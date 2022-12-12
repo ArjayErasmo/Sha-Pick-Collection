@@ -1,0 +1,190 @@
+ERROR - 2022-12-08 00:44:15 --> mysqli_sql_exception: Column 'image' cannot be null in C:\laragon\www\codeigniter4\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\laragon\www\codeigniter4\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\laragon\www\codeigniter4\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\laragon\www\codeigniter4\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\laragon\www\codeigniter4\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\laragon\www\codeigniter4\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\codeigniter4\system\BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\codeigniter4\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\laragon\www\codeigniter4\system\BaseModel.php(659): CodeIgniter\Model->insert(Array, false)
+#8 C:\laragon\www\codeigniter4\app\Controllers\AdminController.php(32): CodeIgniter\BaseModel->save(Array)
+#9 C:\laragon\www\codeigniter4\system\CodeIgniter.php(927): App\Controllers\AdminController->saveproduct()
+#10 C:\laragon\www\codeigniter4\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#11 C:\laragon\www\codeigniter4\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\codeigniter4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\laragon\www\codeigniter4\system\Commands\Server\rewrite.php(46): require_once('C:\\laragon\\www\\...')
+#14 {main}
+CRITICAL - 2022-12-08 00:44:15 --> Column 'image' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `products` (`name`, `description`, `quantity`, `price`, `image`) VALUES (\'Arjay\', \'cassio\', \'20\', \'50\', NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `products` (`name`, `description`, `quantity`, `price`, `image`) VALUES (\'Arjay\', \'cassio\', \'20\', \'50\', NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `products` (`name`, `description`, `quantity`, `price`, `image`) VALUES (\'Arjay\', \'cassio\', \'20\', \'50\', NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `products` (`name`, `description`, `quantity`, `price`, `image`) VALUES (:name:, :description:, :quantity:, :price:, :image:)', [...], false)
+ 5 SYSTEMPATH\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(749): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(659): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\AdminController.php(32): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController->saveproduct()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-12-08 00:46:22 --> mysqli_sql_exception: Column 'image' cannot be null in C:\laragon\www\codeigniter4\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\laragon\www\codeigniter4\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\laragon\www\codeigniter4\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\laragon\www\codeigniter4\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\laragon\www\codeigniter4\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\laragon\www\codeigniter4\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\codeigniter4\system\BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\codeigniter4\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\laragon\www\codeigniter4\system\BaseModel.php(659): CodeIgniter\Model->insert(Array, false)
+#8 C:\laragon\www\codeigniter4\app\Controllers\AdminController.php(32): CodeIgniter\BaseModel->save(Array)
+#9 C:\laragon\www\codeigniter4\system\CodeIgniter.php(927): App\Controllers\AdminController->saveproduct()
+#10 C:\laragon\www\codeigniter4\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#11 C:\laragon\www\codeigniter4\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\codeigniter4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\laragon\www\codeigniter4\system\Commands\Server\rewrite.php(46): require_once('C:\\laragon\\www\\...')
+#14 {main}
+CRITICAL - 2022-12-08 00:46:22 --> Column 'image' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `products` (`name`, `description`, `quantity`, `price`, `image`) VALUES (\'Arjay\', \'cassio\', \'20\', \'50\', NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `products` (`name`, `description`, `quantity`, `price`, `image`) VALUES (\'Arjay\', \'cassio\', \'20\', \'50\', NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `products` (`name`, `description`, `quantity`, `price`, `image`) VALUES (\'Arjay\', \'cassio\', \'20\', \'50\', NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `products` (`name`, `description`, `quantity`, `price`, `image`) VALUES (:name:, :description:, :quantity:, :price:, :image:)', [...], false)
+ 5 SYSTEMPATH\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(749): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(659): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\AdminController.php(32): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController->saveproduct()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-08 00:50:26 --> Call to a member function getName() on null
+in APPPATH\Controllers\AdminController.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController->saveproduct()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-08 00:50:48 --> Call to a member function get_filename() on null
+in APPPATH\Controllers\AdminController.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController->saveproduct()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-08 00:52:04 --> Call to a member function getName() on null
+in APPPATH\Controllers\AdminController.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController->saveproduct()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-08 00:52:06 --> Call to a member function getName() on null
+in APPPATH\Controllers\AdminController.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController->saveproduct()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-08 00:52:35 --> Call to a member function move() on null
+in APPPATH\Controllers\AdminController.php on line 25.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController->saveproduct()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-08 00:56:14 --> Call to a member function getName() on null
+in APPPATH\Controllers\AdminController.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController->saveproduct()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-08 01:00:01 --> Call to a member function getName() on null
+in APPPATH\Controllers\AdminController.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController->saveproduct()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-08 01:01:51 --> Call to a member function getName() on null
+in APPPATH\Controllers\AdminController.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController->saveproduct()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-08 01:02:07 --> Call to a member function getName() on null
+in APPPATH\Controllers\AdminController.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController->saveproduct()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-08 01:06:59 --> Call to a member function getName() on null
+in APPPATH\Controllers\AdminController.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController->saveproduct()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-08 02:22:57 --> Undefined array key "img/image"
+in APPPATH\Views\admin\products.php on line 69.
+ 1 APPPATH\Views\admin\products.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "img/image"', 'APPPATH\\Views\\admin\\products.php', 69)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\products.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/products', [], true)
+ 5 APPPATH\Controllers\AdminController.php(47): view('admin/products', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController->products()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-08 04:14:15 --> Call to a member function getRandomName() on null
+in APPPATH\Controllers\AdminController.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController->saveproduct()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-08 04:14:49 --> Call to a member function getRandomName() on null
+in APPPATH\Controllers\AdminController.php on line 25.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController->saveproduct()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-08 04:16:00 --> Call to a member function getRandomName() on null
+in APPPATH\Controllers\AdminController.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController->saveproduct()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-08 04:16:53 --> Call to a member function getRandomName() on null
+in APPPATH\Controllers\AdminController.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController->saveproduct()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-08 04:17:39 --> Call to a member function getName() on null
+in APPPATH\Controllers\AdminController.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController->saveproduct()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-08 04:18:15 --> Call to a member function getName() on null
+in APPPATH\Controllers\AdminController.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController->saveproduct()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

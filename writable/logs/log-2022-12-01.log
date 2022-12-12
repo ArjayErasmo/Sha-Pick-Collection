@@ -1,0 +1,45 @@
+ERROR - 2022-12-01 10:15:56 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\laragon\www\codeigniter4\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\laragon\www\codeigniter4\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'codeigniter_aut...', 3306, '', 0)
+#1 C:\laragon\www\codeigniter4\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\codeigniter4\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\codeigniter4\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\codeigniter4\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\codeigniter4\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\codeigniter4\app\Controllers\Home.php(48): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\codeigniter4\system\CodeIgniter.php(927): App\Controllers\Home->productlist()
+#8 C:\laragon\www\codeigniter4\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\laragon\www\codeigniter4\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\codeigniter4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\codeigniter4\system\Commands\Server\rewrite.php(46): require_once('C:\\laragon\\www\\...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\laragon\www\codeigniter4\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\laragon\www\codeigniter4\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\codeigniter4\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\codeigniter4\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\laragon\www\codeigniter4\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\laragon\www\codeigniter4\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\laragon\www\codeigniter4\app\Controllers\Home.php(48): CodeIgniter\BaseModel->findAll()
+#6 C:\laragon\www\codeigniter4\system\CodeIgniter.php(927): App\Controllers\Home->productlist()
+#7 C:\laragon\www\codeigniter4\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\laragon\www\codeigniter4\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\codeigniter4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\codeigniter4\system\Commands\Server\rewrite.php(46): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2022-12-01 10:15:56 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `products`
+WHERE `quantity` > :quantity:', [...], false)
+ 3 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Home.php(48): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->productlist()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

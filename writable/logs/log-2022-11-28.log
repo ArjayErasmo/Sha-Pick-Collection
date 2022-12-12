@@ -1,0 +1,796 @@
+CRITICAL - 2022-11-28 05:22:41 --> Invalid file: register.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('register.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('register', [], true)
+ 3 APPPATH\Controllers\Auth.php(27): view('register', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Auth->save()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-28 05:23:46 --> Invalid file: register.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('register.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('register', [], true)
+ 3 APPPATH\Controllers\Auth.php(27): view('register', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Auth->save()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-28 05:25:19 --> Invalid file: register.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('register.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('register', [], true)
+ 3 APPPATH\Controllers\Auth.php(27): view('register', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Auth->save()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-28 10:23:34 --> strpos(): Argument #3 ($offset) must be contained in argument #1 ($haystack)
+in SYSTEMPATH\Validation\Validation.php on line 807.
+ 1 SYSTEMPATH\Validation\Validation.php(807): strpos('required|min_length[5]|max_length[12|matches[password]', '|', 55)
+ 2 SYSTEMPATH\Validation\Validation.php(145): CodeIgniter\Validation\Validation->splitRules([...])
+ 3 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\Auth.php(29): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Auth->save()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-28 10:26:56 --> strpos(): Argument #3 ($offset) must be contained in argument #1 ($haystack)
+in SYSTEMPATH\Validation\Validation.php on line 807.
+ 1 SYSTEMPATH\Validation\Validation.php(807): strpos('required|min_length[5]|max_length[12|matches[password]', '|', 55)
+ 2 SYSTEMPATH\Validation\Validation.php(145): CodeIgniter\Validation\Validation->splitRules([...])
+ 3 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\Auth.php(31): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Auth->save()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-28 10:29:13 --> strpos(): Argument #3 ($offset) must be contained in argument #1 ($haystack)
+in SYSTEMPATH\Validation\Validation.php on line 807.
+ 1 SYSTEMPATH\Validation\Validation.php(807): strpos('required|min_length[5]|max_length[12|matches[password]', '|', 55)
+ 2 SYSTEMPATH\Validation\Validation.php(145): CodeIgniter\Validation\Validation->splitRules([...])
+ 3 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\Auth.php(31): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Auth->save()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-28 10:29:55 --> strpos(): Argument #3 ($offset) must be contained in argument #1 ($haystack)
+in SYSTEMPATH\Validation\Validation.php on line 807.
+ 1 SYSTEMPATH\Validation\Validation.php(807): strpos('required|min_length[5]|max_length[12|matches[password]', '|', 55)
+ 2 SYSTEMPATH\Validation\Validation.php(145): CodeIgniter\Validation\Validation->splitRules([...])
+ 3 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\Auth.php(31): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Auth->save()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-28 10:30:38 --> strpos(): Argument #3 ($offset) must be contained in argument #1 ($haystack)
+in SYSTEMPATH\Validation\Validation.php on line 807.
+ 1 SYSTEMPATH\Validation\Validation.php(807): strpos('required|min_length[5]|max_length[12|matches[password]', '|', 55)
+ 2 SYSTEMPATH\Validation\Validation.php(145): CodeIgniter\Validation\Validation->splitRules([...])
+ 3 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\Auth.php(35): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Auth->save()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-28 10:32:40 --> strpos(): Argument #3 ($offset) must be contained in argument #1 ($haystack)
+in SYSTEMPATH\Validation\Validation.php on line 807.
+ 1 SYSTEMPATH\Validation\Validation.php(807): strpos('required|min_length[5]|max_length[12|matches[password]', '|', 55)
+ 2 SYSTEMPATH\Validation\Validation.php(145): CodeIgniter\Validation\Validation->splitRules([...])
+ 3 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\Auth.php(35): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Auth->save()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-28 10:34:47 --> strpos(): Argument #3 ($offset) must be contained in argument #1 ($haystack)
+in SYSTEMPATH\Validation\Validation.php on line 807.
+ 1 SYSTEMPATH\Validation\Validation.php(807): strpos('required|min_length[5]|max_length[12|matches[password]', '|', 55)
+ 2 SYSTEMPATH\Validation\Validation.php(145): CodeIgniter\Validation\Validation->splitRules([...])
+ 3 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\Auth.php(29): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Auth->save()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-28 10:36:01 --> strpos(): Argument #3 ($offset) must be contained in argument #1 ($haystack)
+in SYSTEMPATH\Validation\Validation.php on line 807.
+ 1 SYSTEMPATH\Validation\Validation.php(807): strpos('required|min_length[5]|max_length[12|matches[password]', '|', 55)
+ 2 SYSTEMPATH\Validation\Validation.php(145): CodeIgniter\Validation\Validation->splitRules([...])
+ 3 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\Auth.php(29): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Auth->save()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-28 10:36:05 --> strpos(): Argument #3 ($offset) must be contained in argument #1 ($haystack)
+in SYSTEMPATH\Validation\Validation.php on line 807.
+ 1 SYSTEMPATH\Validation\Validation.php(807): strpos('required|min_length[5]|max_length[12|matches[password]', '|', 55)
+ 2 SYSTEMPATH\Validation\Validation.php(145): CodeIgniter\Validation\Validation->splitRules([...])
+ 3 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\Auth.php(29): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Auth->save()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-28 10:38:22 --> strpos(): Argument #3 ($offset) must be contained in argument #1 ($haystack)
+in SYSTEMPATH\Validation\Validation.php on line 807.
+ 1 SYSTEMPATH\Validation\Validation.php(807): strpos('required|min_length[5]|max_length[12|matches[password]', '|', 55)
+ 2 SYSTEMPATH\Validation\Validation.php(145): CodeIgniter\Validation\Validation->splitRules([...])
+ 3 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\Auth.php(29): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Auth->save()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-28 10:38:41 --> Undefined variable $validation
+in APPPATH\Controllers\Auth.php on line 27.
+ 1 APPPATH\Controllers\Auth.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $validation', 'APPPATH\\Controllers\\Auth.php', 27)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Auth->save()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-28 10:38:55 --> strpos(): Argument #3 ($offset) must be contained in argument #1 ($haystack)
+in SYSTEMPATH\Validation\Validation.php on line 807.
+ 1 SYSTEMPATH\Validation\Validation.php(807): strpos('required|min_length[5]|max_length[12|matches[password]', '|', 55)
+ 2 SYSTEMPATH\Validation\Validation.php(145): CodeIgniter\Validation\Validation->splitRules([...])
+ 3 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\Auth.php(29): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Auth->save()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-28 10:39:51 --> Undefined variable $validation
+in APPPATH\Controllers\Auth.php on line 27.
+ 1 APPPATH\Controllers\Auth.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $validation', 'APPPATH\\Controllers\\Auth.php', 27)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Auth->save()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-28 10:55:26 --> Class "App\Model\UsersModel" not found
+in APPPATH\Controllers\Auth.php on line 74.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Auth->save()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-28 10:56:54 --> Class "App\Model\UsersModel" not found
+in APPPATH\Controllers\Auth.php on line 74.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Auth->save()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-28 11:01:05 --> Allowed fields must be specified for model: App\Models\UsersModel
+in SYSTEMPATH\BaseModel.php on line 1160.
+ 1 SYSTEMPATH\BaseModel.php(1160): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\UsersModel')
+ 2 SYSTEMPATH\BaseModel.php(724): CodeIgniter\BaseModel->doProtectFields([...])
+ 3 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([...], true)
+ 4 APPPATH\Controllers\Auth.php(75): CodeIgniter\Model->insert([...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Auth->save()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-28 11:08:22 --> Allowed fields must be specified for model: App\Models\UsersModel
+in SYSTEMPATH\BaseModel.php on line 1160.
+ 1 SYSTEMPATH\BaseModel.php(1160): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\UsersModel')
+ 2 SYSTEMPATH\BaseModel.php(724): CodeIgniter\BaseModel->doProtectFields([...])
+ 3 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([...], true)
+ 4 APPPATH\Controllers\Auth.php(75): CodeIgniter\Model->insert([...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Auth->save()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-28 11:10:44 --> Allowed fields must be specified for model: App\Models\UsersModel
+in SYSTEMPATH\BaseModel.php on line 1160.
+ 1 SYSTEMPATH\BaseModel.php(1160): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\UsersModel')
+ 2 SYSTEMPATH\BaseModel.php(724): CodeIgniter\BaseModel->doProtectFields([...])
+ 3 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([...], true)
+ 4 APPPATH\Controllers\Auth.php(76): CodeIgniter\Model->insert([...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Auth->save()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-28 11:18:09 --> Allowed fields must be specified for model: App\Models\UsersModel
+in SYSTEMPATH\BaseModel.php on line 1160.
+ 1 SYSTEMPATH\BaseModel.php(1160): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\UsersModel')
+ 2 SYSTEMPATH\BaseModel.php(724): CodeIgniter\BaseModel->doProtectFields([...])
+ 3 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([...], true)
+ 4 APPPATH\Controllers\Auth.php(76): CodeIgniter\Model->insert([...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Auth->save()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-28 11:19:38 --> Call to undefined function App\Controllers\with()
+in APPPATH\Controllers\Auth.php on line 80.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Auth->save()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-28 12:03:23 --> Invalid file: auth.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('auth.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('auth', [], true)
+ 3 APPPATH\Controllers\Auth.php(107): view('auth', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Auth->check()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-28 12:04:09 --> Invalid file: .php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('ROOTPATH\\public', [], true)
+ 3 APPPATH\Controllers\Auth.php(107): view('ROOTPATH\\public', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Auth->check()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-28 12:05:19 --> Invalid file: .php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('ROOTPATH\\public', [], true)
+ 3 APPPATH\Controllers\Auth.php(107): view('ROOTPATH\\public', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Auth->check()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-28 12:06:13 --> Invalid file: .php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('ROOTPATH\\public', [], true)
+ 3 APPPATH\Controllers\Auth.php(107): view('ROOTPATH\\public', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Auth->check()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-28 12:06:54 --> Invalid file: .php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('ROOTPATH\\public', [], true)
+ 3 APPPATH\Controllers\Auth.php(107): view('ROOTPATH\\public', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Auth->check()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-28 12:15:29 --> Class "App\Controllers\Controller" not found
+in APPPATH\Controllers\Auth.php on line 6.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(282): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Auth.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Auth')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Auth')
+ 5 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\Auth', true)
+ 6 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-28 12:15:48 --> Class "App\Controllers\Controllers" not found
+in APPPATH\Controllers\Auth.php on line 6.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(282): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Auth.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Auth')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Auth')
+ 5 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\Auth', true)
+ 6 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-28 12:16:53 --> Invalid file: .php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('ROOTPATH\\public', [], true)
+ 3 APPPATH\Controllers\Auth.php(107): view('ROOTPATH\\public', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Auth->check()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-28 12:17:12 --> Invalid file: index.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('FCPATH\\index.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('index', [], true)
+ 3 APPPATH\Controllers\Auth.php(107): view('index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Auth->check()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-28 12:17:28 --> Invalid file: auth/index.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('auth/index.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('auth/index', [], true)
+ 3 APPPATH\Controllers\Auth.php(107): view('auth/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Auth->check()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-28 12:17:42 --> Invalid file: auth/index().php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('auth/index().php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('auth/index()', [], true)
+ 3 APPPATH\Controllers\Auth.php(107): view('auth/index()', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Auth->check()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-28 12:17:53 --> Invalid file: index().php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('index().php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('index()', [], true)
+ 3 APPPATH\Controllers\Auth.php(107): view('index()', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Auth->check()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-28 12:18:12 --> Invalid file: /.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('C:\\', [], true)
+ 3 APPPATH\Controllers\Auth.php(107): view('C:\\', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Auth->check()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-28 12:18:27 --> Invalid file: login.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('login.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('login', [], true)
+ 3 APPPATH\Controllers\Auth.php(107): view('login', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Auth->check()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-28 12:23:19 --> Invalid file: index.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('FCPATH\\index.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('index', [], true)
+ 3 APPPATH\Controllers\Auth.php(107): view('index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Auth->check()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-28 12:26:25 --> Invalid file: index.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('FCPATH\\index.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('index', [], true)
+ 3 APPPATH\Controllers\Auth.php(106): view('index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Auth->check()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-28 12:28:02 --> Invalid file: index.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('FCPATH\\index.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('index', [], true)
+ 3 APPPATH\Controllers\Auth.php(112): view('index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Auth->check()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-28 12:30:37 --> Invalid file:  login.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile(' login.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render(' login', [], true)
+ 3 APPPATH\Controllers\Auth.php(115): view(' login', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Auth->check()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-28 12:31:29 --> Invalid file:  auth/login.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile(' auth/login.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render(' auth/login', [], true)
+ 3 APPPATH\Controllers\Auth.php(115): view(' auth/login', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Auth->check()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-11-28 12:37:52 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\laragon\www\codeigniter4\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\laragon\www\codeigniter4\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'codeigniter_aut...', 3306, '', 0)
+#1 C:\laragon\www\codeigniter4\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\codeigniter4\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\codeigniter4\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\laragon\www\codeigniter4\system\Validation\Rules.php(142): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\codeigniter4\system\Validation\Validation.php(315): CodeIgniter\Validation\Rules->is_unique('hd@gmail.com', 'email', Array, NULL, 'email')
+#6 C:\laragon\www\codeigniter4\system\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('email', 'email', 'hd@gmail.com', Array, Array)
+#7 C:\laragon\www\codeigniter4\system\Controller.php(140): CodeIgniter\Validation\Validation->run()
+#8 C:\laragon\www\codeigniter4\app\Controllers\Auth.php(90): CodeIgniter\Controller->validate(Array)
+#9 C:\laragon\www\codeigniter4\system\CodeIgniter.php(927): App\Controllers\Auth->check()
+#10 C:\laragon\www\codeigniter4\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#11 C:\laragon\www\codeigniter4\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\codeigniter4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\laragon\www\codeigniter4\system\Commands\Server\rewrite.php(46): require_once('C:\\laragon\\www\\...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\laragon\www\codeigniter4\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\laragon\www\codeigniter4\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\codeigniter4\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\codeigniter4\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#3 C:\laragon\www\codeigniter4\system\Validation\Rules.php(142): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\laragon\www\codeigniter4\system\Validation\Validation.php(315): CodeIgniter\Validation\Rules->is_unique('hd@gmail.com', 'email', Array, NULL, 'email')
+#5 C:\laragon\www\codeigniter4\system\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('email', 'email', 'hd@gmail.com', Array, Array)
+#6 C:\laragon\www\codeigniter4\system\Controller.php(140): CodeIgniter\Validation\Validation->run()
+#7 C:\laragon\www\codeigniter4\app\Controllers\Auth.php(90): CodeIgniter\Controller->validate(Array)
+#8 C:\laragon\www\codeigniter4\system\CodeIgniter.php(927): App\Controllers\Auth->check()
+#9 C:\laragon\www\codeigniter4\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#10 C:\laragon\www\codeigniter4\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\codeigniter4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\laragon\www\codeigniter4\system\Commands\Server\rewrite.php(46): require_once('C:\\laragon\\www\\...')
+#13 {main}
+CRITICAL - 2022-11-28 12:37:52 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Validation\Rules.php(142): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\Validation\Validation.php(315): CodeIgniter\Validation\Rules->is_unique('hd@gmail.com', 'email', [...], null, 'email')
+ 5 SYSTEMPATH\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('email', 'email', 'hd@gmail.com', [...], [...])
+ 6 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 7 APPPATH\Controllers\Auth.php(90): CodeIgniter\Controller->validate([...])
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Auth->check()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-11-28 12:37:56 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\laragon\www\codeigniter4\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\laragon\www\codeigniter4\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'codeigniter_aut...', 3306, '', 0)
+#1 C:\laragon\www\codeigniter4\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\codeigniter4\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\codeigniter4\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\laragon\www\codeigniter4\system\Validation\Rules.php(142): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\codeigniter4\system\Validation\Validation.php(315): CodeIgniter\Validation\Rules->is_unique('hd@gmail.com', 'email', Array, NULL, 'email')
+#6 C:\laragon\www\codeigniter4\system\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('email', 'email', 'hd@gmail.com', Array, Array)
+#7 C:\laragon\www\codeigniter4\system\Controller.php(140): CodeIgniter\Validation\Validation->run()
+#8 C:\laragon\www\codeigniter4\app\Controllers\Auth.php(90): CodeIgniter\Controller->validate(Array)
+#9 C:\laragon\www\codeigniter4\system\CodeIgniter.php(927): App\Controllers\Auth->check()
+#10 C:\laragon\www\codeigniter4\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#11 C:\laragon\www\codeigniter4\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\codeigniter4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\laragon\www\codeigniter4\system\Commands\Server\rewrite.php(46): require_once('C:\\laragon\\www\\...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\laragon\www\codeigniter4\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\laragon\www\codeigniter4\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\codeigniter4\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\codeigniter4\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#3 C:\laragon\www\codeigniter4\system\Validation\Rules.php(142): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\laragon\www\codeigniter4\system\Validation\Validation.php(315): CodeIgniter\Validation\Rules->is_unique('hd@gmail.com', 'email', Array, NULL, 'email')
+#5 C:\laragon\www\codeigniter4\system\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('email', 'email', 'hd@gmail.com', Array, Array)
+#6 C:\laragon\www\codeigniter4\system\Controller.php(140): CodeIgniter\Validation\Validation->run()
+#7 C:\laragon\www\codeigniter4\app\Controllers\Auth.php(90): CodeIgniter\Controller->validate(Array)
+#8 C:\laragon\www\codeigniter4\system\CodeIgniter.php(927): App\Controllers\Auth->check()
+#9 C:\laragon\www\codeigniter4\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#10 C:\laragon\www\codeigniter4\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\codeigniter4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\laragon\www\codeigniter4\system\Commands\Server\rewrite.php(46): require_once('C:\\laragon\\www\\...')
+#13 {main}
+CRITICAL - 2022-11-28 12:37:56 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Validation\Rules.php(142): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\Validation\Validation.php(315): CodeIgniter\Validation\Rules->is_unique('hd@gmail.com', 'email', [...], null, 'email')
+ 5 SYSTEMPATH\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('email', 'email', 'hd@gmail.com', [...], [...])
+ 6 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 7 APPPATH\Controllers\Auth.php(90): CodeIgniter\Controller->validate([...])
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Auth->check()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-11-28 12:38:01 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\laragon\www\codeigniter4\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\laragon\www\codeigniter4\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'codeigniter_aut...', 3306, '', 0)
+#1 C:\laragon\www\codeigniter4\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\codeigniter4\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\codeigniter4\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\laragon\www\codeigniter4\system\Validation\Rules.php(142): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\codeigniter4\system\Validation\Validation.php(315): CodeIgniter\Validation\Rules->is_unique('hd@gmail.com', 'email', Array, NULL, 'email')
+#6 C:\laragon\www\codeigniter4\system\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('email', 'email', 'hd@gmail.com', Array, Array)
+#7 C:\laragon\www\codeigniter4\system\Controller.php(140): CodeIgniter\Validation\Validation->run()
+#8 C:\laragon\www\codeigniter4\app\Controllers\Auth.php(90): CodeIgniter\Controller->validate(Array)
+#9 C:\laragon\www\codeigniter4\system\CodeIgniter.php(927): App\Controllers\Auth->check()
+#10 C:\laragon\www\codeigniter4\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#11 C:\laragon\www\codeigniter4\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\codeigniter4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\laragon\www\codeigniter4\system\Commands\Server\rewrite.php(46): require_once('C:\\laragon\\www\\...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\laragon\www\codeigniter4\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\laragon\www\codeigniter4\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\codeigniter4\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\codeigniter4\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#3 C:\laragon\www\codeigniter4\system\Validation\Rules.php(142): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\laragon\www\codeigniter4\system\Validation\Validation.php(315): CodeIgniter\Validation\Rules->is_unique('hd@gmail.com', 'email', Array, NULL, 'email')
+#5 C:\laragon\www\codeigniter4\system\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('email', 'email', 'hd@gmail.com', Array, Array)
+#6 C:\laragon\www\codeigniter4\system\Controller.php(140): CodeIgniter\Validation\Validation->run()
+#7 C:\laragon\www\codeigniter4\app\Controllers\Auth.php(90): CodeIgniter\Controller->validate(Array)
+#8 C:\laragon\www\codeigniter4\system\CodeIgniter.php(927): App\Controllers\Auth->check()
+#9 C:\laragon\www\codeigniter4\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#10 C:\laragon\www\codeigniter4\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\codeigniter4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\laragon\www\codeigniter4\system\Commands\Server\rewrite.php(46): require_once('C:\\laragon\\www\\...')
+#13 {main}
+CRITICAL - 2022-11-28 12:38:01 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Validation\Rules.php(142): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\Validation\Validation.php(315): CodeIgniter\Validation\Rules->is_unique('hd@gmail.com', 'email', [...], null, 'email')
+ 5 SYSTEMPATH\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('email', 'email', 'hd@gmail.com', [...], [...])
+ 6 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 7 APPPATH\Controllers\Auth.php(90): CodeIgniter\Controller->validate([...])
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Auth->check()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-11-28 12:38:13 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\laragon\www\codeigniter4\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\laragon\www\codeigniter4\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'codeigniter_aut...', 3306, '', 0)
+#1 C:\laragon\www\codeigniter4\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\codeigniter4\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\codeigniter4\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\laragon\www\codeigniter4\system\Validation\Rules.php(142): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\codeigniter4\system\Validation\Validation.php(315): CodeIgniter\Validation\Rules->is_unique('arh@gmail.com', 'email', Array, NULL, 'email')
+#6 C:\laragon\www\codeigniter4\system\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('email', 'email', 'arh@gmail.com', Array, Array)
+#7 C:\laragon\www\codeigniter4\system\Controller.php(140): CodeIgniter\Validation\Validation->run()
+#8 C:\laragon\www\codeigniter4\app\Controllers\Auth.php(90): CodeIgniter\Controller->validate(Array)
+#9 C:\laragon\www\codeigniter4\system\CodeIgniter.php(927): App\Controllers\Auth->check()
+#10 C:\laragon\www\codeigniter4\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#11 C:\laragon\www\codeigniter4\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\codeigniter4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\laragon\www\codeigniter4\system\Commands\Server\rewrite.php(46): require_once('C:\\laragon\\www\\...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\laragon\www\codeigniter4\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\laragon\www\codeigniter4\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\codeigniter4\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\codeigniter4\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#3 C:\laragon\www\codeigniter4\system\Validation\Rules.php(142): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\laragon\www\codeigniter4\system\Validation\Validation.php(315): CodeIgniter\Validation\Rules->is_unique('arh@gmail.com', 'email', Array, NULL, 'email')
+#5 C:\laragon\www\codeigniter4\system\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('email', 'email', 'arh@gmail.com', Array, Array)
+#6 C:\laragon\www\codeigniter4\system\Controller.php(140): CodeIgniter\Validation\Validation->run()
+#7 C:\laragon\www\codeigniter4\app\Controllers\Auth.php(90): CodeIgniter\Controller->validate(Array)
+#8 C:\laragon\www\codeigniter4\system\CodeIgniter.php(927): App\Controllers\Auth->check()
+#9 C:\laragon\www\codeigniter4\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#10 C:\laragon\www\codeigniter4\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\codeigniter4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\laragon\www\codeigniter4\system\Commands\Server\rewrite.php(46): require_once('C:\\laragon\\www\\...')
+#13 {main}
+CRITICAL - 2022-11-28 12:38:13 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Validation\Rules.php(142): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\Validation\Validation.php(315): CodeIgniter\Validation\Rules->is_unique('arh@gmail.com', 'email', [...], null, 'email')
+ 5 SYSTEMPATH\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('email', 'email', 'arh@gmail.com', [...], [...])
+ 6 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 7 APPPATH\Controllers\Auth.php(90): CodeIgniter\Controller->validate([...])
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Auth->check()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-11-28 12:41:01 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\laragon\www\codeigniter4\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\laragon\www\codeigniter4\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'codeigniter_aut...', 3306, '', 0)
+#1 C:\laragon\www\codeigniter4\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\codeigniter4\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\codeigniter4\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\laragon\www\codeigniter4\system\Validation\Rules.php(142): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\codeigniter4\system\Validation\Validation.php(315): CodeIgniter\Validation\Rules->is_unique('eraay4@gmail.co...', 'email', Array, NULL, 'email')
+#6 C:\laragon\www\codeigniter4\system\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('email', 'email', 'eraay4@gmail.co...', Array, Array)
+#7 C:\laragon\www\codeigniter4\system\Controller.php(140): CodeIgniter\Validation\Validation->run()
+#8 C:\laragon\www\codeigniter4\app\Controllers\Auth.php(90): CodeIgniter\Controller->validate(Array)
+#9 C:\laragon\www\codeigniter4\system\CodeIgniter.php(927): App\Controllers\Auth->check()
+#10 C:\laragon\www\codeigniter4\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#11 C:\laragon\www\codeigniter4\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\codeigniter4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\laragon\www\codeigniter4\system\Commands\Server\rewrite.php(46): require_once('C:\\laragon\\www\\...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\laragon\www\codeigniter4\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\laragon\www\codeigniter4\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\codeigniter4\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\codeigniter4\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#3 C:\laragon\www\codeigniter4\system\Validation\Rules.php(142): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\laragon\www\codeigniter4\system\Validation\Validation.php(315): CodeIgniter\Validation\Rules->is_unique('eraay4@gmail.co...', 'email', Array, NULL, 'email')
+#5 C:\laragon\www\codeigniter4\system\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('email', 'email', 'eraay4@gmail.co...', Array, Array)
+#6 C:\laragon\www\codeigniter4\system\Controller.php(140): CodeIgniter\Validation\Validation->run()
+#7 C:\laragon\www\codeigniter4\app\Controllers\Auth.php(90): CodeIgniter\Controller->validate(Array)
+#8 C:\laragon\www\codeigniter4\system\CodeIgniter.php(927): App\Controllers\Auth->check()
+#9 C:\laragon\www\codeigniter4\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#10 C:\laragon\www\codeigniter4\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\codeigniter4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\laragon\www\codeigniter4\system\Commands\Server\rewrite.php(46): require_once('C:\\laragon\\www\\...')
+#13 {main}
+CRITICAL - 2022-11-28 12:41:01 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Validation\Rules.php(142): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\Validation\Validation.php(315): CodeIgniter\Validation\Rules->is_unique('eraay4@gmail.com', 'email', [...], null, 'email')
+ 5 SYSTEMPATH\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('email', 'email', 'eraay4@gmail.com', [...], [...])
+ 6 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 7 APPPATH\Controllers\Auth.php(90): CodeIgniter\Controller->validate([...])
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Auth->check()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-11-28 12:42:09 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\laragon\www\codeigniter4\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\laragon\www\codeigniter4\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'codeigniter_aut...', 3306, '', 0)
+#1 C:\laragon\www\codeigniter4\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\codeigniter4\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\codeigniter4\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\laragon\www\codeigniter4\system\Validation\Rules.php(104): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\codeigniter4\system\Validation\Validation.php(315): CodeIgniter\Validation\Rules->is_not_unique('eraay4@gmail.co...', 'email', Array, NULL, 'email')
+#6 C:\laragon\www\codeigniter4\system\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('email', 'email', 'eraay4@gmail.co...', Array, Array)
+#7 C:\laragon\www\codeigniter4\system\Controller.php(140): CodeIgniter\Validation\Validation->run()
+#8 C:\laragon\www\codeigniter4\app\Controllers\Auth.php(90): CodeIgniter\Controller->validate(Array)
+#9 C:\laragon\www\codeigniter4\system\CodeIgniter.php(927): App\Controllers\Auth->check()
+#10 C:\laragon\www\codeigniter4\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#11 C:\laragon\www\codeigniter4\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\codeigniter4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\laragon\www\codeigniter4\system\Commands\Server\rewrite.php(46): require_once('C:\\laragon\\www\\...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\laragon\www\codeigniter4\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\laragon\www\codeigniter4\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\codeigniter4\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\codeigniter4\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#3 C:\laragon\www\codeigniter4\system\Validation\Rules.php(104): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\laragon\www\codeigniter4\system\Validation\Validation.php(315): CodeIgniter\Validation\Rules->is_not_unique('eraay4@gmail.co...', 'email', Array, NULL, 'email')
+#5 C:\laragon\www\codeigniter4\system\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('email', 'email', 'eraay4@gmail.co...', Array, Array)
+#6 C:\laragon\www\codeigniter4\system\Controller.php(140): CodeIgniter\Validation\Validation->run()
+#7 C:\laragon\www\codeigniter4\app\Controllers\Auth.php(90): CodeIgniter\Controller->validate(Array)
+#8 C:\laragon\www\codeigniter4\system\CodeIgniter.php(927): App\Controllers\Auth->check()
+#9 C:\laragon\www\codeigniter4\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#10 C:\laragon\www\codeigniter4\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\codeigniter4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\laragon\www\codeigniter4\system\Commands\Server\rewrite.php(46): require_once('C:\\laragon\\www\\...')
+#13 {main}
+CRITICAL - 2022-11-28 12:42:09 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Validation\Rules.php(104): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\Validation\Validation.php(315): CodeIgniter\Validation\Rules->is_not_unique('eraay4@gmail.com', 'email', [...], null, 'email')
+ 5 SYSTEMPATH\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('email', 'email', 'eraay4@gmail.com', [...], [...])
+ 6 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 7 APPPATH\Controllers\Auth.php(90): CodeIgniter\Controller->validate([...])
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Auth->check()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-28 13:40:09 --> Invalid file: dashboard.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('dashboard.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('dashboard', [], true)
+ 3 APPPATH\Controllers\Dashboard.php(13): view('dashboard')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Dashboard->dashboard()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-28 13:40:54 --> Invalid file: dashboard.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('dashboard.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('dashboard', [], true)
+ 3 APPPATH\Controllers\Dashboard.php(13): view('dashboard')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Dashboard->dashboard()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-28 13:41:41 --> Invalid file: dashboard.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('dashboard.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('dashboard', [], true)
+ 3 APPPATH\Controllers\Dashboard.php(13): view('dashboard')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Dashboard->dashboard()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-28 22:26:36 --> Call to undefined function url()
+in APPPATH\Views\include\end.php on line 22.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('include/end', null, true)
+ 4 APPPATH\Views\mainpage.php(6): CodeIgniter\View\View->include('include/end')
+ 5 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\mainpage.php')
+ 6 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('mainpage', [], true)
+ 8 APPPATH\Controllers\Home.php(13): view('mainpage')
+ 9 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->mainpage()
+10 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+11 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-28 22:27:53 --> Call to undefined function url()
+in APPPATH\Views\include\end.php on line 22.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('include/end', null, true)
+ 4 APPPATH\Views\mainpage.php(6): CodeIgniter\View\View->include('include/end')
+ 5 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\mainpage.php')
+ 6 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('mainpage', [], true)
+ 8 APPPATH\Controllers\Home.php(13): view('mainpage')
+ 9 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->mainpage()
+10 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+11 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
