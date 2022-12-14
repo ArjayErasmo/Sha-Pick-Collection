@@ -1,0 +1,91 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FF6F61;
+}
+
+form{
+    background: #fff;
+    width: 500px;
+    padding: 30px;
+    font-size: 18px;
+    border-radius: 8px;
+}
+
+.message-icon{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.message-icon i{
+   font-size: 40px; 
+}
+
+.message-icon span{
+    font-size: 22px;
+    font-weight: bold;
+    margin-left: 190px;
+}
+
+form input, textarea{
+    width: 100%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #000;
+    outline: none;
+}
+
+#input-field{
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+#input-field i{
+    font-size: 30px;
+    margin-right: 15px;
+}
+#input-field a{
+    font-size: 15px;
+    margin-right: 15px;
+}
+#input-field ::placeholder{
+    font-size: 15px;
+    margin-right: 15px;
+}
+
+#adminlogo{
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+}
+.adminlogo i{
+    font-size: 60px;
+    justify-content: center;
+    align-items: center;
+    padding-left: 190px;
+    
+    
+}
+
+.send-btn{
+    width: 100px;
+    border: none;
+    background: #000;
+    color: #fff;
+    font-size: 15px;
+    padding: 6px 0;
+    border-radius: 50px;
+}
