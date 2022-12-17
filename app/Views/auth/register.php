@@ -5,12 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign up</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="<?php echo base_url('css/design.css')?>"></link>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
 </head>
 <body>
-    <div class="container">
-        <div class="row" style="margin-top-45px">
-            <h4>Sign Up</h4><hr>
+    <div class="hero">
+        
             <form action="<?=base_url('save');?>" method="post" autocomplete="off">
                 <?= csrf_field(); ?>
 
@@ -21,6 +21,13 @@
                     <div class="alert alert-success"><?= session()->getFlashdata('success'); ?></div>
                 <?php endif ?>
 
+                <div class="adminlogo">
+                <a href="#" style="color:black;"><i class="bi bi-person-circle"></i></a>
+                </div>
+                <div class="message-icon">
+                <span>Sign up</span>
+                </div>
+                <br>
 
                 <div class="form-group">
                     <label for="">Name</label>
@@ -44,12 +51,12 @@
                 </div>
                 <br>
                 <div class="form-group">
-                <button class="btn btn-primary btn-block" type="submit">Sign in</button>
+                <button class="send-btn" type="submit">Sign in</button>
                 </div>
                 <br>
                 <a href="<?=site_url('login');?>">I already have an account, log in now</a>
             </form>
-        </div>
+        
     </div>
 </body>
 </html>
