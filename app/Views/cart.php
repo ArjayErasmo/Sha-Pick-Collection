@@ -280,9 +280,9 @@
                         <div class="footer-widget">
                             <h2>Get in Touch</h2>
                             <div class="contact-info">
-                                <p><i class="fa fa-map-marker"></i>123 E Store, Los Angeles, USA</p>
-                                <p><i class="fa fa-envelope"></i>email@example.com</p>
-                                <p><i class="fa fa-phone"></i>+123-456-7890</p>
+                                <p><i class="fa fa-map-marker"></i>Sitio Mahogany Leuteboro 2, Socorro Oriental Mindoro,Philippines</p>
+                                <p><i class="fa fa-envelope"></i>shainamariesamarita14@gmail.com</p>
+                                <p><i class="fa fa-phone"></i>0905 474 2754</p>
                             </div>
                         </div>
                     </div>

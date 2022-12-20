@@ -36,7 +36,7 @@
                 </div>
                 <br>
                 <div class="form-group">
-                    <button class="send-btn" type="submit">Sign in</button>
+                    <button class="send-btn" type="submit" >Sign in</button>
                 </div>
                 <br>
                 <div id="input-field">
