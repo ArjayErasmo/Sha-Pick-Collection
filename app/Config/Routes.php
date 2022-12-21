@@ -85,6 +85,10 @@ $routes->get('/sendemail', 'EmailController::index');
 $routes->post('/send', 'EmailController::sendEmail');
 $routes->post('/contact', 'EmailController::sendEmail');
 
+
+//
+$routes->match(['get', 'post'], '/registers', 'AccountController::registers');
+
 /*
  * --------------------------------------------------------------------
  * Additional Routing

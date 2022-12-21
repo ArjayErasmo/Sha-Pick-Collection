@@ -1,0 +1,20 @@
+CRITICAL - 2022-12-21 12:19:27 --> Invalid file: registers.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('registers.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('registers', [], true)
+ 3 APPPATH\Controllers\AccountController.php(9): view('registers')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AccountController->registers()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AccountController))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-21 12:20:11 --> Invalid file: registers.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('registers.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('registers', [], true)
+ 3 APPPATH\Controllers\AccountController.php(9): view('registers')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AccountController->registers()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AccountController))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
