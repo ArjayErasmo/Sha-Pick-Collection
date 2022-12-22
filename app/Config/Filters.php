@@ -25,6 +25,7 @@ class Filters extends BaseConfig
         'secureheaders' => SecureHeaders::class,
         'AuthCheck'     => AuthCheckFilter::class,
         'AlreadyLoggedin'     => AlreadyLoggedinFilter::class,
+        'authGuard'   => \App\Filters\AuthGuard::class,
     ];
 
     /**
