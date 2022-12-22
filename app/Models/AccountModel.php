@@ -13,6 +13,7 @@ class AccountModel extends Model
         'password',
         'token',
         'type',
+        'status'
 
     ];
 }
