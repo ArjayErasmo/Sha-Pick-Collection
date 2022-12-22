@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>E Store - eCommerce HTML Template</title>
+        <title>Product List - Sha Pick Collection</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="eCommerce HTML Template Free Download" name="keywords">
         <meta content="eCommerce HTML Template Free Download" name="description">
@@ -121,8 +121,8 @@
         <div class="breadcrumb-wrap">
             <div class="container-fluid">
                 <ul class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="#">Home</a></li>
-                    <li class="breadcrumb-item"><a href="#">Products</a></li>
+                    <li class="breadcrumb-item"><a href="mainpage">Home</a></li>
+                    <li class="breadcrumb-item"><a href="productlist">Products</a></li>
                     <li class="breadcrumb-item active">Product List</li>
                 </ul>
             </div>
@@ -426,9 +426,9 @@
                         <div class="footer-widget">
                             <h2>Company Info</h2>
                             <ul>
-                                <li><a href="aboutUs">About Us</a></li>
-                                <li><a href="privacypolicy">Privacy Policy</a></li>
-                                <li><a href="termscondition">Terms & Condition</a></li>
+                                <li><a href="<?= site_url('aboutUs'); ?>">About Us</a></li>
+                                <li><a href="<?= site_url('privacypolicy'); ?>">Privacy Policy</a></li>
+                                <li><a href="<?= site_url('termscondition'); ?>">Terms & Condition</a></li>
                             </ul>
                         </div>
                     </div>
@@ -437,9 +437,9 @@
                         <div class="footer-widget">
                             <h2>Purchase Info</h2>
                             <ul>
-                                <li><a href="paymentpolicy">Payment Policy</a></li>
-                                <li><a href="shippingpolicy">Shipping Policy</a></li>
-                                <li><a href="returnpolicy">Return Policy</a></li>
+                                <li><a href="<?= site_url('paymentpolicy'); ?>">Payment Policy</a></li>
+                                <li><a href="<?= site_url('shippingpolicy'); ?>">Shipping Policy</a></li>
+                                <li><a href="<?= site_url('returnpolicy'); ?>">Return Policy</a></li>
                             </ul>
                         </div>
                     </div>

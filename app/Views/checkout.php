@@ -120,8 +120,8 @@
         <div class="breadcrumb-wrap">
             <div class="container-fluid">
                 <ul class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="#">Home</a></li>
-                    <li class="breadcrumb-item"><a href="#">Products</a></li>
+                    <li class="breadcrumb-item"><a href="mainpage">Home</a></li>
+                    <li class="breadcrumb-item"><a href="productlist">Products</a></li>
                     <li class="breadcrumb-item active">Checkout</li>
                 </ul>
             </div>
@@ -355,9 +355,9 @@
                         <div class="footer-widget">
                             <h2>Company Info</h2>
                             <ul>
-                                <li><a href="#">About Us</a></li>
-                                <li><a href="#">Privacy Policy</a></li>
-                                <li><a href="#">Terms & Condition</a></li>
+                                <li><a href="<?= site_url('aboutUs'); ?>">About Us</a></li>
+                                <li><a href="<?= site_url('privacypolicy'); ?>">Privacy Policy</a></li>
+                                <li><a href="<?= site_url('termscondition'); ?>">Terms & Condition</a></li>
                             </ul>
                         </div>
                     </div>
@@ -366,9 +366,9 @@
                         <div class="footer-widget">
                             <h2>Purchase Info</h2>
                             <ul>
-                                <li><a href="#">Pyament Policy</a></li>
-                                <li><a href="#">Shipping Policy</a></li>
-                                <li><a href="#">Return Policy</a></li>
+                                <li><a href="<?= site_url('paymentpolicy'); ?>">Payment Policy</a></li>
+                                <li><a href="<?= site_url('shippingpolicy'); ?>">Shipping Policy</a></li>
+                                <li><a href="<?= site_url('returnpolicy'); ?>">Return Policy</a></li>
                             </ul>
                         </div>
                     </div>
