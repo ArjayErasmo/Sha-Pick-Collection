@@ -85,10 +85,14 @@ $routes->get('/sendemail', 'EmailController::index');
 $routes->post('/send', 'EmailController::sendEmail');
 $routes->post('/contact', 'EmailController::sendEmail');
 
+//Verification
+$routes->match(['get', 'post'], '/mail', 'AccountController::mail');
+
 
 //Register
 $routes->match(['get', 'post'], '/registers', 'AccountController::registers');
 $routes->match(['get', 'post'], '/store', 'AccountController::store');
+
 
 /*
  * --------------------------------------------------------------------
