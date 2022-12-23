@@ -92,6 +92,9 @@ $routes->match(['get', 'post'], '/mail', 'AccountController::mail');
 //Register
 $routes->match(['get', 'post'], '/registers', 'AccountController::registers');
 $routes->match(['get', 'post'], '/store', 'AccountController::store');
+$routes->match(['get', 'post'], '/verify/(:any)', 'AccountController::verify/$1');
+$routes->match(['get', 'post'], '/signin', 'AccountController::signin');
+$routes->match(['get', 'post'], '/auth', 'AccountController::auth');
 
 
 /*

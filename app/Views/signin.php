@@ -13,30 +13,24 @@
     <div class="container mt-5">
         <div class="row justify-content-md-center">
             <div class="col-5">
-                <h2>Register</h2>
-                <br>
+            <h2>Sign In</h2>
 
-                <?php if(isset($validation)):?>
-                    <div class="alert alert-warning">
-                        <?= $validation->listErrors() ?>
-                    </div>
-                <?php endif; ?>
+<?php if(session()->getFlashdata('msg')):?>
+    <div class="alert alert-danger">
+    <?= session()->getFlashdata('msg')?>
+    </div>
+<?php endif;?>
 
-            <form action="/store" method="post">
-                <label>Name</label>
-                <input type="text" name="name" class="form-control" value="<?=set_value('name')?>">
+            <form action="/auth" method="post">
                 <label>Email</label>
-                <input type="text" name="email" class="form-control" value="<?=set_value('email')?>">
+                <input type="text" name="email" class="form-control" value="">
                 <label>Password</label>
                 <input type="password" name="password" class="form-control">
-                <label>Retype Password</label>
-                <input type="password" name="confirmpassword" class="form-control">
                 <br>
-                <button type="submit" class="btn btn-primary" name="button">Register</button>
+                <button type="submit" class="btn btn-primary" name="button">Login</button>
             </form>
             </div>
         </div>
     </div>
-    
 </body>
 </html>

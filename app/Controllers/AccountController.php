@@ -71,5 +71,60 @@ class AccountController extends BaseController
     {
         $this->SendMail();
     }
+    public function verify($id = null)
+    {
+        $ac = new AccountModel();
+        $acc = $ac->where('token', $id)->first();
+        $session = session();
+        if($acc){
+            $data = [
+                'token' => $this->token(100),
+                'status' => 'active',
+            ];
+            $ac->set($data)->where('token', $id)->update();
+            $session->setFlashdata('msg', 'Account was verified');
+        }else{
+            $session->setFlashdata('msg', 'Invalid link');
+        }
+        
+        return redirect('signin');
+    }
+    public function signin()
+    {
+        return view('signin');
+    }
+    public function auth()
+    {
+        $session = session();
+        $ac = new AccountModel();
+        $email = $this->request->getVar('email');
+        $password = $this->request->getVar('password');
+        $d = $ac->where('email', $email)->first();
+        if($d){
+            $pass = $d['password'];
+            $authenticatePassword = password_verify($password, $pass);
+            if($authenticatePassword){
+                if($d['status'] == 'active'):
+                $session_data = [
+                    'id' => $d['id'],
+                    'name' => $d['name'],
+                    'email' => $d['email'],
+                    'isLoggedIn' => TRUE
+                ];
+                $session->set($session_data);
+                return redirect('mainpage');
+                else:
+                $session->setFlashdata('msg', 'Account was not verified');
+                return redirect('signin');
+                endif;
+            }else{
+                $session->setFlashdata('msg', 'Invalid Password');
+                return redirect('signin');
+            }
+        }else{
+            $session->setFlashdata('msg', 'Email not exist');
+            return redirect('signin');
+        }
+    }
 }
 ?>
