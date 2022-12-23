@@ -71,8 +71,8 @@
                             <div class="nav-item dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">User Account</a>
                                 <div class="dropdown-menu">
-                                    <a href="#" class="dropdown-item">Login</a>
-                                    <a href="#" class="dropdown-item">Register</a>
+                                    <a href="signin" class="dropdown-item">Login</a>
+                                    <a href="registers" class="dropdown-item">Register</a>
                                 </div>
                             </div>
                         </div>

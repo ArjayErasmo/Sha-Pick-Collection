@@ -31,7 +31,7 @@ class AccountController extends BaseController
             $subject = 'confirm your registration';
             $message = 'hi '. $this->request->getVar('name') . ' Welcome to our website. To continue please confirm your account by clicking this <a href="'.base_url().'/verify/' . $token .'">link</a>';
             $this->SendMail($to, $subject, $message);
-            return redirect('/sigin');
+            return redirect('signin');
         }else{
             $data['validation']=$this->validator;
             echo view('registers', $data);
