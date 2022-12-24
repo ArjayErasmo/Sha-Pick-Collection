@@ -96,6 +96,8 @@ $routes->match(['get', 'post'], '/verify/(:any)', 'AccountController::verify/$1'
 $routes->match(['get', 'post'], '/signin', 'AccountController::signin');
 $routes->match(['get', 'post'], '/auth', 'AccountController::auth');
 
+$routes->match(['get', 'post'], '/registor', 'AccountController::registor');
+
 
 /*
  * --------------------------------------------------------------------

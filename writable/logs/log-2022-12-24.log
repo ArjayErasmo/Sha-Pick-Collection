@@ -1,0 +1,15 @@
+CRITICAL - 2022-12-24 03:42:09 --> Call to undefined method App\Controllers\AccountController::view()
+in APPPATH\Controllers\AccountController.php on line 132.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AccountController->signins()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AccountController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-24 03:42:25 --> Undefined property: App\Controllers\AccountController::$call
+in APPPATH\Controllers\AccountController.php on line 132.
+ 1 APPPATH\Controllers\AccountController.php(132): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\AccountController::$call', 'APPPATH\\Controllers\\AccountController.php', 132)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AccountController->signins()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AccountController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
