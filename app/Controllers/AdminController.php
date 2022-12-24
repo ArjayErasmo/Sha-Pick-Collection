@@ -27,16 +27,14 @@ class AdminController extends BaseController
             'description' => $description,
             'quantity' => $quantity,
             'price' => $price,
- 
-            
-
         ];
-        $pr->save($data);
         $session = session();
         $session->setFlashdata('msg', 'Product Successfully added');
-        return redirect()->to($_SERVER['HTTP_REFERER']);
-
-        
+        if($pr->save($data)){
+            return redirect()->to($_SERVER['HTTP_REFERER']);
+        }else{
+            return redirect('products');
+        }
     }
     public function products()
     {

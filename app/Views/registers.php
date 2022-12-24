@@ -7,21 +7,21 @@
 	<link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/a81368914c.js"></script>
 
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+	<!---<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">--->
   	<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
   	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
   	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
 	
 </head>
 <body>
-	<img class="wave" src="">
+	<img class="wave" src="<?php echo base_url('img/wave.png')?>">
 	<div class="container">
 		<div class="img">
 			<img src="<?php echo base_url('img/bg.svg')?>">
 		</div>
 		<div class="login-content">
 			<form action="store" method="post" autocomplete="off">
-				<img src="img/avatar.svg">
+				<img src="<?php echo base_url('img/avatar.svg')?>">
 				<h2 class="title">Register</h2>
 				<br>
 
