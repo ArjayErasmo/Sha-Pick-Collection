@@ -12,7 +12,7 @@
     <p>Sha Pick Collection is an online e-commerce system application wherein the owner
 is Ms. Shaina Marie J. Samarita, an online entrepreneur at a very young age. Her shop 
 consists of different variety of products like shoes, dresses, shirts, shorts and 
-many more. Her shop founded in the year 2016 during her high school days.
+many more. She founded her shop in the year 2016 during her high school days.
 
 Browse and buy in my shop where all my products are all authentic and good quality 
 in an affordable prices.</p>
