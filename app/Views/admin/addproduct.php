@@ -33,7 +33,8 @@
           <div class="col-12">
           <div class="card">
               <div class="card-header">
-                <h3 class="card-title">DataTable with default features</h3>
+                <h3 class="card-title">Add Products</h3>
+                <div align="right"><a class="btn btn-secondary" href="products" role="button">Go back</a></div>
               </div>
               <!-- /.card-header -->
               <div class="card-body">

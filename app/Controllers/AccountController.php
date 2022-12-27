@@ -125,7 +125,6 @@ class AccountController extends BaseController
             $session->setFlashdata('msg', 'Email not exist');
             return redirect('signin');
         }
-
     }
 }
 ?>

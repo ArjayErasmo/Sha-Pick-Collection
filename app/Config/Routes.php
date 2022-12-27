@@ -77,7 +77,10 @@ $routes->get('/admin', 'AdminController::index');
 $routes->get('/admin/products', 'AdminController::products');
 $routes->get('/admin/addproduct', 'AdminController::addproduct');
 $routes->post('/admin/saveproduct', 'AdminController::saveproduct');
-$routes->get('/admin/editproduct/(:num)', 'AdminController::editproduct/$1');
+$routes->put('/admin/update', 'AdminController::update');
+$routes->match(['get', 'post'], '/admin/edit/(:any)', 'AdminController::edit/$1');
+$routes->match(['get', 'post', 'put'], '/admin/update/(:any)', 'AdminController::update/$1');
+$routes->get('/admin/edit', 'AdminController::edit');
 
 
 //Email sending
@@ -96,7 +99,9 @@ $routes->match(['get', 'post'], '/verify/(:any)', 'AccountController::verify/$1'
 $routes->match(['get', 'post'], '/signin', 'AccountController::signin');
 $routes->match(['get', 'post'], '/auth', 'AccountController::auth');
 
-$routes->match(['get', 'post'], '/registor', 'AccountController::registor');
+
+
+
 
 
 /*

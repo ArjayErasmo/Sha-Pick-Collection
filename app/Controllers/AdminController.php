@@ -9,6 +9,14 @@ class AdminController extends BaseController
     {
         return view('admin/index');
     }
+    public function products()
+    {
+        $pr = new ProductsModel();
+        $data = [
+            'products' => $pr->findAll()
+        ];
+        return view('admin/products', $data);
+    }
     public function addproduct()
     {
         return view('admin/addproduct');
@@ -36,13 +44,29 @@ class AdminController extends BaseController
             return redirect('products');
         }
     }
-    public function products()
-    {
+    
+    public function edit($id = null){
+        $pr = new ProductsModel();
+        $data['products'] = $pr->findAll($id);
+        return view('admin/edit', $data);
+    }
+    public function update($id = null){
         $pr = new ProductsModel();
         $data = [
-            'products' => $pr->findAll()
+            'name' => $this->request->getPost('name'),
+            'description' => $this->request->getPost('description'),
+            'quantity' => $this->request->getPost('quantity'),
+            'price' => $this->request->getPost('price')
         ];
-        return view('admin/products', $data);
+        $prod->update($id,$data);
+        $session = session();
+        $session->setFlashdata('msg', 'Updated Successfully!');
+        return redirect()->to($_SERVER['HTTP_REFERER']);
+    }
+    public function delete($id = null){
+        $prod = new ProductsModel();
+        $prod->delete($id);
+        return redirect()->to($_SERVER['HTTP_REFERER']);
     }
 
 }

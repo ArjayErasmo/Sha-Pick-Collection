@@ -8,6 +8,14 @@ class ProductsModel extends Model
 {
     protected $table ='products';
     protected $primaryKey ='id';
-    protected $allowedFields = ['name','description','quantity','price','image'];
+    protected $allowedFields = [
+        'name',
+        'description',
+        'quantity',
+        'price',
+        'image',
+        'created_at',
+        'updated_at'
+    ]; 
 }
 ?>

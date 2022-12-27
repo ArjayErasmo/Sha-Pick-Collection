@@ -1,0 +1,115 @@
+CRITICAL - 2022-12-27 11:23:00 --> Class "App\Controllers\ProductModel" not found
+in APPPATH\Controllers\AdminController.php on line 49.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController->edit()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-27 11:23:21 --> CodeIgniter\BaseModel::findAll(): Argument #1 ($limit) must be of type int, null given, called in C:\laragon\www\Sha-Pick-Collection\app\Controllers\AdminController.php on line 50
+in SYSTEMPATH\BaseModel.php on line 568.
+ 1 APPPATH\Controllers\AdminController.php(50): CodeIgniter\BaseModel->findAll(null)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController->edit()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-27 11:25:40 --> CodeIgniter\BaseModel::findAll(): Argument #1 ($limit) must be of type int, null given, called in C:\laragon\www\Sha-Pick-Collection\app\Controllers\AdminController.php on line 50
+in SYSTEMPATH\BaseModel.php on line 568.
+ 1 APPPATH\Controllers\AdminController.php(50): CodeIgniter\BaseModel->findAll(null)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController->edit()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-27 11:25:52 --> Undefined variable $data
+in APPPATH\Controllers\AdminController.php on line 51.
+ 1 APPPATH\Controllers\AdminController.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Controllers\\AdminController.php', 51)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController->edit()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-27 11:26:06 --> Invalid file: admin/editproduct.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/editproduct.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/editproduct', [], true)
+ 3 APPPATH\Controllers\AdminController.php(51): view('admin/editproduct')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController->edit()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-27 11:26:16 --> Undefined variable $products
+in APPPATH\Views\admin\edit.php on line 42.
+ 1 APPPATH\Views\admin\edit.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $products', 'APPPATH\\Views\\admin\\edit.php', 42)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/edit', [], true)
+ 5 APPPATH\Controllers\AdminController.php(51): view('admin/edit')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController->edit()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-27 11:27:06 --> Class "App\Controllers\ProductModel" not found
+in APPPATH\Controllers\AdminController.php on line 48.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController->edit()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-27 11:28:22 --> Class "App\Controllers\ProductModel" not found
+in APPPATH\Controllers\AdminController.php on line 48.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController->edit()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-27 11:28:46 --> CodeIgniter\BaseModel::findAll(): Argument #1 ($limit) must be of type int, null given, called in C:\laragon\www\Sha-Pick-Collection\app\Controllers\AdminController.php on line 49
+in SYSTEMPATH\BaseModel.php on line 568.
+ 1 APPPATH\Controllers\AdminController.php(49): CodeIgniter\BaseModel->findAll(null)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController->edit()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-27 11:46:40 --> CodeIgniter\BaseModel::findAll(): Argument #1 ($limit) must be of type int, null given, called in C:\laragon\www\Sha-Pick-Collection\app\Controllers\AdminController.php on line 49
+in SYSTEMPATH\BaseModel.php on line 568.
+ 1 APPPATH\Controllers\AdminController.php(49): CodeIgniter\BaseModel->findAll(null)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController->edit()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-27 11:50:33 --> CodeIgniter\BaseModel::findAll(): Argument #1 ($limit) must be of type int, null given, called in C:\laragon\www\Sha-Pick-Collection\app\Controllers\AdminController.php on line 50
+in SYSTEMPATH\BaseModel.php on line 568.
+ 1 APPPATH\Controllers\AdminController.php(50): CodeIgniter\BaseModel->findAll(null)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController->edit()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-27 11:50:55 --> CodeIgniter\BaseModel::findAll(): Argument #1 ($limit) must be of type int, string given, called in C:\laragon\www\Sha-Pick-Collection\app\Controllers\AdminController.php on line 50
+in SYSTEMPATH\BaseModel.php on line 568.
+ 1 APPPATH\Controllers\AdminController.php(50): CodeIgniter\BaseModel->findAll('id')
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController->edit()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-27 11:51:37 --> CodeIgniter\BaseModel::findAll(): Argument #1 ($limit) must be of type int, null given, called in C:\laragon\www\Sha-Pick-Collection\app\Controllers\AdminController.php on line 50
+in SYSTEMPATH\BaseModel.php on line 568.
+ 1 APPPATH\Controllers\AdminController.php(50): CodeIgniter\BaseModel->findAll(null, 'id')
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController->edit()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-27 11:51:47 --> CodeIgniter\BaseModel::findAll(): Argument #1 ($limit) must be of type int, null given, called in C:\laragon\www\Sha-Pick-Collection\app\Controllers\AdminController.php on line 50
+in SYSTEMPATH\BaseModel.php on line 568.
+ 1 APPPATH\Controllers\AdminController.php(50): CodeIgniter\BaseModel->findAll(null)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController->edit()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
