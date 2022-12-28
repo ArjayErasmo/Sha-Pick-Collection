@@ -58,14 +58,8 @@
                             <a href="cart" class="nav-item nav-link">Cart</a>
                             <a href="checkout" class="nav-item nav-link">Checkout</a>
                             <a href="myaccount" class="nav-item nav-link">My Account</a>
-                            <div class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">More Pages</a>
-                                <div class="dropdown-menu">
-                                    <a href="wishlist" class="dropdown-item">Wishlist</a>
-                                    <a href="login" class="dropdown-item">Login & Register</a>
-                                    <a href="contact" class="dropdown-item">Contact Us</a>
-                                </div>
-                            </div>
+                            <a href="wishlist" class="nav-item nav-link">Wishlist</a>
+                            <a href="contact" class="nav-item nav-link">Contact us</a>
                         </div>
                         <div class="navbar-nav ml-auto">
                             <div class="nav-item dropdown">

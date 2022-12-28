@@ -18,4 +18,5 @@ class ProductsModel extends Model
         'updated_at'
     ]; 
 }
+
 ?>
