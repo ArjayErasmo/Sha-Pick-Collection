@@ -13,6 +13,7 @@ class ProductsModel extends Model
         'description',
         'quantity',
         'price',
+        'category',
         'image',
         'created_at',
         'updated_at'

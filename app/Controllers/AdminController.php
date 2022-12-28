@@ -27,6 +27,8 @@ class AdminController extends BaseController
         $description = $this->request->getVar('description');
         $quantity = $this->request->getVar('quantity');
         $price = $this->request->getVar('price');
+        $category = $this->request->getVar('category');
+        $img = $this->request->getFile('image');
 
 
         $pr = new ProductsModel();
@@ -35,6 +37,7 @@ class AdminController extends BaseController
             'description' => $description,
             'quantity' => $quantity,
             'price' => $price,
+            'category' => $category
         ];
         $session = session();
         $session->setFlashdata('msg', 'Product Successfully added');

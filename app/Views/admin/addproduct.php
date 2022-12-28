@@ -52,6 +52,8 @@
                     <input type="text" name="quantity" class="form-control" placeholder="Enter product quantity">
                     <label>Price</label>
                     <input type="text" name="price" class="form-control" placeholder="Enter product price">
+                    <label>Category</label>
+                    <input type="text" name="category" class="form-control" placeholder="Enter product category">
                     <label for="image">Select a photo</label>
                     <input type="file" name="image" id="image" class="form-control ">
                     <br>
