@@ -1,2 +1,28 @@
-# Sha Pick Collection
- Ecommerce
+BRIEF INTRODUCTION
+Sha Pick Collection is an online store owned by Ms. Shaina Marie J. Samarita. It was founded year 2016 during her high school days in influenced by her classmate who's same with her, selling products online. Her business consists of products categories with dresses, shirts, sandals, shoes, jewelries, for men products and women products. Since she's selling online, having her own platform must have when it comes to online selling and marketing, that's why our project propose e-commerce system application for her business. E-commerce system application gives opportunity to the business owners to make their income growth flourish and expand their business in a convenient way. In a world where all the transactions are done online, it is important to make businesses be in online as well. It is one of the best opportunities for entrepreneurs to be easily known in the market, especially small businesses. This will give the business owners to have a large scale of buyers because that is the job of e-commerce system applications in every business.
+
+PROJECT CONTEXT
+The main purpose of this study is to develop an e-commerce system application to help the business in expansion and have a larger target scale. Online marketing has been used by many entrepreneurs, they used it to convey to the buyers about their product for them to buy it, and one of the online marketing is having an e-commerce system. Sha Pick Collection is already an online store wherein the owner sells her goods and products online with the help of Facebook and other social media sites. However, the owner has no particular store on the said platforms, she only posts her products on the internet and let her Facebook friends notice and buy from her. This is limited to her Facebook friends only and the other people who don’t know her will not be notified of what she’s selling because of the limited clients that she has. The business has limited scope therefore, she has limited buyers and small revenue thus this problem needs to be resolved by having an e-commerce system application. E-commerce system applications can resolve the existing problems that the business has by implementing them. Implementing the project will benefit the business this will increase the revenue and can easily monitor the products sold using the provided analytics of the system. Aside from that having an e-commerce system online will minimize the expenses of the owner in terms of marketing, and distribution and will surely avoid building large enterprises because the business uses technology to accommodate the buyers, which will get better accessibility and easy-of shopping to the buyers. [1]
+
+There are many opportunities that the e-commerce system application can offer to the business owner. Aside from the aforementioned benefits, this project also has the ability to make online payments through Gcash, this will be a great help to the buyers to pay for their products ahead of time if they want. There are a lot of given features in the system that will surely help the business owner in making her business flourish. 
+
+This will be a great time to make this project for businesses like Sha Pick Collection because this will help small businesses to keep pace with an ever-growing society of online businesses. A system that needs to accommodate the requirement of society. A business having an e-commerce system will have a large impact on its business because this will guarantee that the business’ economic growth will be profound and will give the business an opportunity to broaden its revenue and to monitor and have an inventory at the same time. An E-commerce system application that will surely give the business intangible success in future business marketing and expenditures. [2]
+
+OBJECTIVES OF THE STUDY
+The main goal of this study is to develop an e-commerce system application wherein it will help the online business in promoting her shop and her business as well.
+The proposed system application aims to:
+1.	Develop a system application where it will monitor the orders of the buyers and the revenue of the business.
+2.	To manage and monitor the remaining stocks available on the system.
+3.	Provide an online payment.
+4.	Provide access to the ordering status and the live orders of the buyer.
+5.	Provide a tool that allows the management to modify the product information such as the price and many others as well as tools for managing user, system products, and promotion records.
+
+SCOPE AND LIMITATIONS
+The study focuses mainly on developing an e-commerce system application for the business of Sha Pick Collection. Thus this study’s scope includes the registration of the user to the website, where all the information of the user must be kept in the database and used again for login purposes. The system also has the access to the cart and the place order of the buyers, where they can select the location for the delivery option and has the access to online payment. Additionally, the e-commerce system application has the expected features that an e-commerce feature must have, and yet to expand in the near future but not limited to the expected scale and features of the website.
+
+Thus, the study has its delimitation which includes the following:
+a)	The study is exclusive only for Miss Shaina Marie Samarita, the owner of the Sha Pick collection to post and upload products on her website as an admin as well as a seller.
+b)	The target buyer of this shop is only around the Philippines, thus it is only for national buyers only.
+c)	Persons outside the country may still browse the website of Sha Pick Collection, however, they can’t place and check it out because of unavailability of the shipping outside the Philippines.
+
+
