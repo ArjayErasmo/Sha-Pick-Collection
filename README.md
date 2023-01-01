@@ -1,4 +1,4 @@
-BRIEF INTRODUCTION
+BRIEF INTRODUCTION<br>
 Sha Pick Collection is an online store owned by Ms. Shaina Marie J. Samarita. It was founded year 2016 during her high school days in influenced by her classmate who's same with her, selling products online. Her business consists of products categories with dresses, shirts, sandals, shoes, jewelries, for men products and women products. Since she's selling online, having her own platform must have when it comes to online selling and marketing, that's why our project propose e-commerce system application for her business. E-commerce system application gives opportunity to the business owners to make their income growth flourish and expand their business in a convenient way. In a world where all the transactions are done online, it is important to make businesses be in online as well. It is one of the best opportunities for entrepreneurs to be easily known in the market, especially small businesses. This will give the business owners to have a large scale of buyers because that is the job of e-commerce system applications in every business.
 
 PROJECT CONTEXT
