@@ -17,7 +17,7 @@
 	<img class="wave" src="<?php echo base_url('img/wave.png')?>">
 	<div class="container">
 		<div class="img">
-			<img src="<?php echo base_url('img/bg.svg')?>">
+			<img src="<?php echo base_url('img/iconbg.png')?>">
 		</div>
 		<div class="login-content">
 			<form action="/auth" method="post" autocomplete="off">

@@ -57,7 +57,7 @@
                     <div class="col-md-3">
                         <div class="logo">
                             <a href="index.html">
-                                <img src="img/logosha.png" alt="Logo">
+                                <img src="img/shoplogo.png" alt="Logo">
                             </a>
                         </div>
                     </div>
@@ -73,7 +73,7 @@
                                 <i class="fa fa-heart"></i>
                                 <span>(0)</span>
                             </a>
-                            <a href="cart.html" class="btn cart">
+                            <a href="cart" class="btn cart">
                                 <i class="fa fa-shopping-cart"></i>
                                 <span>(0)</span>
                             </a>

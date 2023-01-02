@@ -1,0 +1,8 @@
+CRITICAL - 2023-01-02 07:53:24 --> CodeIgniter\BaseModel::findAll(): Argument #1 ($limit) must be of type int, null given, called in C:\laragon\www\Sha-Pick-Collection\app\Controllers\AdminController.php on line 53
+in SYSTEMPATH\BaseModel.php on line 568.
+ 1 APPPATH\Controllers\AdminController.php(53): CodeIgniter\BaseModel->findAll(null)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminController->edit()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
