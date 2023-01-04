@@ -16,7 +16,7 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>DataTables</h1>
+            <h1><b>Products</b></h1>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
@@ -38,26 +38,43 @@
               </div>
               <!-- /.card-header -->
               <div class="card-body">
-                <?php if(session()->getFlashdata('msg')):?>
-                    <div class="alert alert-warning">
-                        <?= session()->getFlashdata('msg')?>
-                    </div>
+              <?php if (!empty(session()->getFlashdata('msg', 'Successfully Added!'))) : ?>
+              <div class="alert alert-success">
+                <?= session()->getFlashdata('msg', 'Successfully Added!') ?>
+              </div>
                 <?php endif;?>
-                <form action="saveproduct" method ="post">
+                <form action="<?= site_url('admin/saveproduct') ?>" method ="post" autocomplete="off" enctype="multipart/form-data">
+                  <?php if(isset($validation)):?>
+                      <div class="alert alert-warning">
+                         <?= $validation->listErrors() ?>
+                      </div>
+                  <?php endif; ?>
                     <label>Name</label>
-                    <input type="text" name="name" class="form-control" placeholder="Enter product name">
-                    <label>Description</label>
-                    <input type="text" name="description" class="form-control" placeholder="Enter product description">
-                    <label>Quantity</label>
-                    <input type="text" name="quantity" class="form-control" placeholder="Enter product quantity">
-                    <label>Price</label>
-                    <input type="text" name="price" class="form-control" placeholder="Enter product price">
-                    <label>Category</label>
-                    <input type="text" name="category" class="form-control" placeholder="Enter product category">
-                    <label for="image">Select a photo</label>
-                    <input type="file" name="image" id="image" class="form-control ">
+                    <span></span>
+                    <input type="text" name="name" class="form-control" placeholder="Enter Product Name">
                     <br>
-                    <button type="submit" name="submit" class="btn btn-success">Save</button>
+                    <label>Description</label>
+                    <span></span>
+                    <input type="text" name="description" class="form-control" placeholder="Enter Product Description">
+                    <br>
+                    <label>Quantity</label>
+                    <span></span>
+                    <input type="text" name="quantity" class="form-control" placeholder="Enter Product Quantity">
+                    <br>
+                    <label>Price</label>
+                    <span></span>
+                    <input type="text" name="price" class="form-control" placeholder="Enter Product Price">
+                    <br>
+                    <label>Category</label>
+                    <span></span>
+                    <input type="text" name="category" class="form-control" placeholder="Enter Product Category">
+
+                    <br>
+                    <label for="image">Upload Image</label>
+                    <input type="file" name="image" id="image"size="30">
+
+                    <br>
+                    <div><button type="submit" style="float:right" class="btn btn-info">Add new product</button></div>
                 </form>
               </div>
               <!-- /.card-body -->

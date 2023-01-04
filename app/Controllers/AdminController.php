@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Controllers;
+
 use App\Models\ProductsModel;
 
 class AdminController extends BaseController
@@ -23,6 +24,55 @@ class AdminController extends BaseController
     }
     public function saveproduct()
     {
+        $validation = $this->validate([
+            
+            'name' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'Product name is required.'
+                ]
+            ],
+            'description' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'Product description is required.'
+                ]
+            ],
+            'price' => [
+                'rules' => 'required|numeric',
+                'errors' => [
+                    'required' => 'Product price is required.',
+                    'numeric' => 'Product price needs  to be numeric.'
+                ]
+            ],
+            'quantity' => [
+                'rules' => 'required|numeric',
+                'errors' => [
+                    'required' => 'Product quantity is required.',
+                    'numeric' => 'Product quantity needs  to be numeric.'
+                ]
+            ],
+            'category' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'Product category is required.'
+                ]
+            ],
+            // 'image' => [
+            //     'label' => 'Image File',
+            //     'rules' => 'uploaded[products]'
+            //         . '|is_image[products]'
+            //         . '|mime_in[product,image/jpg,image/jpeg,image/gif,image/png,image/webp]'
+
+            // ],
+
+
+        ]);
+
+        if (!$validation) {
+            $msg = ['validation' => $this->validator];
+            return view('admin/addproduct', $msg);
+        }else {
         $name = $this->request->getVar('name');
         $description = $this->request->getVar('description');
         $quantity = $this->request->getVar('quantity');
@@ -30,14 +80,15 @@ class AdminController extends BaseController
         $category = $this->request->getVar('category');
         $img = $this->request->getFile('image');
 
-
+    
         $pr = new ProductsModel();
         $data = [
             'name' => $name,
             'description' => $description,
             'quantity' => $quantity,
             'price' => $price,
-            'category' => $category
+            'category' => $category,
+            'image' => $img->getClientName()
         ];
         $session = session();
         $session->setFlashdata('msg', 'Product Successfully added');
@@ -46,6 +97,9 @@ class AdminController extends BaseController
         }else{
             return redirect('products');
         }
+    }
+        
+        
     }
     
     public function edit($id = null){

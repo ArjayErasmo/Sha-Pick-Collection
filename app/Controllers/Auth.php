@@ -19,7 +19,7 @@ class Auth extends BaseController
     {
         return view('auth/register');
     }
-    public function save()
+    public function unsave()
     {
         //Let's validate requests
         $validation = $this->validate([
