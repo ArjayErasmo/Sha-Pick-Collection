@@ -1,0 +1,46 @@
+ERROR - 2023-01-09 23:06:05 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\laragon\www\Sha-Pick-Collection\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\laragon\www\Sha-Pick-Collection\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'codeigniter_aut...', 3306, '', 0)
+#1 C:\laragon\www\Sha-Pick-Collection\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\Sha-Pick-Collection\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\Sha-Pick-Collection\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\Sha-Pick-Collection\system\Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\Sha-Pick-Collection\system\BaseModel.php(623): CodeIgniter\Model->doFirst()
+#6 C:\laragon\www\Sha-Pick-Collection\app\Controllers\AccountController.php(102): CodeIgniter\BaseModel->first()
+#7 C:\laragon\www\Sha-Pick-Collection\system\CodeIgniter.php(927): App\Controllers\AccountController->auth()
+#8 C:\laragon\www\Sha-Pick-Collection\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AccountController))
+#9 C:\laragon\www\Sha-Pick-Collection\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\Sha-Pick-Collection\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\Sha-Pick-Collection\system\Commands\Server\rewrite.php(46): require_once('C:\\laragon\\www\\...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\laragon\www\Sha-Pick-Collection\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\laragon\www\Sha-Pick-Collection\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\Sha-Pick-Collection\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\Sha-Pick-Collection\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\laragon\www\Sha-Pick-Collection\system\Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\laragon\www\Sha-Pick-Collection\system\BaseModel.php(623): CodeIgniter\Model->doFirst()
+#5 C:\laragon\www\Sha-Pick-Collection\app\Controllers\AccountController.php(102): CodeIgniter\BaseModel->first()
+#6 C:\laragon\www\Sha-Pick-Collection\system\CodeIgniter.php(927): App\Controllers\AccountController->auth()
+#7 C:\laragon\www\Sha-Pick-Collection\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AccountController))
+#8 C:\laragon\www\Sha-Pick-Collection\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\Sha-Pick-Collection\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\Sha-Pick-Collection\system\Commands\Server\rewrite.php(46): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-01-09 23:06:05 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `accounts`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(623): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\AccountController.php(102): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AccountController->auth()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AccountController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
