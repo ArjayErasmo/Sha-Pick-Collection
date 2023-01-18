@@ -1,0 +1,10 @@
+CRITICAL - 2023-01-18 04:06:54 --> Invalid file: privacypolicy.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('privacypolicy.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('privacypolicy', [], true)
+ 3 APPPATH\Controllers\Home.php(22): view('privacypolicy')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->privacypolicy()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

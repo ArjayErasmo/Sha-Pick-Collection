@@ -5,6 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy and Policy</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            align-items: center;
+        }
+    </style>
 </head>
 <body>
     <p>Welcome to Sha-Pick Collection, a website that offers a wide range of products for purchase. 
@@ -41,6 +50,6 @@ We take reasonable steps to protect your personal information from unauthorized 
 We reserve the right to change this Policy at any time. Any changes to this Policy will be effective immediately upon posting the revised Policy on our website. By using our website, you agree to be bound by the then-current version of this Policy.</p>
 
     <p><br><h3>Contact Information</h3>
-If you have any questions or concerns about this Policy, please contact us at [Contact email or phone number].</p>
+If you have any questions or concerns about this Policy, please contact us at shainamariesamarita14@gmail.com or 0905 474 2754.</p>
 </body>
 </html>
