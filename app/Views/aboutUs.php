@@ -44,6 +44,49 @@
         }
         .image-section img{
             height: 280px;
+            width: 280px;
+            border-radius: 50%;
+            border: 1px solid #fff;
+            display: block;
+            margin: auto;
+        }
+        article{
+            width: 90%;
+        }
+        article h3{
+            font-size: 22px;
+            font-weight: 500;
+            color: #7d7d7d;
+        }
+        article p{
+            font-size: 17px;
+            color: #fff;
+            margin-top: 25px;
+        }
+        article .button{
+            margin-top: 35px;
+        }
+        article a{
+            color: #fff;
+            padding: 10px 25px;
+            font-size: 19px;
+            font-weight: 300;
+            text-decoration: none;
+            border: 1px solid #f3be00;
+            border-radius: 5px;  
+        }
+        article a:hover{
+            background-color: #f3be00;
+            transition: 0.5s ease;
+        }
+        @media screen and (max-width: 768px){
+            .wrapper{
+                margin-top: 15px;
+            }
+            .title h1{
+                font-size: 28px;
+                text-align: center;
+            }
         }
     </style>
 </head>
@@ -58,10 +101,10 @@
             </div>
             <article>
                 <h3>Sha Pick Collection</h3>
-                <p>Sha Pick Collection is an online e-commerce system application wherein the </p>
-                <p>owner is Ms. Shaina Marie J. Samarita, an online entrepreneur at a very young age. </p>
-                <p>Her shop consists of different variety of products like shoes, dresses, shirts, shorts and many more.</p> 
-                <p>She founded her shop in the year 2016 during her high school days. </p>
+                <p>Sha Pick Collection is an online e-commerce system application wherein the <br>
+                owner is Ms. Shaina Marie J. Samarita, an online entrepreneur at a very young age. <br>
+                Her shop consists of different variety of products like shoes, dresses, shirts, shorts and many more. <br> 
+                She founded her shop in the year 2016 during her high school days. <br>
                 <p>Browse and buy in my shop where all my products are all authentic and good quality in an affordable prices </p> 
                 <p>Happy Shopping!</p>
                 <div class="button">
