@@ -16,15 +16,15 @@
         body{
             width: 100%;
             min-height: 100vh;
-            background-color: #1a192c;
+            background: linear-gradient(130deg, #e5cbcbca, #FF6F61) ;
         }
         .wrapper{
             width: 100%;
         }
         .title h1{
-            color: #fff;
+            color: #111;
             font-size: 46px;
-            font-weight: 700;
+            font-weight: bold;
             text-transform: uppercase;
             text-align: center;
             padding: 40px 0px;
@@ -46,7 +46,7 @@
             height: 230px;
             width: 280px;
             border-radius: 10%;
-            border: 1px solid #fff;
+            border: 1px solid gray;
             display: block;
             margin: auto;
         }
@@ -55,28 +55,30 @@
         }
         article h3{
             font-size: 22px;
-            font-weight: 500;
-            color: #7d7d7d;
+            font-weight: bold;
+            color: #112;
         }
         article p{
+            font-weight: bold;
             font-size: 17px;
-            color: #fff;
+            color: #111;
             margin-top: 25px;
         }
         article .button{
             margin-top: 35px;
         }
         article a{
-            color: #fff;
+            color: #111;
             padding: 10px 25px;
             font-size: 19px;
             font-weight: 300;
             text-decoration: none;
-            border: 1px solid #f3be00;
+            border: 1px solid gray;
             border-radius: 5px;  
         }
         article a:hover{
-            background-color: #f3be00;
+            color: #fff;
+            background-color: gray;
             transition: 0.5s ease;
         }
         @media screen and (max-width: 768px){
