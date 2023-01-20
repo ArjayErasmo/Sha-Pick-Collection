@@ -50,44 +50,6 @@
         display: block;
         margin: auto;
     }
-    article{
-        width: 90%;
-    }
-    article h3{
-        font-size: 22px;
-        font-weight: 500;
-        color: #7d7d7d;
-    }
-    article p{
-        font-size: 17px;
-        color: #fff;
-        margin-top: 25px;
-    }
-    article .button{
-        margin-top: 35px;
-    }
-    article a{
-        color: #fff;
-        padding: 10px 25px;
-        font-size: 19px;
-        font-weight: 300;
-        text-decoration: none;
-        border: 1px solid #f3be00;
-        border-radius: 5px;
-    }
-    article a:hover{
-        background-color: #f3be00;
-        transition: 0.5s ease;
-    }
-    @media screen and (max-width: 768px){
-        .wrapper{
-            margin-top: 15px;
-        }
-        .title h1{
-            font-size: 28px;
-            text-align: center;
-        }
-    }
     .row:after
     {
     content: "";
@@ -121,12 +83,13 @@
     <div class="column">
         <div img src="https://th.bing.com/th/id/OIF.PpWiN8LgRVEjB3UbOVRTjw?pid=ImgDet&rs=1" class="center"></div>
         <!-- style="background-color:#bbb;" -->
-        <h2 text-align="center">delivery</h2>
+        <h2>delivery</h2>
+        <p style="text-align=justified"></p>
         <!-- on process editing -->
     </div>
     <div class="column">
         <h2>Pick up</h2>
-        <p>on process editing</p>
+        <p style="text-align=justified"></p>
       </div>
 </body>
 </html>
