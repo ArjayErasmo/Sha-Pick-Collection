@@ -43,9 +43,9 @@
             margin: auto;
         }
         .image-section img{
-            height: 280px;
+            height: 230px;
             width: 280px;
-            border-radius: 50%;
+            border-radius: 10%;
             border: 1px solid #fff;
             display: block;
             margin: auto;
@@ -87,6 +87,27 @@
                 font-size: 28px;
                 text-align: center;
             }
+            .about{
+                flex-direction: column;
+                margin-top: 10px;
+            }
+            article{
+                margin-top: 30px;
+            }
+            article h3{
+                font-size: 18px;
+            }
+            article p{
+                font-size: 15px;
+            }
+            article .button{
+                margin-bottom: 50px;
+            }
+            article a{
+                padding: 8px 20px;
+                font-size: 17px;
+                
+            }
         }
     </style>
 </head>
@@ -97,7 +118,7 @@
         </div>
         <div class="about">
             <div class="image-section">
-                <img src="#" alt="">
+                <img src="img/shoplogo.png" alt="">
             </div>
             <article>
                 <h3>Sha Pick Collection</h3>
