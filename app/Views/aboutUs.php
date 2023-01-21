@@ -46,7 +46,7 @@
             height: 230px;
             width: 280px;
             border-radius: 10%;
-            border: 1px solid gray;
+            border: 1px solid #502420;
             display: block;
             margin: auto;
         }
@@ -78,7 +78,7 @@
         }
         article a:hover{
             color: #fff;
-            background-color: gray;
+            background-color: #502420;
             transition: 0.5s ease;
         }
         @media screen and (max-width: 768px){
