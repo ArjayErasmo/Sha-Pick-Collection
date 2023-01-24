@@ -26,13 +26,13 @@
                     <div class="col-md-3">
                         <div class="header-img">
                             <div class="img-item">
-                                <img src="img/category-1.jpg" />
+                                <img src="<?php echo base_url('img/category1.png')?>" />
                                 <a class="img-text" href="">
                                     <p>Some text goes here that describes the image</p>
                                 </a>
                             </div>
                             <div class="img-item">
-                                <img src="img/category-2.jpg" />
+                                <img src="<?php echo base_url('img/category2.jpg')?>" />
                                 <a class="img-text" href="">
                                     <p>Some text goes here that describes the image</p>
                                 </a>
@@ -68,25 +68,25 @@
                             <i class="fab fa-cc-mastercard"></i>
                             <h2>Secure Payment</h2>
                             <p>
-                                Lorem ipsum dolor sit amet consectetur elit
+                                Ensures your personal and financial information is protected during every transaction.
                             </p>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 feature-col">
                         <div class="feature-content">
                             <i class="fa fa-truck"></i>
-                            <h2>Worldwide Delivery</h2>
+                            <h2>Delivery</h2>
                             <p>
-                                Lorem ipsum dolor sit amet consectetur elit
+                                Deliver purchase right to your doorstep with our efficient delivery service.
                             </p>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 feature-col">
                         <div class="feature-content">
                             <i class="fa fa-sync-alt"></i>
-                            <h2>90 Days Return</h2>
+                            <h2>3 Days Return</h2>
                             <p>
-                                Lorem ipsum dolor sit amet consectetur elit
+                                Shop with peace of mind having 3 days to return any item that doesn't meet your expectations.
                             </p>
                         </div>
                     </div>
@@ -95,7 +95,7 @@
                             <i class="fa fa-comments"></i>
                             <h2>24/7 Support</h2>
                             <p>
-                                Lorem ipsum dolor sit amet consectetur elit
+                                Our support team is ready to assist you with any questions or concerns, anytime, anywhere.
                             </p>
                         </div>
                     </div>
@@ -110,7 +110,7 @@
                 <div class="row">
                     <div class="col-md-3">
                         <div class="category-item ch-400">
-                            <img src="img/category-3.jpg" />
+                            <img src="<?php echo base_url('img/tshirts.png')?>"/>
                             <a class="category-name" href="">
                                 <p>Some text goes here that describes the image</p>
                             </a>
@@ -146,7 +146,7 @@
                     </div>
                     <div class="col-md-3">
                         <div class="category-item ch-400">
-                            <img src="img/category-8.jpg" />
+                            <img src="<?php echo base_url('img/tshirts4.png')?>" />
                             <a class="category-name" href="">
                                 <p>Some text goes here that describes the image</p>
                             </a>
