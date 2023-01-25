@@ -22,7 +22,7 @@
 		<div class="login-content">
 			<form action="/auth" method="post" autocomplete="off">
 				<img src="<?php echo base_url('img/avatar.svg')?>">
-				<h2 class="title">Sign In</h2>
+				<h2 class="title">Sign in</h2>
 				<br>
 
 				<?php if(session()->getFlashdata('msg')):?>
