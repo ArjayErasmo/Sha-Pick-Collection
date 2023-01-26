@@ -188,7 +188,7 @@
                                 <div class="col-md-12">
                                     <div class="coupon">
                                         <input type="text" placeholder="Coupon Code">
-                                        <button>Apply Code</button>
+                                        <button>Apply Codes</button>
                                     </div>
                                 </div>
                                 <div class="col-md-12">
