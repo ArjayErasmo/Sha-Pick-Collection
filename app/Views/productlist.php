@@ -336,18 +336,6 @@
                                 </div>
                             </div>
                         </div>
-                        
-                        <div class="sidebar-widget brands">
-                            <h2 class="title">Our Brands</h2>
-                            <ul>
-                                <li><a href="#">Nulla </a><span>(45)</span></li>
-                                <li><a href="#">Curabitur </a><span>(34)</span></li>
-                                <li><a href="#">Nunc </a><span>(67)</span></li>
-                                <li><a href="#">Ullamcorper</a><span>(74)</span></li>
-                                <li><a href="#">Fusce </a><span>(89)</span></li>
-                                <li><a href="#">Sagittis</a><span>(28)</span></li>
-                            </ul>
-                        </div>
                     </div>
                     <!-- Side Bar End -->
                 </div>
