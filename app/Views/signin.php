@@ -51,7 +51,7 @@
             	</div>
             	<input type="submit" class="btn" value="Login">
 				<br>
-				<a href="registers">Have no account? Create new</a>
+				<a href="registers">Don't hanve an account? Create One</a>
             </form>
         </div>
     </div>
