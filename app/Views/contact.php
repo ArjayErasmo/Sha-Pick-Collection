@@ -159,7 +159,7 @@
                             </div>
                         <?php endif;?>
 
-                            <form action="<?= base_url('contact')?>" method ="POST" enctype="multipart/form-data" novalidate>
+                            <form action="<?= base_url('contact')?>" method ="POST" autocomplete="off" enctype="multipart/form-data" novalidate>
                                 <div class="row">
                                     <div class="col-md-12">
                                         <input type="email" name="email" id="email" class="form-control <?= ($validation->getError('email'))?'is-invalid':''?>" placeholder="Enter your Email" >
@@ -253,7 +253,7 @@
                     </div>
                 </div>
                 
-                <div class="row payment align-items-center">
+                <!--<div class="row payment align-items-center">
                     <div class="col-md-6">
                         <div class="payment-method">
                             <h2>We Accept:</h2>
@@ -268,7 +268,7 @@
                             <img src="img/ssl.svg" alt="Payment Security" />
                         </div>
                     </div>
-                </div>
+                </div>-->
             </div>
         </div>
         <!-- Footer End -->
