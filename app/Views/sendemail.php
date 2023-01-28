@@ -53,7 +53,7 @@
                                     <?php endif;?>
                             </div> 
                             <div class="mb-3">
-                                <label for="file">Select File</label>
+                                <label for="file">Choose File</label>
                                 <input type="file" name="file" id="file" class="form-control <?= ($validation->getError('file'))?'is-invalid':''?>">
                                 <?php if($validation->getError('file')): ?>
                                     <div class="invalid-feedback"><?= $validation->getError('file') ?></div>

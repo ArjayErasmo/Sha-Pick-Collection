@@ -9,6 +9,9 @@
                                     <a class="nav-link" href="#"><i class="fa fa-home"></i>Home</a>
                                 </li>
                                 <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="fa fa-shopping-bag"></i>Best Selling</a>
+                                </li>
+                                <li class="nav-item">
                                     <a class="nav-link" href="#"><i class="fa fa-plus-square"></i>New Arrivals</a>
                                 </li>
                                 <li class="nav-item">
