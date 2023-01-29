@@ -40,7 +40,7 @@
                 </div>
                 <br>
                 <div id="input-field">
-                <a href="<?=site_url('register');?>">Have no account, create new account</a>
+                <a href="<?=site_url('register');?>">Don't have an account?, Create new account</a>
                 </div>
             </form>
         

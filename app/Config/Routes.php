@@ -88,8 +88,11 @@ $routes->get('/sendemail', 'EmailController::index');
 $routes->post('/send', 'EmailController::sendEmail');
 $routes->post('/contact', 'EmailController::sendEmail');
 
-//Verification
+//User Verification
 $routes->match(['get', 'post'], '/mail', 'AccountController::mail');
+
+//Admin Verification
+$routes->match(['get', 'post'], '/Admail', 'AdminEmailController::Admail');
 
 
 //Register
