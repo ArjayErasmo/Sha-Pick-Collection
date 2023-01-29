@@ -82,10 +82,15 @@
     <div class="row">
     <div class="column">
         <div img src="https://th.bing.com/th/id/OIF.PpWiN8LgRVEjB3UbOVRTjw?pid=ImgDet&rs=1" class="center"></div>
-        <!-- style="background-color:#bbb;" -->
-        <h2>delivery</h2>
-        <p style="text-align=justified"></p>
-        <!-- on process editing -->
+        <h2>Delivery</h2><br>
+        <p style="text-align=justified">The Sha Pick Collection checkout process includes delivery options, allowing customers to choose between delivery and pick-up.
+         In the delivery option, J&T Express or any other courier will be responsible for carrying your order to the comfort of your home. 
+         Please be mindful that the delivery fee for the courier will be borne by the customers. They will have additional fees to pay in the checkout process. 
+         The delivery cost will depend on the location and the distance from it to the local stores' location. 
+         The parcels and packages will be securely packed to ensure the quality of every product, however, if your product has dents and damages, it was not solely the responsibility of the seller, and it may be damaged during the delivery period. <br>
+
+        <br>We are hoping for your great consideration and cooperation. Thank you. </p>
+        
     </div>
     <div class="column">
         <h2>Pick up</h2><br>
