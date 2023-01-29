@@ -83,13 +83,16 @@
     <div class="column">
         <div img src="https://th.bing.com/th/id/OIF.PpWiN8LgRVEjB3UbOVRTjw?pid=ImgDet&rs=1" class="center"></div>
         <!-- style="background-color:#bbb;" -->
-        <h2>Delivery</h2>
-        <p style="text-align=justified"></p>
-        <!-- on process editing -->
+        <h2>Delivery</h2><br>
+        <p style="text-align: justified">Sha Pick Collection has delivery options via logistics companies like J & T Express or any other local courier that can deliver your parcels and packages.
+             The delivery fees will be borne by the customers during their checkout. The fees will be based on their location and the location of the shop. The farther away the customer is, the larger the delivery fee.
+             All your parcels will be packed and handled carefully before being shipped out.
+            All the possible dents and damages that may occur on the products may not be accountable to the seller because all the products undergo a quality check before shipping out to valuable customers.  </p>
+
     </div>
     <div class="column">
-        <h2>Pick up</h2>
-        <p style="text-align=justified"></p>
+        <h2>Pick up</h2><br>
+        <p style="text-align:justified">The Sha Pick Collection store is located at Sitio Mahogany, Leuteboro II, Socorro, Oriental Mindoro. If you want to buy something from her online store, you can select "Pick up" when you check out. This will be free, with no charge or any other additional fees. Claim your products or parcel directly in her shop. </p>
       </div>
 </body>
 </html>
