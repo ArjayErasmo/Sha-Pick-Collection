@@ -83,7 +83,7 @@
     <div class="column">
         <div img src="https://th.bing.com/th/id/OIF.PpWiN8LgRVEjB3UbOVRTjw?pid=ImgDet&rs=1" class="center"></div>
         <!-- style="background-color:#bbb;" -->
-        <h2>delivery</h2>
+        <h2>Delivery</h2>
         <p style="text-align=justified"></p>
         <!-- on process editing -->
     </div>
