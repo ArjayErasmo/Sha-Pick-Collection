@@ -92,7 +92,7 @@ $routes->post('/contact', 'EmailController::sendEmail');
 $routes->match(['get', 'post'], '/mail', 'AccountController::mail');
 
 //Admin Verification
-$routes->match(['get', 'post'], '/Admail', 'AdminEmailController::Admail');
+$routes->match(['get', 'post'], '/Adregister', 'AdminEmailController::Adregister');
 
 
 //Register

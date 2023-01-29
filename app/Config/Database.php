@@ -35,7 +35,7 @@ class Database extends Config
         'hostname' => 'localhost',
         'username' => 'root',
         'password' => '',
-        'database' => 'product_list',
+        'database' => 'codeigniter_authentication',
         'DBDriver' => 'MySQLi',
         'DBPrefix' => '',
         'pConnect' => false,

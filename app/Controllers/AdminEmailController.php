@@ -5,6 +5,10 @@ use App\Models\ProductsModel;
 
 class AdminEmailController extends BaseController
 {
+    public function Adregister()
+    {
+        return view('adregister');
+    }
     public function Asendmail()
     {
         $to = 'Erasmoarjhay4@gmail.com';
