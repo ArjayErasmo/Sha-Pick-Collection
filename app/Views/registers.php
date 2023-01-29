@@ -69,7 +69,7 @@
             	</div>
             	<input type="submit" class="btn" value="Login">
 				<br>
-				<a href="signin">Already have an account? Log in</a>
+				<a href="signin">Already have an account? Sign in</a>
             </form>
         </div>
     </div>

@@ -9,9 +9,18 @@
                                     <a class="nav-link" href="#"><i class="fa fa-home"></i>Home</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#"><i class="fa fa-shopping-bag"></i>Best Selling</a>
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> source code
+=======
+>>>>>>> afbfe04fcfff358b38e45e8f222edf3202e46f7f
+                                <a class="nav-link" href="#"><i class="fa fa-shopping-bag"></i>Best Selling</a>
                                 </li>
                                 <li class="nav-item">
+>>>>>>> source code
                                     <a class="nav-link" href="#"><i class="fa fa-plus-square"></i>New Arrivals</a>
                                 </li>
                                 <li class="nav-item">
