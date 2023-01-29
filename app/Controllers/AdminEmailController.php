@@ -20,11 +20,10 @@ class AdminEmailController extends BaseController
             $data = $email->printDebugger(['headers']);
             print($data);
         }
-
     }
-
-    public function Admail()
+    public function token($length)
     {
-        $this->Asendmail();
+        $str_result = '0123456789ABCDEFGHIJKLMNOPQRSTUVXYZabcdefghijklmnopqrstuvwxyz';
+        return substr(str_shuffle($str_result),0, $length);
     }
 }
