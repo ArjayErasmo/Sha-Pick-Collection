@@ -83,13 +83,13 @@
     <div class="column">
         <div img src="https://th.bing.com/th/id/OIF.PpWiN8LgRVEjB3UbOVRTjw?pid=ImgDet&rs=1" class="center"></div>
         <!-- style="background-color:#bbb;" -->
-        <h2>Delivery</h2>
+        <h2>delivery</h2>
         <p style="text-align=justified"></p>
         <!-- on process editing -->
     </div>
     <div class="column">
-        <h2>Pick up</h2>
-        <p style="text-align=justified"></p>
+        <h2>Pick up</h2><br>
+        <p style="text-align:justified">The Sha Pick Collection store is located at Sitio Mahogany, Leuteboro II, Socorro, Oriental Mindoro. If you want to buy something from her online store, you can select "Pick up" when you check out. This will be free, with no charge or any other additional fees. Claim your products or parcel directly in her shop. </p>
       </div>
 </body>
 </html>
