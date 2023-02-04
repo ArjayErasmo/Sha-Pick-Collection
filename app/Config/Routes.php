@@ -64,7 +64,6 @@ $routes->get('/shippingpolicy', 'Home::shippingpolicy');
 $routes->get('/returnpolicy', 'Home::returnpolicy');
 $routes->get('/log', 'Home::log');
 $routes->get('/productlist', 'Home::productlist');
-$routes->get('/productdetail', 'Home::productdetail');
 $routes->get('/cart', 'Home::cart');
 $routes->get('/checkout', 'Home::checkout');
 $routes->get('/myaccount', 'Home::myaccount');
@@ -102,7 +101,8 @@ $routes->match(['get', 'post'], '/verify/(:any)', 'AccountController::verify/$1'
 $routes->match(['get', 'post'], '/signin', 'AccountController::signin');
 $routes->match(['get', 'post'], '/auth', 'AccountController::auth');
 
-
+//Single Product
+$routes->get('/spo/(:any)', 'ProductsController::spo/$1');
 
 
 

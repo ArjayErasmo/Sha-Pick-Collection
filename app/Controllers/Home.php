@@ -9,10 +9,6 @@ class Home extends BaseController
     {
         return view('welcome_message');
     }
-    public function mainpage()
-    {
-        return view('mainpage');
-    }
     public function aboutUs()
     {
         return view('aboutUs');
@@ -49,15 +45,19 @@ class Home extends BaseController
         ];
         return view('productlist', $data);
     }
-    public function productdetail()
+    public function mainpage()
     {
-        return view('productdetail');
+        $pr = new ProductsModel();
+        $data = [
+            'products' => $pr->where('quantity >', '0')->findAll()
+        ];
+        return view('mainpage', $data);
     }
     public function cart()
     {
         return view('cart');
     }
-    public function checkout()
+    public function checkout() 
     {
         return view('checkout');
     }
