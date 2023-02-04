@@ -12,4 +12,4 @@ class ProductsController extends BaseController
         return view('singlesearch', $result);
     }
 }
-?>
+?> 

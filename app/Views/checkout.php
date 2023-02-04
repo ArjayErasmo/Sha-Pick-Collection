@@ -54,7 +54,6 @@
                         <div class="navbar-nav mr-auto">
                             <a href="mainpage" class="nav-item nav-link">Home</a>
                             <a href="productlist" class="nav-item nav-link">Products</a>
-                            <a href="productdetail" class="nav-item nav-link">Product Detail</a>
                             <a href="cart" class="nav-item nav-link">Cart</a>
                             <a href="checkout" class="nav-item nav-link active">Checkout</a>
                             <a href="myaccount" class="nav-item nav-link">My Account</a>
