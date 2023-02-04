@@ -202,7 +202,7 @@
                                 <div class="product-action">
                                     <a href="#"><i class="fa fa-cart-plus"></i></a>
                                     <a href="#"><i class="fa fa-heart"></i></a>
-                                    <a href=<?= site_url('spo/'.$pr['id'])?>><i class="fa fa-search"></i></a>
+                                    <a href=<?= site_url('mp/'.$pr['id'])?>><i class="fa fa-search"></i></a>
                                 </div>
                             </div>
                             <div class="product-price">

@@ -102,7 +102,7 @@ $routes->match(['get', 'post'], '/signin', 'AccountController::signin');
 $routes->match(['get', 'post'], '/auth', 'AccountController::auth');
 
 //Single Product
-$routes->get('/spo/(:any)', 'ProductsController::spo/$1');
+$routes->get('/mp/(:any)', 'ProductsController::mp/$1');
 
 
 

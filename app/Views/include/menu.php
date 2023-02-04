@@ -12,27 +12,22 @@
                                 <a class="nav-link" href="#"><i class="fa fa-shopping-bag"></i>Best Selling</a>
                                 </li>
                                 <li class="nav-item">
-
-                                <a class="nav-link" href="#"><i class="fa fa-shopping-bag"></i>Best Selling</a>
+                                    <a class="nav-link" href="#"><i class="fa fa-female"></i>Women's Wear</a>
                                 </li>
                                 <li class="nav-item">
-
-                                    <a class="nav-link" href="#"><i class="fa fa-plus-square"></i>New Arrivals</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#"><i class="fa fa-female"></i>Fashion & Beauty</a>
+                                    <a class="nav-link" href="#"><i class="fa fa-tshirt"></i>Men's Wear'</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="#"><i class="fa fa-child"></i>Kids & Babies Clothes</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#"><i class="fa fa-tshirt"></i>Men & Women Clothes</a>
+                                    <a class="nav-link" href="#"><i class="fa fa-mobile-alt"></i>Accessories</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#"><i class="fa fa-mobile-alt"></i>Gadgets & Accessories</a>
+                                    <a class="nav-link" href="#"><i class="fa fa-microchip"></i>Appliances</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#"><i class="fa fa-microchip"></i>Electronics & Accessories</a>
+                                <a class="nav-link" href="#"><i class="fa fa-shopping-bag"></i>Foot Wear</a>
                                 </li>
                             </ul>
                         </nav>

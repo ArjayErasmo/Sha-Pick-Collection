@@ -5,7 +5,7 @@ use App\Models\MenuModel;
 
 class ProductsController extends BaseController
 {
-    public function spo($id)
+    public function mp($id) 
     {
         $menu_model = new MenuModel();
         $result['result'] = $menu_model->find($id);

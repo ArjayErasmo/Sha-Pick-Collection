@@ -125,7 +125,7 @@
                 </div>
             </div>
             <div class="col-2">
-                <p>Home/ Tshirts</p>
+                <p>Home/ <?=($result['category'] )?></p>
                 <br>
                 <h2><b><?=  $result['name']?></b></h2>  
                 <h3><span>₱</span><?=number_format($result['price'], 2)?></h3>
@@ -135,9 +135,9 @@
                     <option>Select Size</option>
                     <option>XXL</option>
                     <option>XL</option>
-                    <option>Large</option>
-                    <option>Medium</option>
-                    <option>S</option>
+                    <option>LARGE</option>
+                    <option>MEDIUM</option>
+                    <option>SMALL</option>
                     <option>XS</option>
                 </select>
                 <br>
