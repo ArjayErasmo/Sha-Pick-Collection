@@ -58,14 +58,14 @@
                             <a href="checkout" class="nav-item nav-link">Checkout</a>
                             <a href="myaccount" class="nav-item nav-link">My Account</a>
                             <a href="wishlist" class="nav-item nav-link">Wishlist</a>
-                            <a href="contact" class="nav-item nav-link">Contact us</a>
+                            <a href="contact" class="nav-item nav-link active">Contact us</a>
                         </div>
                         <div class="navbar-nav ml-auto">
                             <div class="nav-item dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">User Account</a>
                                 <div class="dropdown-menu">
-                                    <a href="signin" class="dropdown-item">Login</a>
-                                    <a href="registers" class="dropdown-item">Sign up</a>
+                                    <a href="signin" class="dropdown-item">Logout</a>
+                                    <a href="signin" class="dropdown-item">Switch Account</a>
                                 </div>
                             </div>
                         </div>

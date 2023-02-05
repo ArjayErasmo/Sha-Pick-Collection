@@ -64,8 +64,8 @@
                             <div class="nav-item dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">User Account</a>
                                 <div class="dropdown-menu">
-                                    <a href="signin" class="dropdown-item">Login</a>
-                                    <a href="registers" class="dropdown-item">Register</a>
+                                    <a href="signin" class="dropdown-item">Logout</a>
+                                    <a href="signin" class="dropdown-item">Switch Account</a>
                                 </div>
                             </div>
                         </div>
@@ -367,7 +367,7 @@
                     </div>
                 </div>
                 
-                <div class="row payment align-items-center">
+                <!--<div class="row payment align-items-center">
                     <div class="col-md-6">
                         <div class="payment-method">
                             <h2>We Accept:</h2>
@@ -382,7 +382,7 @@
                             <img src="img/ssl.svg" alt="Payment Security" />
                         </div>
                     </div>
-                </div>
+                </div>-->
             </div>
         </div>
         <!-- Footer End -->
@@ -392,11 +392,11 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 copyright">
-                        <p>Copyright &copy; <a href="https://htmlcodex.com">HTML Codex</a>. All Rights Reserved</p>
+                        <!--<p>Copyright &copy; <a href="https://htmlcodex.com">HTML Codex</a>. All Rights Reserved</p>-->
                     </div>
 
                     <div class="col-md-6 template-by">
-                        <p>Template By <a href="https://htmlcodex.com">HTML Codex</a></p>
+                        <!--<p>Template By <a href="https://htmlcodex.com">HTML Codex</a></p>-->
                     </div>
                 </div>
             </div>
