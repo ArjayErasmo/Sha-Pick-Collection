@@ -34,7 +34,7 @@
         
           <li class="nav-header">SHA PICK COLLECTION</li>
           <li class="nav-item">
-            <a href=<?= base_url('admin/index')?> class="nav-link">
+            <a href=<?= base_url('admin/index')?> class="nav-link active" style="background-color: #e2796f;">
               <i class="nav-icon fas fa-chart-pie"></i>
               <p>
                 Sales and Graph
@@ -53,7 +53,7 @@
           <li class="nav-item">
           </li>
           <li class="nav-item">
-            <a href="pages/kanban.html" class="nav-link">
+            <a href="#" class="nav-link">
               <i class="nav-icon fas fa-shopping-bag"></i>
               <p>
                 Orders
@@ -62,7 +62,18 @@
           </li>
         </ul>
       </nav>
-      <!-- /.sidebar-menu -->
+      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+      </div>
+      <li class="nav-item">
+          <a href="<?= site_url('signin') ?>" class="nav-link">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="nav-icon fas fa-power-off"></i>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Log Out</p>
+          </a>
+        </li>
+      </ul>
     </div>
     <!-- /.sidebar -->
   </aside>
+ 
