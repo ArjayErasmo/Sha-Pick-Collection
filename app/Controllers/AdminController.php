@@ -104,7 +104,7 @@ class AdminController extends BaseController
     
     public function edit($id = null){
         $pr = new ProductsModel();
-        $data['products'] = $pr->findAll($id);
+        $data['products'] = $pr->where('id', $id)->first();
         return view('admin/edit', $data);
     }
     public function update($id = null){

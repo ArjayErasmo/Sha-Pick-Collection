@@ -69,9 +69,29 @@ class Home extends BaseController
     {
         return view('contact');
     }
-    public function wishlist()
+    public function WomensWear()
     {
-        return view('wishlist');
+        return view('menu/WomensWear');
+    }
+    public function MensWear()
+    {
+        return view('menu/MensWear');
+    }
+    public function Kids_Babies()
+    {
+        return view('menu/Kids_Babies');
+    }
+    public function GadgetsAccessories()
+    {
+        return view('menu/GadgetsAccessories');
+    }
+    public function Appliances()
+    {
+        return view('menu/Appliances');
+    }
+    public function FootWear()
+    {
+        return view('menu/FootWear');
     }
 
 }

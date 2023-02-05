@@ -105,8 +105,13 @@ $routes->match(['get', 'post'], '/auth', 'AccountController::auth');
 $routes->get('/mp/(:any)', 'ProductsController::mp/$1');
 $routes->get('/Mens/(:any)', 'ProductsController::Mens/$1');
 
-
-
+//Menu Category of Products
+$routes->match(['get', 'post'], '/menu/WomensWear', 'Home::WomensWear');
+$routes->match(['get', 'post'], '/menu/MensWear', 'Home::MensWear');
+$routes->match(['get', 'post'], '/menu/GadgetsAccessories', 'Home::GadgetsAccessories');
+$routes->match(['get', 'post'], '/menu/Kids_Babies', 'Home::Kids_Babies');
+$routes->match(['get', 'post'], '/menu/Appliances', 'Home::Appliances');
+$routes->match(['get', 'post'], '/menu/FootWear', 'Home::FootWear');
 /*
  * --------------------------------------------------------------------
  * Additional Routing

@@ -39,21 +39,21 @@
                 <!-- /.card-header -->
                 <div class="card-body">
                   <div>
-                  <?php foreach ($products as $data): ?>
-                    <form action="<?= site_url('update/'.$data['id']) ?>" method="post">
+
+                    <form action="<?= site_url('update/'.$products['id']) ?>" method="post">
                     <input type="hidden" name="_method" value="PUT" />
                       <label>Name</label>
-                      <input type="text" name="name" value="<?= $data['name']; ?>" class="form-control" placeholder="Enter Product Name">
+                      <input type="text" name="name" value="<?= $products['name']; ?>" class="form-control" placeholder="Enter Product Name">
                       <label>Description</label>
-                      <input type="text" name="description" value="<?= $data['description']; ?>" class="form-control" placeholder="Enter Product Description">
+                      <input type="text" name="description" value="<?= $products['description']; ?>" class="form-control" placeholder="Enter Product Description">
                       <label>Quantity</label>
-                      <input type="text" name="quantity" value="<?= $data['quantity']; ?>" class="form-control" placeholder="Enter Product Quantity">
+                      <input type="text" name="quantity" value="<?= $products['quantity']; ?>" class="form-control" placeholder="Enter Product Quantity">
                       <label>Price</label>
-                      <input type="text" name="price" value="<?= $data['price']; ?>" class="form-control" placeholder="Enter Product Price">
+                      <input type="text" name="price" value="<?= $products['price']; ?>" class="form-control" placeholder="Enter Product Price">
                       <br>
                       <div><button type="submit" class="btn btn-info">Update product</button>
                     </form>
-                    <?php endforeach;?>
+
                   </div>
                 <!-- /.card-body -->
               </div>

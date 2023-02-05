@@ -185,7 +185,7 @@
 
                     <div class="col-lg-3">
                         <div class="product-item">
-                            <div class="product-title">
+                            <div class="product-title"> 
                                 <a href=""><?= $pr['name']?></a>
                                 <div class="ratting">
                                     <i class="fa fa-star"></i>
