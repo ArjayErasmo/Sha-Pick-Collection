@@ -115,14 +115,14 @@ class AdminController extends BaseController
             'quantity' => $this->request->getPost('quantity'),
             'price' => $this->request->getPost('price')
         ];
-        $prod->update($id,$data);
+        $pr->update($id,$data);
         $session = session();
         $session->setFlashdata('msg', 'Updated Successfully!');
         return redirect()->to($_SERVER['HTTP_REFERER']);
     }
     public function delete($id = null){
-        $prod = new ProductsModel();
-        $prod->delete($id);
+        $pr = new ProductsModel();
+        $pr->delete($id);
         return redirect()->to($_SERVER['HTTP_REFERER']);
     }
 

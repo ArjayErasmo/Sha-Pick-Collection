@@ -32,7 +32,6 @@
                             <a href="cart" class="nav-item nav-link">Cart</a>
                             <a href="checkout" class="nav-item nav-link">Checkout</a>
                             <a href="myaccount" class="nav-item nav-link">My Account</a>
-                            <a href="wishlist" class="nav-item nav-link">Wishlist</a>
                             <a href="contact" class="nav-item nav-link">Contact us</a>
                         </div>
                         <div class="navbar-nav ml-auto">

@@ -76,9 +76,9 @@ $routes->get('/admin', 'AdminController::index');
 $routes->get('/admin/products', 'AdminController::products');
 $routes->get('/admin/addproduct', 'AdminController::addproduct');
 $routes->post('/admin/saveproduct', 'AdminController::saveproduct');
-$routes->put('/admin/update', 'AdminController::update');
+$routes->put('/update', 'AdminController::update');
 $routes->match(['get', 'post'], '/admin/edit/(:any)', 'AdminController::edit/$1');
-$routes->match(['get', 'post', 'put'], '/admin/update/(:any)', 'AdminController::update/$1');
+$routes->match(['get', 'post', 'put'], '/update/(:any)', 'AdminController::update/$1');
 $routes->get('/admin/edit', 'AdminController::edit');
 
 
@@ -103,7 +103,7 @@ $routes->match(['get', 'post'], '/auth', 'AccountController::auth');
 
 //Single Product
 $routes->get('/mp/(:any)', 'ProductsController::mp/$1');
-
+$routes->get('/Mens/(:any)', 'ProductsController::Mens/$1');
 
 
 

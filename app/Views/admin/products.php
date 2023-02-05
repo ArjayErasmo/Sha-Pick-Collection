@@ -16,7 +16,7 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>DataTables</h1>
+            <h1>Dashboard</h1>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
@@ -126,9 +126,9 @@
                     <td><?= $pr['description']?></td>
                     <td><?= $pr['quantity']?></td>
                     <td><?= $pr['price']?></td>
-                    <td><img src="<?= base_url(). '/'. $pr['image']?>" width = "150" height = "150"></td>
+                    <td><img src="<?= base_url(). '/'  . 'img/'. $pr['image']?>" width = "150" height = "150"></td>
                     <td>
-                      <a href="<?= base_url('admin/edit'. $pr['id'])?>" class="btn btn-success btn-sm">Edit</a>
+                      <a href="<?= base_url('admin/edit/'. $pr['id'])?>" class="btn btn-success btn-sm">Edit</a>
                     </td>
                   </tr>
                     <?php endforeach;?>

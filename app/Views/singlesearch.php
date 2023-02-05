@@ -201,7 +201,7 @@
     <div class="small-container single product">
         <div class="row">
             <div class="col-2">
-                <img src="<?= base_url($result['image'] )?>" width="100%" alt="Product Photo" id="ProductImg">
+                <img src="<?= base_url('/'. 'img/' .$result['image'] )?>" width="100%" alt="Product Photo" id="ProductImg">
                 <div class="small-img-row">
                 </div>
             </div>
