@@ -203,11 +203,10 @@
                                     </div>
                                 </div>
                             </div>
-                            <?php endforeach; ?>
+                            <?php endforeach; ?> 
+                        </div>
                             
-                            
-                            
-                        
+
                         <!-- Pagination Start -->
                         <div class="col-md-12">
                             <nav aria-label="Page navigation example">

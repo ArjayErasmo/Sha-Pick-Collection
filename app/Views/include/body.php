@@ -18,7 +18,7 @@
                                 <img src="img/slider-3.jpg" alt="Slider Image" />
                                 <div class="header-slider-caption">
                                     <p>Some text goes here that describes the image</p>
-                                    <a class="btn" href='productlist'><i class="fa fa-shopping-cart"></i>Shop Now</a>
+                                    <a class="btn" href=""><i class="fa fa-shopping-cart"></i>Shop Now</a>
                                 </div>
                             </div>
                         </div>
@@ -197,7 +197,7 @@
                             </div>
                             <div class="product-image">
                                 <a href="product-detail.html">
-                                    <img src="<?=($pr['image'])?>" alt="Product Image" height="250" width="150">
+                                    <img src="<?='/' . 'img/' . ($pr['image'])?>" alt="Product Image" height="250" width="150">
                                 </a>
                                 <div class="product-action">
                                     <a href="#"><i class="fa fa-cart-plus"></i></a>
