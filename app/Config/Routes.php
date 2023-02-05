@@ -73,6 +73,7 @@ $routes->get('/wishlist', 'Home::wishlist');
 
 //ADMIN LTE
 $routes->get('/admin', 'AdminController::index');
+$routes->get('/admin/index', 'AdminController::index');
 $routes->get('/admin/products', 'AdminController::products');
 $routes->get('/admin/addproduct', 'AdminController::addproduct');
 $routes->post('/admin/saveproduct', 'AdminController::saveproduct');
@@ -112,6 +113,7 @@ $routes->match(['get', 'post'], '/menu/GadgetsAccessories', 'Home::GadgetsAccess
 $routes->match(['get', 'post'], '/menu/Kids_Babies', 'Home::Kids_Babies');
 $routes->match(['get', 'post'], '/menu/Appliances', 'Home::Appliances');
 $routes->match(['get', 'post'], '/menu/FootWear', 'Home::FootWear');
+
 /*
  * --------------------------------------------------------------------
  * Additional Routing
