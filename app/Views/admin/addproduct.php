@@ -38,10 +38,9 @@
               </div>
               <!-- /.card-header -->
               <div class="card-body">
+              <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
               <?php if (!empty(session()->getFlashdata('msg', 'Successfully Added!'))) : ?>
-              <div class="alert alert-success">
-                <?= session()->getFlashdata('msg', 'Successfully Added!') ?>
-              </div>
+               <script> swal("Product Added Successfully", "", "success");</script>
                 <?php endif;?>
                 <form action="<?= site_url('admin/saveproduct') ?>" method ="post" autocomplete="off" enctype="multipart/form-data">
                   <?php if(isset($validation)):?>
