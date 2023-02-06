@@ -114,7 +114,7 @@
             <p>.hjghffgftgvhghy</p>
             <p>.hjghffgftgvhghy</p>
         </div>
-        <h4>I Agree to the <span>Terms of Service</span>and I read the Privacy Notice.</h4>
+        <h4>I Agree to the <span>Terms of Service</span>&nbsp;&nbsp;and I read the Privacy Notice.</h4>
             <div class="buttons">
                 <button class="btn red-btn">Accept</button>
                 <button class="btn gray-btn">Decline</button>

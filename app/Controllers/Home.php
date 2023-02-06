@@ -63,7 +63,7 @@ class Home extends BaseController
     }
     public function myaccount()
     {
-        return view('myaccount');
+        return view('user/profile');
     }
     public function contact()
     {

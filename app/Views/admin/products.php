@@ -94,6 +94,8 @@
 
 <?= $this->include('admin/inc/end')?>
 
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
 <script>
   $(function () {
     $("#example1").DataTable({
