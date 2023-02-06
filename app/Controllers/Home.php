@@ -53,6 +53,14 @@ class Home extends BaseController
         ];
         return view('mainpage', $data);
     }
+    public function WomensWear()
+    {
+        $pr = new ProductsModel();
+        $data = [
+            'products' => $pr->where('quantity >', '0')->where('category', 'Womens')->findAll()
+        ];
+        return view('menu/WomensWear', $data);
+    }
     public function cart()
     {
         return view('cart');
@@ -68,10 +76,6 @@ class Home extends BaseController
     public function contact()
     {
         return view('contact');
-    }
-    public function WomensWear()
-    {
-        return view('menu/WomensWear');
     }
     public function MensWear()
     {

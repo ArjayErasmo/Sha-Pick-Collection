@@ -575,3 +575,360 @@ in APPPATH\Views\admin\edit.php on line 44.
  8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
 10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-06 13:52:53 --> Undefined variable $pr
+in APPPATH\Views\menu\WomensWear.php on line 94.
+ 1 APPPATH\Views\menu\WomensWear.php(94): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pr', 'APPPATH\\Views\\menu\\WomensWear.php', 94)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\menu\\WomensWear.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('menu/WomensWear', [], true)
+ 5 APPPATH\Controllers\Home.php(74): view('menu/WomensWear')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->WomensWear()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-06 14:08:36 --> Undefined variable $products
+in APPPATH\Views\menu\WomensWear.php on line 90.
+ 1 APPPATH\Views\menu\WomensWear.php(90): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $products', 'APPPATH\\Views\\menu\\WomensWear.php', 90)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\menu\\WomensWear.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('menu/WomensWear', [], true)
+ 5 APPPATH\Controllers\Home.php(82): view('menu/WomensWear')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->WomensWear()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-02-06 14:09:49 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`=` = 'Womens'' at line 4 in C:\laragon\www\Sha-Pick-Collection\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\laragon\www\Sha-Pick-Collection\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\laragon\www\Sha-Pick-Collection\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\Sha-Pick-Collection\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\Sha-Pick-Collection\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\Sha-Pick-Collection\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\Sha-Pick-Collection\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\Sha-Pick-Collection\app\Controllers\Home.php(52): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\Sha-Pick-Collection\system\CodeIgniter.php(927): App\Controllers\Home->mainpage()
+#8 C:\laragon\www\Sha-Pick-Collection\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\laragon\www\Sha-Pick-Collection\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\Sha-Pick-Collection\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\Sha-Pick-Collection\system\Commands\Server\rewrite.php(46): require_once('C:\\laragon\\www\\...')
+#12 {main}
+CRITICAL - 2023-02-06 14:09:49 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`=` = 'Womens'' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `products`
+WHERE `quantity` > \'0\'
+AND `category` `=` = \'Womens\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `products`
+WHERE `quantity` > \'0\'
+AND `category` `=` = \'Womens\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `products`
+WHERE `quantity` > \'0\'
+AND `category` `=` = \'Womens\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `products`
+WHERE `quantity` > :quantity:
+AND `category` `=` = :category =:', [...], false)
+ 5 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Home.php(52): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->mainpage()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-02-06 14:09:53 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`=` = 'Womens'' at line 4 in C:\laragon\www\Sha-Pick-Collection\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\laragon\www\Sha-Pick-Collection\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\laragon\www\Sha-Pick-Collection\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\Sha-Pick-Collection\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\Sha-Pick-Collection\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\Sha-Pick-Collection\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\Sha-Pick-Collection\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\Sha-Pick-Collection\app\Controllers\Home.php(52): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\Sha-Pick-Collection\system\CodeIgniter.php(927): App\Controllers\Home->mainpage()
+#8 C:\laragon\www\Sha-Pick-Collection\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\laragon\www\Sha-Pick-Collection\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\Sha-Pick-Collection\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\Sha-Pick-Collection\system\Commands\Server\rewrite.php(46): require_once('C:\\laragon\\www\\...')
+#12 {main}
+CRITICAL - 2023-02-06 14:09:53 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`=` = 'Womens'' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `products`
+WHERE `quantity` > \'0\'
+AND `category` `=` = \'Womens\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `products`
+WHERE `quantity` > \'0\'
+AND `category` `=` = \'Womens\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `products`
+WHERE `quantity` > \'0\'
+AND `category` `=` = \'Womens\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `products`
+WHERE `quantity` > :quantity:
+AND `category` `=` = :category =:', [...], false)
+ 5 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Home.php(52): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->mainpage()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-02-06 14:10:36 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '= Womens' at line 4 in C:\laragon\www\Sha-Pick-Collection\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\laragon\www\Sha-Pick-Collection\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\laragon\www\Sha-Pick-Collection\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\Sha-Pick-Collection\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\Sha-Pick-Collection\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\Sha-Pick-Collection\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\Sha-Pick-Collection\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\Sha-Pick-Collection\app\Controllers\Home.php(52): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\Sha-Pick-Collection\system\CodeIgniter.php(927): App\Controllers\Home->mainpage()
+#8 C:\laragon\www\Sha-Pick-Collection\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\laragon\www\Sha-Pick-Collection\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\Sha-Pick-Collection\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\Sha-Pick-Collection\system\Commands\Server\rewrite.php(46): require_once('C:\\laragon\\www\\...')
+#12 {main}
+CRITICAL - 2023-02-06 14:10:36 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '= Womens' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `products`
+WHERE `quantity` > \'0\'
+AND `category` = = Womens', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `products`
+WHERE `quantity` > \'0\'
+AND `category` = = Womens')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `products`
+WHERE `quantity` > \'0\'
+AND `category` = = Womens')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `products`
+WHERE `quantity` > :quantity:
+AND `category` = = Womens', [...], false)
+ 5 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Home.php(52): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->mainpage()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-02-06 14:12:24 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`=` = 'Womens'' at line 4 in C:\laragon\www\Sha-Pick-Collection\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\laragon\www\Sha-Pick-Collection\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\laragon\www\Sha-Pick-Collection\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\Sha-Pick-Collection\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\Sha-Pick-Collection\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\Sha-Pick-Collection\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\Sha-Pick-Collection\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\Sha-Pick-Collection\app\Controllers\Home.php(52): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\Sha-Pick-Collection\system\CodeIgniter.php(927): App\Controllers\Home->mainpage()
+#8 C:\laragon\www\Sha-Pick-Collection\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\laragon\www\Sha-Pick-Collection\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\Sha-Pick-Collection\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\Sha-Pick-Collection\system\Commands\Server\rewrite.php(46): require_once('C:\\laragon\\www\\...')
+#12 {main}
+CRITICAL - 2023-02-06 14:12:24 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`=` = 'Womens'' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `products`
+WHERE `quantity` > \'0\'
+AND `category` `=` = \'Womens\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `products`
+WHERE `quantity` > \'0\'
+AND `category` `=` = \'Womens\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `products`
+WHERE `quantity` > \'0\'
+AND `category` `=` = \'Womens\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `products`
+WHERE `quantity` > :quantity:
+AND `category` `=` = :category =:', [...], false)
+ 5 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Home.php(52): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->mainpage()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-06 14:13:32 --> Cannot redeclare App\Controllers\Home::WomensWear()
+in APPPATH\Controllers\Home.php on line 80.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-02-06 14:15:30 --> Undefined variable $products
+in APPPATH\Views\menu\WomensWear.php on line 90.
+ 1 APPPATH\Views\menu\WomensWear.php(90): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $products', 'APPPATH\\Views\\menu\\WomensWear.php', 90)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\menu\\WomensWear.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('menu/WomensWear', [], true)
+ 5 APPPATH\Controllers\Home.php(82): view('menu/WomensWear')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->WomensWear()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-06 14:16:41 --> Undefined variable $products
+in APPPATH\Views\menu\WomensWear.php on line 90.
+ 1 APPPATH\Views\menu\WomensWear.php(90): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $products', 'APPPATH\\Views\\menu\\WomensWear.php', 90)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\menu\\WomensWear.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('menu/WomensWear', [], true)
+ 5 APPPATH\Controllers\Home.php(82): view('menu/WomensWear')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->WomensWear()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-06 14:17:23 --> Undefined variable $products
+in APPPATH\Views\menu\WomensWear.php on line 90.
+ 1 APPPATH\Views\menu\WomensWear.php(90): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $products', 'APPPATH\\Views\\menu\\WomensWear.php', 90)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\menu\\WomensWear.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('menu/WomensWear', [], true)
+ 5 APPPATH\Controllers\Home.php(82): view('menu/WomensWear')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->WomensWear()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-06 14:17:25 --> Undefined variable $products
+in APPPATH\Views\menu\WomensWear.php on line 90.
+ 1 APPPATH\Views\menu\WomensWear.php(90): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $products', 'APPPATH\\Views\\menu\\WomensWear.php', 90)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\menu\\WomensWear.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('menu/WomensWear', [], true)
+ 5 APPPATH\Controllers\Home.php(82): view('menu/WomensWear')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->WomensWear()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-06 14:17:27 --> Undefined variable $products
+in APPPATH\Views\menu\WomensWear.php on line 90.
+ 1 APPPATH\Views\menu\WomensWear.php(90): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $products', 'APPPATH\\Views\\menu\\WomensWear.php', 90)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\menu\\WomensWear.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('menu/WomensWear', [], true)
+ 5 APPPATH\Controllers\Home.php(82): view('menu/WomensWear')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->WomensWear()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-06 14:18:34 --> Undefined variable $products
+in APPPATH\Views\menu\WomensWear.php on line 90.
+ 1 APPPATH\Views\menu\WomensWear.php(90): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $products', 'APPPATH\\Views\\menu\\WomensWear.php', 90)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\menu\\WomensWear.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('menu/WomensWear', [], true)
+ 5 APPPATH\Controllers\Home.php(82): view('menu/WomensWear')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->WomensWear()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-06 14:18:41 --> Undefined variable $products
+in APPPATH\Views\menu\WomensWear.php on line 90.
+ 1 APPPATH\Views\menu\WomensWear.php(90): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $products', 'APPPATH\\Views\\menu\\WomensWear.php', 90)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\menu\\WomensWear.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('menu/WomensWear', [], true)
+ 5 APPPATH\Controllers\Home.php(82): view('menu/WomensWear')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->WomensWear()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-02-06 14:21:22 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`=` = 'Womens'' at line 4 in C:\laragon\www\Sha-Pick-Collection\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\laragon\www\Sha-Pick-Collection\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\laragon\www\Sha-Pick-Collection\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\Sha-Pick-Collection\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\Sha-Pick-Collection\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\Sha-Pick-Collection\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\Sha-Pick-Collection\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\Sha-Pick-Collection\app\Controllers\Home.php(60): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\Sha-Pick-Collection\system\CodeIgniter.php(927): App\Controllers\Home->WomensWear()
+#8 C:\laragon\www\Sha-Pick-Collection\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\laragon\www\Sha-Pick-Collection\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\Sha-Pick-Collection\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\Sha-Pick-Collection\system\Commands\Server\rewrite.php(46): require_once('C:\\laragon\\www\\...')
+#12 {main}
+CRITICAL - 2023-02-06 14:21:22 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`=` = 'Womens'' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `products`
+WHERE `quantity` > \'0\'
+AND `category` `=` = \'Womens\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `products`
+WHERE `quantity` > \'0\'
+AND `category` `=` = \'Womens\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `products`
+WHERE `quantity` > \'0\'
+AND `category` `=` = \'Womens\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `products`
+WHERE `quantity` > :quantity:
+AND `category` `=` = :category =:', [...], false)
+ 5 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Home.php(60): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->WomensWear()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-02-06 14:21:44 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '= Womens' at line 4 in C:\laragon\www\Sha-Pick-Collection\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\laragon\www\Sha-Pick-Collection\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\laragon\www\Sha-Pick-Collection\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\Sha-Pick-Collection\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\Sha-Pick-Collection\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\Sha-Pick-Collection\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\Sha-Pick-Collection\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\Sha-Pick-Collection\app\Controllers\Home.php(60): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\Sha-Pick-Collection\system\CodeIgniter.php(927): App\Controllers\Home->WomensWear()
+#8 C:\laragon\www\Sha-Pick-Collection\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\laragon\www\Sha-Pick-Collection\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\Sha-Pick-Collection\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\Sha-Pick-Collection\system\Commands\Server\rewrite.php(46): require_once('C:\\laragon\\www\\...')
+#12 {main}
+CRITICAL - 2023-02-06 14:21:44 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '= Womens' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `products`
+WHERE `quantity` > \'0\'
+AND `category` = = Womens', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `products`
+WHERE `quantity` > \'0\'
+AND `category` = = Womens')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `products`
+WHERE `quantity` > \'0\'
+AND `category` = = Womens')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `products`
+WHERE `quantity` > :quantity:
+AND `category` = = Womens', [...], false)
+ 5 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Home.php(60): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->WomensWear()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

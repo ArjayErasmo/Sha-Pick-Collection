@@ -175,7 +175,7 @@
                             </div>
                             
                             <?php foreach ($products as $pr): ?>
-
+ 
                             <div class="col-md-4">
                                 <div class="product-item">
                                     <div class="product-title">
