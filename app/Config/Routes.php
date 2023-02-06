@@ -116,6 +116,9 @@ $routes->match(['get', 'post'], '/menu/Kids_Babies', 'Home::Kids_Babies');
 $routes->match(['get', 'post'], '/menu/Appliances', 'Home::Appliances');
 $routes->match(['get', 'post'], '/menu/FootWear', 'Home::FootWear');
 
+//User Profile
+$routes->match(['get', 'post', 'put'], '/edit_profile', 'User::edit_profile');
+
 /*
  * --------------------------------------------------------------------
  * Additional Routing

@@ -22,7 +22,7 @@
         <!-- Template Stylesheet -->
         <link href="css/style.css" rel="stylesheet">
     </head>
-
+ 
     <body>
         <!-- Top bar Start -->
         <div class="top-bar">
@@ -144,18 +144,15 @@
                         <div class="contact-form">
                             <h2>Email Us</h2>
                             <br>
-
+                            <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
                             <?php if(session()->getFlashdata('success')): ?>
-                            <div class="alert alert-success" role="alert">
-                            <?= session()->getFlashdata('success'); ?>
-                            </div>
-                        <?php endif;?>
+                                <script> swal("Email Sent Successfully", "", "success");</script>
+                            <?php endif;?>
 
-                        <?php if(session()->getFlashdata('error')): ?>
-                            <div class="alert alert-danger" role="alert">
-                            <?= session()->getFlashdata('error'); ?>
-                            </div>
-                        <?php endif;?>
+                            <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+                            <?php if(session()->getFlashdata('error')): ?>
+                                <script> swal("Email not sent", "", "error");</script>
+                            <?php endif;?>
 
                             <form action="<?= base_url('contact')?>" method ="POST" autocomplete="off" enctype="multipart/form-data" novalidate>
                                 <div class="row">

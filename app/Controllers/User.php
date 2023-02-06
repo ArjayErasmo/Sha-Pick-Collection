@@ -75,4 +75,8 @@ class User extends BaseController{
         session()->setFlashdata('cancelled', 'cancelled');
         return redirect()->route('order_status');
     }
+    public function edit_profile()
+    {
+        return view('user/editprofile');
+    }
 }
