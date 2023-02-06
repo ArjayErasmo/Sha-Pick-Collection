@@ -256,7 +256,7 @@
                         <div class="footer-widget">
                             <h2>Purchase Info</h2>
                             <ul>
-                                <li><a href="<?= site_url('paymentpolicy'); ?>">Pyament Policy</a></li>
+                                <li><a href="<?= site_url('paymentpolicy'); ?>">Payment Policy</a></li>
                                 <li><a href="<?= site_url('shippingpolicy'); ?>">Shipping Policy</a></li>
                                 <li><a href="<?= site_url('returnpolicy'); ?>">Return Policy</a></li>
                             </ul>

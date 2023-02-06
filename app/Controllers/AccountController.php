@@ -104,19 +104,27 @@ class AccountController extends BaseController
             $pass = $d['password'];
             $authenticatePassword = password_verify($password, $pass);
             if($authenticatePassword){
-                if($d['status'] == 'active'):
-                $session_data = [
-                    'id' => $d['id'],
-                    'name' => $d['name'],
-                    'email' => $d['email'],
-                    'isLoggedIn' => TRUE
-                ];
-                $session->set($session_data);
-                return redirect('mainpage');
-                else:
-                $session->setFlashdata('msg', 'Account was not verified');
-                return redirect('signin');
-                endif;
+                if($d['status'] == 'active'){
+                    $session_data = [
+                        'id' => $d['id'],
+                        'name' => $d['name'],
+                        'email' => $d['email'],
+                        'isLoggedIn' => TRUE
+                    ];
+                    $session->set($session_data);
+
+                    if($d['type'] == "admin"){
+                        return redirect('admin');
+                    }
+                    else{
+                        return redirect('mainpage');
+                    }
+                
+                } else{
+                    $session->setFlashdata('msg', 'Account was not verified');
+                    return redirect('signin');
+                }
+
             }else{
                 $session->setFlashdata('msg', 'Invalid Password');
                 return redirect('signin');

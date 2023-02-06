@@ -104,7 +104,9 @@ $routes->match(['get', 'post'], '/auth', 'AccountController::auth');
 
 //Single Product
 $routes->get('/mp/(:any)', 'ProductsController::mp/$1');
-$routes->get('/Mens/(:any)', 'ProductsController::Mens/$1');
+$routes->get('/FT/(:any)', 'ProductsController::FT/$1');
+$routes->get('/Gad/(:any)', 'ProductsController::Gad/$1');
+$routes->get('/Appl/(:any)', 'ProductsController::Appl/$1');
 
 //Menu Category of Products
 $routes->match(['get', 'post'], '/menu/WomensWear', 'Home::WomensWear');

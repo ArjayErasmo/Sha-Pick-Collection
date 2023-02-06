@@ -802,6 +802,7 @@ h2 {
     padding: 20px;
     background: #000000;
     transition: all .3s;
+
 }
 
 .product-item:hover .product-price {
@@ -1900,7 +1901,7 @@ h2 {
 .call-to-action a:hover {
     color: #000000;
     border-color: #000000;
-}
+} 
 
 @media (max-width: 767.98px) {
     .call-to-action,

@@ -11,5 +11,23 @@ class ProductsController extends BaseController
         $result['result'] = $menu_model->find($id);
         return view('singlesearch', $result);
     }
+    public function FT($id) 
+    {
+        $footwear_model = new MenuModel();
+        $footwear['result'] = $footwear_model->find($id);
+        return view('singlesearchFootWear', $footwear);
+    }
+    public function Gad($id) 
+    {
+        $Gadgets_model = new MenuModel();
+        $Gadgets['result'] = $Gadgets_model->find($id);
+        return view('singlesearchGadgets', $Gadgets);
+    }
+    public function Appl($id) 
+    {
+        $Appliances_model = new MenuModel();
+        $Appliances['result'] = $Appliances_model->find($id);
+        return view('singlesearchAppliances', $Appliances);
+    }
 }
 ?> 
