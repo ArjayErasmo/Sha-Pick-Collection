@@ -36,7 +36,7 @@
                 <h3 class="card-title">Add Products</h3>
                 <div align="right"><a class="btn btn-secondary" href="products" role="button">Go back</a></div>
               </div>
-              <!-- /.card-header -->
+              <!-- /.card-header --> 
               <div class="card-body">
               <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
               <?php if (!empty(session()->getFlashdata('msg', 'Successfully Added!'))) : ?>

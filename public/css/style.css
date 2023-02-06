@@ -915,7 +915,7 @@ h2 {
 .product-view {
     position: relative;
     width: 100%;
-    padding: 30px 0;
+    padding: 0;
 }
 
 .product-view .product-view-top {
@@ -1008,10 +1008,13 @@ h2 {
 
 .product-view .product-item {
     margin-bottom: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+    border-radius: 8px;
 }
 
 .product-view .pagination {
-    margin: 0;
+    margin: 0;   
 }
 
 .product-view .pagination .page-item .page-link {
@@ -1024,6 +1027,7 @@ h2 {
 .product-view .pagination .page-item.active .page-link {
     color: #FF6F61;
     background: #000000;
+
 }
 
 @media (max-width: 991.98px) {

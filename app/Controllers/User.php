@@ -79,4 +79,8 @@ class User extends BaseController{
     {
         return view('user/editprofile');
     }
+    public function orderH()
+    {
+        return view('user/order_history');
+    }
 }

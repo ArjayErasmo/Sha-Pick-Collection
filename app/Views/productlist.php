@@ -56,8 +56,8 @@
                             <a href="productlist" class="nav-item nav-link active">Products</a>
                             <a href="cart" class="nav-item nav-link">Cart</a>
                             <a href="checkout" class="nav-item nav-link">Checkout</a>
-                            <a href="myaccount" class="nav-item nav-link">My Account</a>
                             <a href="contact" class="nav-item nav-link">Contact us</a>
+                            <a href="myaccount" class="nav-item nav-link">My Account</a>
                         </div>
                         <div class="navbar-nav ml-auto">
                             <div class="nav-item dropdown">
@@ -125,7 +125,7 @@
         <div class="product-view">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-lg-8">
+                    <div class="col-lg-">
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="product-view-top">
@@ -139,11 +139,14 @@
                                         <div class="col-md-4">
                                             <div class="product-short">
                                                 <div class="dropdown">
-                                                    <div class="dropdown-toggle" data-toggle="dropdown">Product short by</div>
+                                                    <div class="dropdown-toggle" data-toggle="dropdown">Category</div>
                                                     <div class="dropdown-menu dropdown-menu-right">
-                                                        <a href="#" class="dropdown-item">Newest</a>
-                                                        <a href="#" class="dropdown-item">Popular</a>
-                                                        <a href="#" class="dropdown-item">Most sale</a>
+                                                        <a href='menu/WomensWear' class="dropdown-item">Women's Wear</a>
+                                                        <a href='menu/MensWear' class="dropdown-item">Men's Wear</a>
+                                                        <a href='menu/Kids_Babies' class="dropdown-item">Kids & Babies Clothes</a>
+                                                        <a href='menu/GadgetsAccessories' class="dropdown-item">Accessories</a>
+                                                        <a href='menu/Appliances' class="dropdown-item">Appliances</a>
+                                                        <a href='menu/FootWear' class="dropdown-item">Foot Wear</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -187,7 +190,7 @@
                                     </div>
                                     <div class="product-image">
                                         <a href="product-detail.html">
-                                            <img src="<?= '/' . 'img/' . ($pr['image'])?>" alt="Product Image" height="250" width="150">
+                                            <img src="<?= '/' . 'img/' . ($pr['image'])?>" alt="Product Image" height="350" width="10">
                                         </a>
                                         <div class="product-action">
                                             <a href="#"><i class="fa fa-cart-plus"></i></a>
@@ -225,26 +228,29 @@
                         <!-- Pagination Start -->
                     </div>           
                     
-                    <!-- Side Bar Start -->
+                    <!-- Side Bar Start 
                     <div class="col-lg-4 sidebar">
                         <div class="sidebar-widget category">
                             <h2 class="title">Category</h2>
                             <nav class="navbar bg-light">
                                 <ul class="navbar-nav">
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#"><i class="fa fa-female"></i>Fashion & Beauty</a>
+                                        <a class="nav-link" href='menu/WomensWear'><i class="fa fa-female"></i>Women's Wear</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#"><i class="fa fa-child"></i>Kids & Babies Clothes</a>
+                                        <a class="nav-link" href='menu/MensWear'><i class="fa fa-tshirt"></i>Men's Wear'</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#"><i class="fa fa-tshirt"></i>Men & Women Clothes</a>
+                                        <a class="nav-link" href='menu/Kids_Babies'><i class="fa fa-child"></i>Kids & Babies Clothes</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#"><i class="fa fa-mobile-alt"></i>Gadgets & Accessories</a>
+                                        <a class="nav-link" href='menu/GadgetsAccessories'><i class="fa fa-mobile-alt"></i>Accessories</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#"><i class="fa fa-microchip"></i>Electronics & Accessories</a>
+                                        <a class="nav-link" href='menu/Appliances'><i class="fa fa-microchip"></i>Appliances</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href='menu/FootWear'><i class="fa fa-shopping-bag"></i>Foot Wear</a>
                                     </li>
                                 </ul>
                             </nav>
@@ -333,7 +339,7 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Side Bar End -->
+                     Side Bar End -->
                 </div>
             </div>
         </div>

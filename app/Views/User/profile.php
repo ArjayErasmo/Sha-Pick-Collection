@@ -43,7 +43,7 @@
       </li>
 
       <li class="nav-item">
-        <a href="<?= site_url('order_history') ?>" class="nav-link">
+        <a href="<?= site_url('orderH') ?>" class="nav-link">
         <i class="nav-icon fas fa-file-alt"></i>
           <p>History</p>
         </a>
@@ -96,19 +96,19 @@
                                     <img class="profile-user-img img-fluid img-circle" src="<?= base_url('img\Arjay.jpg') ?>" alt="User profile picture">
                                 </div>
 
-                                <h3 class="profile-username text-center">Name</h3>
+                                <h3 class="profile-username text-center">Arjay Erasmo</h3>
 
-                                <p class="text-muted text-center">Email</p>
+                                <p class="text-muted text-center">erasmoarjhay4@gmail.com</p>
                                 
                                 <ul class="list-group list-group-unbordered mb-3">
                                     <li class="list-group-item"><i class="fas fa-user-tie fa-sm"></i>
-                                        <b> </b> <a class="float-right">Usernam</a>
+                                        <b> </b> <a class="float-right">arjhay04</a>
                                     </li>
                                     <li class="list-group-item"><i class="fas fa-phone fa-sm"></i>
-                                        <b> </b> <a class="float-right">Phone Number</a>
+                                        <b> </b> <a class="float-right">09309669488</a>
                                     </li>
                                     <li class="list-group-item"><i class="fas fa-home fa-sm"></i>
-                                        <b> </b> <a class="float-right">Address</a>
+                                        <b> </b> <a class="float-right">Poblacion, San Teodoro, Oriental Mindoro</a>
                                     </li>
                                 </ul>
                                 <div class="text-center">

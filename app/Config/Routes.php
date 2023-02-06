@@ -118,6 +118,7 @@ $routes->match(['get', 'post'], '/menu/FootWear', 'Home::FootWear');
 
 //User Profile
 $routes->match(['get', 'post', 'put'], '/edit_profile', 'User::edit_profile');
+$routes->match(['get', 'post', 'put'], '/order_h', 'User::order_h');
 
 /*
  * --------------------------------------------------------------------

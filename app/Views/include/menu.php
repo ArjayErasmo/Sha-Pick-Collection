@@ -12,7 +12,7 @@
                                     <a class="nav-link" href='menu/WomensWear'><i class="fa fa-female"></i>Women's Wear</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href='menu/MensWear'><i class="fa fa-tshirt"></i>Men's Wear'</a>
+                                    <a class="nav-link" href='menu/MensWear'><i class="fa fa-tshirt"></i>Men's Wear</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href='menu/Kids_Babies'><i class="fa fa-child"></i>Kids & Babies Clothes</a>
@@ -28,4 +28,4 @@
                                 </li>
                             </ul>
                         </nav>
-                    </div>
+                    </div> 

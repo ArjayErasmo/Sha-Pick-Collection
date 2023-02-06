@@ -37,7 +37,7 @@
         </li>
 
         <li class="nav-item">
-          <a href="<?= site_url('order_history') ?>" class="nav-link" style="background-color: #3f474e;">
+          <a href="<?= site_url('order_h') ?>" class="nav-link" style="background-color: #3f474e;">
           <i class="nav-icon fas fa-file-alt"></i>
             <p>History</p>
           </a>
