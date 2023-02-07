@@ -1,14 +1,22 @@
 <?php
 
 namespace App\Controllers;
-
+use App\Models\PlaceorderModel;
 use App\Models\ProductsModel;
 
 class AdminController extends BaseController
 {
     public function index()
     {
-        return view('admin/index');
+        $product_model = new ProductsModel();
+        $placeorder = new PlaceorderModel();
+        $data = [
+            'approved_order' => $placeorder->where('state', 'Approved')->get()->getNumRows(),
+            'pending_order' => $placeorder->where('state', 'Pending')->get()->getNumRows(),
+            'users' => $placeorder->where('user_id >', '0')->get()->getNumRows(),
+            'cancelled_order' => $placeorder->where('state', 'Cancelled')->get()->getNumRows(),
+        ];
+        return view('admin/index', $data);
     }
     public function products()
     {
