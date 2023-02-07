@@ -64,7 +64,7 @@ $routes->get('/shippingpolicy', 'Home::shippingpolicy');
 $routes->get('/returnpolicy', 'Home::returnpolicy');
 $routes->get('/log', 'Home::log');
 $routes->get('/productlist', 'Home::productlist');
-$routes->get('/cart', 'Home::cart');
+$routes->match(['get', 'post'], '/cart', 'Home::cart');
 $routes->get('/checkout', 'Home::checkout');
 $routes->get('/myaccount', 'Home::myaccount');
 $routes->get('/contact', 'Home::contact');
@@ -120,6 +120,7 @@ $routes->match(['get', 'post'], '/menu/FootWear', 'Home::FootWear');
 //Price Category
 $routes->match(['get', 'post'], '/price/below_one', 'Home::below_one');
 $routes->match(['get', 'post'], '/price/one_two', 'Home::one_two');
+$routes->match(['get', 'post'], '/price/two_three', 'Home::two_three');
 
 
 //User Profile

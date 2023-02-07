@@ -157,9 +157,8 @@
                             <a href="<?=base_url('productlist')?>" class="nav-item nav-link">Products</a>
                             <a href="<?=base_url('cart')?>" class="nav-item nav-link">Cart</a>
                             <a href="<?=base_url('checkout')?>" class="nav-item nav-link">Checkout</a>
-                            <a href="<?=base_url('myaccount')?>" class="nav-item nav-link">My Account</a>
-                            <a href="<?=base_url('wishlist')?>" class="nav-item nav-link">Wishlist</a>
                             <a href="<?=base_url('contact')?>" class="nav-item nav-link">Contact us</a>
+                            <a href="<?=base_url('myaccount')?>" class="nav-item nav-link">My Account</a>
                         </div>
                         <div class="navbar-nav ml-auto">
                             <div class="nav-item dropdown">
@@ -191,7 +190,7 @@
                     <div class="col-md-3">
                         <div class="user">
                             
-                        </div>
+                        </div> 
                     </div>
                 </div>
             </div>
@@ -206,24 +205,19 @@
                 </div>
             </div>
             <div class="col-2">
+                <form action="<?=site_url('cart')?>" method="post">
                 <p>Home/ <?=($result['category'] )?></p>
                 <br>
                 <h2><b><?=  $result['name']?></b></h2>  
                 <h3><span>₱</span><?=number_format($result['price'], 2)?></h3>
+                <input type="hidden" value="<?=$result['price']?>" name="price">
+                <input type="hidden" value="<?=$result['id']?>" name="id">
                 <br>
-                Sizes&nbsp;&nbsp;&nbsp;&nbsp;
-                <select>
-                    <option>select size</option>
-                    <option>XXL</option>
-                    <option>XL</option>
-                    <option>LARGE</option>
-                    <option>MEDIUM</option>
-                    <option>SMALL</option>
-                    <option>XS</option>
-                </select>
+                Size&nbsp;&nbsp;&nbsp;&nbsp;<span ><?=$result['size']?></span>
+              
                 <br>
                 <br>
-                Quantity&nbsp;<input type="number" value="1"></input><br>
+                Color&nbsp;<span><?=$result['color']?></span><br>
                 <br>
                 <br>
                 <h4><b>Product Details</b></h4>
@@ -231,7 +225,8 @@
                     <p><?= ($result['description'] )?></p>
                 </div>
                 <br>
-                <a class="btn" href='cart'><i class="fa fa-shopping-cart"></i>Add to Cart</a>
+                <button type="submit" class="btn" ><i class="fa fa-shopping-cart"></i>Add to Cart</button>
+    </form>
             </div>
         </div>
     </div>

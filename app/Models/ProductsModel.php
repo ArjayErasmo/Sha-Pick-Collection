@@ -14,7 +14,9 @@ class ProductsModel extends Model
         'price',
         'quantity',
         'image',
-        'category'
+        'category',
+        'size',
+        'color'
     ]; 
 }
 ?>

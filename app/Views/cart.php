@@ -102,7 +102,7 @@
                                 <span>(0)</span>
                             </a>
                         </div>
-                    </div>
+                    </div> 
                 </div>
             </div>
         </div>
@@ -131,50 +131,30 @@
                                     <thead class="thead-dark">
                                         <tr>
                                             <th>Product</th>
+                                            <th>Details</th>
                                             <th>Price</th>
-                                            <th>Quantity</th>
+                              
                                             <th>Total</th>
                                             <th>Remove</th>
                                         </tr>
                                     </thead>
                                     <tbody class="align-middle">
-                                        
+                                        <?php foreach($cart_item as $item):?>
                                         <tr>
                                             <td>
                                                 <div class="img">
                                                     <a href="#"><img src="img/product-4.jpg" alt="Image"></a>
-                                                    <p>Product Name</p>
+                                                    <p><?=$item['name']?></p>
                                                 </div>
                                             </td>
-                                            <td>$99</td>
-                                            <td>
-                                                <div class="qty">
-                                                    <button class="btn-minus"><i class="fa fa-minus"></i></button>
-                                                    <input type="text" value="1">
-                                                    <button class="btn-plus"><i class="fa fa-plus"></i></button>
-                                                </div>
-                                            </td>
-                                            <td>$99</td>
+                                            <td><?=$item['detail']?></td>
+                                            <td><?=$item['price']?></td>
+                                           
+                                            <td><?=$item['total']?></td>
                                             <td><button><i class="fa fa-trash"></i></button></td>
                                         </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="img">
-                                                    <a href="#"><img src="img/product-5.jpg" alt="Image"></a>
-                                                    <p>Product Name</p>
-                                                </div>
-                                            </td>
-                                            <td>$99</td>
-                                            <td>
-                                                <div class="qty">
-                                                    <button class="btn-minus"><i class="fa fa-minus"></i></button>
-                                                    <input type="text" value="1">
-                                                    <button class="btn-plus"><i class="fa fa-plus"></i></button>
-                                                </div>
-                                            </td>
-                                            <td>$99</td>
-                                            <td><button><i class="fa fa-trash"></i></button></td>
-                                        </tr>
+                                        <?php endforeach;?>
+                                        
                                     </tbody>
                                 </table>
                             </div>

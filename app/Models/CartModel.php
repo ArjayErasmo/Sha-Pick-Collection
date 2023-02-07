@@ -10,7 +10,7 @@ class CartModel extends Model
     protected $table                ='cart';
     protected $primaryKey           ='cartid';
     protected $useAutoIncrement     ='true';
-    protected $insertID             = 0;
+    protected $insertID             = 0; 
     protected $returnType           = 'array';
     protected $useSoftDeletes       = false;
     protected $protectFields        = true;

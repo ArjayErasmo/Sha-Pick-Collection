@@ -86,7 +86,14 @@
             </div>
         </div>
         <!-- Bottom Bar End --> 
-        
+
+        <!-- Product Item Start --> 
+
+    <div class="product-view">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-">
+                    <div class="row">
                         <?php foreach ($products as $pr): ?>
                             <div class="col-md-4">
                                 <div class="product-item">
@@ -117,6 +124,12 @@
                                     </div>
                                 </div>
                             </div>
-                            <?php endforeach; ?> 
+                        <?php endforeach; ?> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+           <!-- Product Item Start --> 
 </body>
 </html>

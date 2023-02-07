@@ -158,7 +158,7 @@
                                                     <div class="dropdown-menu dropdown-menu-right">
                                                         <a href='price/below_one' class="dropdown-item">₱0 to ₱100</a>
                                                         <a href='price/one_two' class="dropdown-item">₱101 to ₱200</a>
-                                                        <a href="#" class="dropdown-item">₱201 to ₱300</a>
+                                                        <a href='price/two_three' class="dropdown-item">₱201 to ₱300</a>
                                                         <a href="#" class="dropdown-item">₱301 to ₱400</a>
                                                         <a href="#" class="dropdown-item">₱401 to ₱500</a>
                                                         <a href="#" class="dropdown-item">₱501 to ₱600</a>

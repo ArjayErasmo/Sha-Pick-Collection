@@ -86,5 +86,51 @@
             </div>
         </div>
         <!-- Bottom Bar End --> 
+
+        <!-- Product Item Start --> 
+
+        <div class="product-view">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-">
+                    <div class="row">
+                        <?php foreach ($products as $pr): ?>
+                            <div class="col-md-4">
+                                <div class="product-item">
+                                    <div class="product-title">
+                                        <a href=""><?= $pr['name']?></a>
+                                        <div class="ratting">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <div class="product-image">
+                                        <a href="product-detail.html">
+                                            <img src="<?= '/' . 'img/' . ($pr['image'])?>" alt="Product Image" height="350" width="10">
+                                        </a>
+                                        <div class="product-action">
+                                            <a href="#"><i class="fa fa-cart-plus"></i></a>
+                                            <a href="<?= site_url('mp/'.$pr['id'])?>"><i class="fa fa-search"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="product-price">
+                                        <p style = "color:white"><?=($pr['description'])?></p>
+                                   <!--     <p>?php if($pr['quantity'] <=0){ ?>sold out ?php }?></p> "close brackets for php" -->
+                                        <h3><span>₱</span><?= number_format($pr['price'], 2)?></h3>
+                                        <a class="btn" href=""><i class="fa fa-shopping-cart"></i>Buy Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        <?php endforeach; ?> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+           <!-- Product Item Start --> 
+
 </body>
 </html>
