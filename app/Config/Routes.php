@@ -116,6 +116,12 @@ $routes->match(['get', 'post'], '/menu/Kids_Babies', 'Home::Kids_Babies');
 $routes->match(['get', 'post'], '/menu/Appliances', 'Home::Appliances');
 $routes->match(['get', 'post'], '/menu/FootWear', 'Home::FootWear');
 
+
+//Price Category
+$routes->match(['get', 'post'], '/price/below_one', 'Home::below_one');
+$routes->match(['get', 'post'], '/price/one_two', 'Home::one_two');
+
+
 //User Profile
 $routes->match(['get', 'post', 'put'], '/edit_profile', 'User::edit_profile');
 $routes->match(['get', 'post', 'put'], '/orderH', 'User::orderH');

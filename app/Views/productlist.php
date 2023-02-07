@@ -156,16 +156,17 @@
                                                 <div class="dropdown">
                                                     <div class="dropdown-toggle" data-toggle="dropdown">Product price range</div>
                                                     <div class="dropdown-menu dropdown-menu-right">
-                                                        <a href="#" class="dropdown-item">$0 to $50</a>
-                                                        <a href="#" class="dropdown-item">$51 to $100</a>
-                                                        <a href="#" class="dropdown-item">$101 to $150</a>
-                                                        <a href="#" class="dropdown-item">$151 to $200</a>
-                                                        <a href="#" class="dropdown-item">$201 to $250</a>
-                                                        <a href="#" class="dropdown-item">$251 to $300</a>
-                                                        <a href="#" class="dropdown-item">$301 to $350</a>
-                                                        <a href="#" class="dropdown-item">$351 to $400</a>
-                                                        <a href="#" class="dropdown-item">$401 to $450</a>
-                                                        <a href="#" class="dropdown-item">$451 to $500</a>
+                                                        <a href='price/below_one' class="dropdown-item">₱0 to ₱100</a>
+                                                        <a href='price/one_two' class="dropdown-item">₱101 to ₱200</a>
+                                                        <a href="#" class="dropdown-item">₱201 to ₱300</a>
+                                                        <a href="#" class="dropdown-item">₱301 to ₱400</a>
+                                                        <a href="#" class="dropdown-item">₱401 to ₱500</a>
+                                                        <a href="#" class="dropdown-item">₱501 to ₱600</a>
+                                                        <a href="#" class="dropdown-item">₱601 to ₱700</a>
+                                                        <a href="#" class="dropdown-item">₱701 to ₱800</a>
+                                                        <a href="#" class="dropdown-item">₱801 to ₱900</a>
+                                                        <a href="#" class="dropdown-item">₱901 to ₱1000</a>
+                                                        <a href="#" class="dropdown-item">₱1001 and more</a>
                                                     </div>
                                                 </div>
                                             </div>

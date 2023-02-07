@@ -1,0 +1,75 @@
+CRITICAL - 2023-02-07 02:02:55 --> Invalid file: prce/below_one.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('prce/below_one.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('prce/below_one', [], true)
+ 3 APPPATH\Controllers\Home.php(72): view('prce/below_one')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->below_one()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-07 02:09:51 --> Undefined variable $products
+in APPPATH\Views\price\below_one.php on line 90.
+ 1 APPPATH\Views\price\below_one.php(90): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $products', 'APPPATH\\Views\\price\\below_one.php', 90)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\price\\below_one.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('price/below_one', [], true)
+ 5 APPPATH\Controllers\Home.php(76): view('price/below_one')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->below_one()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-07 02:10:22 --> Undefined variable $products
+in APPPATH\Views\price\below_one.php on line 90.
+ 1 APPPATH\Views\price\below_one.php(90): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $products', 'APPPATH\\Views\\price\\below_one.php', 90)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\price\\below_one.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('price/below_one', [], true)
+ 5 APPPATH\Controllers\Home.php(76): view('price/below_one')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->below_one()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-02-07 02:18:23 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '< '100'' at line 4 in C:\laragon\www\Sha-Pick-Collection\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\laragon\www\Sha-Pick-Collection\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\laragon\www\Sha-Pick-Collection\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\Sha-Pick-Collection\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\Sha-Pick-Collection\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\Sha-Pick-Collection\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\Sha-Pick-Collection\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\Sha-Pick-Collection\app\Controllers\Home.php(74): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\Sha-Pick-Collection\system\CodeIgniter.php(927): App\Controllers\Home->below_one()
+#8 C:\laragon\www\Sha-Pick-Collection\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\laragon\www\Sha-Pick-Collection\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\Sha-Pick-Collection\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\Sha-Pick-Collection\system\Commands\Server\rewrite.php(46): require_once('C:\\laragon\\www\\...')
+#12 {main}
+CRITICAL - 2023-02-07 02:18:23 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '< '100'' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `products`
+WHERE `quantity` > \'0\'
+AND `price` = < \'100\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `products`
+WHERE `quantity` > \'0\'
+AND `price` = < \'100\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `products`
+WHERE `quantity` > \'0\'
+AND `price` = < \'100\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `products`
+WHERE `quantity` > :quantity:
+AND `price` = < :price =:', [...], false)
+ 5 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Home.php(74): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->below_one()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

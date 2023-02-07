@@ -53,14 +53,37 @@ class Home extends BaseController
         ];
         return view('mainpage', $data);
     }
+
+
+    //Menu Controller
     public function WomensWear()
     {
         $pr = new ProductsModel();
         $data = [
-            'products' => $pr->where('quantity >', '0')->where('category', 'Womens')->findAll()
+            'products' => $pr->where('quantity >', '0')->where('category', 'Womens Wear')->findAll()
         ];
         return view('menu/WomensWear', $data);
     }
+
+
+    //Price Controller
+    public function below_one()
+    {
+        $pr = new ProductsModel();
+        $data = [
+            'products' => $pr->where('quantity >', 0)->where('price <=', 100)->findAll()
+        ];
+        return view('price/below_one', $data);
+    }
+    public function one_two()
+    {
+        $pr = new ProductsModel();
+        $data = [
+            'products' => $pr->where('quantity >', 0)->where('price >=', 101)->where('price <=', 200)->findAll()
+        ];
+        return view('price/one_two', $data);
+    }
+
     public function cart()
     {
         return view('cart');
