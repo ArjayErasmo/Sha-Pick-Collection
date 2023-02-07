@@ -57,6 +57,8 @@ class Home extends BaseController
     }
     public function cart()
     {
+        $checkout_model = new \App\Models\CheckoutModel();
+        $checkout_model->where('userid', session()->get('id'))->delete();
         $id = $this->request->getPost('id');
         $cart_model = new \App\Models\CartModel();
         if(isset($id)){
@@ -75,12 +77,21 @@ class Home extends BaseController
         }
         
       
-    
-          
+        $placeorder = new \App\Models\PlaceorderModel();
+        $cartId['info'] = $cart_model->select('cartid')->where('user_id', session()->get('id'))->findAll();
+        $arrayId = [];
+        for($i = 0; $i < count($cartId['info']); $i++){
+            array_push($arrayId, $cartId['info'][$i]['cartid']);
+        }
+        
+        $placeorder->select('cart_id')->findAll();
+
+        
         $data = [
             'cart_item' => $cart_model->select("*, concat(size, '<br>' ,color) as detail")
             ->join('products', 'products.id = cart.menu_id', 'inner')
-            ->findAll(),
+            ->join('placeorder', 'cart.cartid = placeorder.cart_id', 'inner')
+            ->get()->getResultArray(),
 
             'total' => $cart_model->selectSum('total')
             ->where('user_id', $id)->first(),
@@ -94,20 +105,32 @@ class Home extends BaseController
     }
     public function checkout() 
     {
+        $checkout_model = new \App\Models\CheckoutModel();
         $menuid = $this->request->getPost('menuid[]');
-        $userid = $this->reques->getPost('userid[]');
-
+        $userid = $this->request->getPost('userid');
+        $amount = $this->request->getPost('amount[]');
         for($i = 0; $i < count($menuid) ; $i++){
             $data = [
-                'userid' => $userid[$i],
-                'mednuid' => $menuid[$i]
+                'userid' => $userid,
+                'menuid' => $menuid[$i],
+                'amount' => $amount[$i]
             ];
-            $checkout_model = new \App\Models\CheckoutModel();
+           
             $checkout_model->insert($data);
         }
        
+        $data = [
+            'cart_item' => $cart_model->select("*, concat(size, '<br>' ,color) as detail")
+            ->join('products', 'products.id = cart.menu_id', 'right')
+            ->join('placeorder', 'cart.cartid = placeorder.cart_id', 'right')
+            ->where('placeorder.user_id', session()->get('id'))
+            ->whereNotIn('placeorder.cart_id', $arrayId)
+            ->findAll(),
 
-        return view('checkout');
+            'total' => $cart_model->selectSum('total')
+            ->where('user_id', $id)->first(),
+        ];
+        return view('checkout', $data);
     }
     public function myaccount()
     {
@@ -117,6 +140,8 @@ class Home extends BaseController
     {
         return view('contact');
     }
+
+ 
 
 
 

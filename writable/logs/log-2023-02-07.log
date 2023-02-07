@@ -2088,3 +2088,347 @@ in APPPATH\Views\singlesearch.php on line 203.
  8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
 10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-07 11:14:59 --> Undefined property: App\Controllers\Home::$reques
+in APPPATH\Controllers\Home.php on line 98.
+ 1 APPPATH\Controllers\Home.php(98): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$reques', 'APPPATH\\Controllers\\Home.php', 98)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->checkout()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-07 11:17:13 --> Undefined property: App\Controllers\Home::$reques
+in APPPATH\Controllers\Home.php on line 98.
+ 1 APPPATH\Controllers\Home.php(98): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$reques', 'APPPATH\\Controllers\\Home.php', 98)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->checkout()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-07 11:17:30 --> Trying to access array offset on value of type null
+in APPPATH\Views\singlesearch.php on line 203.
+ 1 APPPATH\Views\singlesearch.php(203): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\singlesearch.php', 203)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\singlesearch.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('singlesearch', [], true)
+ 5 APPPATH\Controllers\ProductsController.php(12): view('singlesearch', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\ProductsController->mp('FCPATH\\lib', 'slick', 'slick.css')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-07 11:17:30 --> Trying to access array offset on value of type null
+in APPPATH\Views\singlesearch.php on line 203.
+ 1 APPPATH\Views\singlesearch.php(203): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\singlesearch.php', 203)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\singlesearch.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('singlesearch', [], true)
+ 5 APPPATH\Controllers\ProductsController.php(12): view('singlesearch', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\ProductsController->mp('FCPATH\\lib', 'slick', 'slick-theme.css')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-07 11:19:42 --> Undefined property: App\Controllers\Home::$reques
+in APPPATH\Controllers\Home.php on line 98.
+ 1 APPPATH\Controllers\Home.php(98): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$reques', 'APPPATH\\Controllers\\Home.php', 98)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->checkout()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-07 11:41:14 --> Trying to access array offset on value of type null
+in APPPATH\Views\singlesearch.php on line 203.
+ 1 APPPATH\Views\singlesearch.php(203): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\singlesearch.php', 203)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\singlesearch.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('singlesearch', [], true)
+ 5 APPPATH\Controllers\ProductsController.php(12): view('singlesearch', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\ProductsController->mp('FCPATH\\lib', 'slick', 'slick.css')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-07 11:41:15 --> Trying to access array offset on value of type null
+in APPPATH\Views\singlesearch.php on line 203.
+ 1 APPPATH\Views\singlesearch.php(203): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\singlesearch.php', 203)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\singlesearch.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('singlesearch', [], true)
+ 5 APPPATH\Controllers\ProductsController.php(12): view('singlesearch', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\ProductsController->mp('FCPATH\\lib', 'slick', 'slick-theme.css')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-07 11:41:35 --> Undefined property: App\Controllers\Home::$reques
+in APPPATH\Controllers\Home.php on line 98.
+ 1 APPPATH\Controllers\Home.php(98): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$reques', 'APPPATH\\Controllers\\Home.php', 98)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->checkout()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-07 12:04:58 --> Class "App\Models\Checkout" not found
+in APPPATH\Controllers\Home.php on line 97.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->checkout()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-07 12:05:21 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Controllers\Home.php on line 101.
+ 1 APPPATH\Controllers\Home.php(101): count(null)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->checkout()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-07 12:08:26 --> Trying to access array offset on value of type null
+in APPPATH\Views\singlesearch.php on line 203.
+ 1 APPPATH\Views\singlesearch.php(203): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\singlesearch.php', 203)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\singlesearch.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('singlesearch', [], true)
+ 5 APPPATH\Controllers\ProductsController.php(12): view('singlesearch', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\ProductsController->mp('FCPATH\\lib', 'slick', 'slick.css')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-07 12:08:27 --> Trying to access array offset on value of type null
+in APPPATH\Views\singlesearch.php on line 203.
+ 1 APPPATH\Views\singlesearch.php(203): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\singlesearch.php', 203)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\singlesearch.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('singlesearch', [], true)
+ 5 APPPATH\Controllers\ProductsController.php(12): view('singlesearch', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\ProductsController->mp('FCPATH\\lib', 'slick', 'slick-theme.css')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-07 12:08:35 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Controllers\Home.php on line 103.
+ 1 APPPATH\Controllers\Home.php(103): count(null)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->checkout()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-07 12:29:14 --> Class "App\Models\PlaceorderMode" not found
+in APPPATH\Controllers\Home.php on line 80.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->cart()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-02-07 12:29:28 --> mysqli_sql_exception: Column 'user_id' in where clause is ambiguous in C:\laragon\www\Sha-Pick-Collection\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\laragon\www\Sha-Pick-Collection\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *, conca...', 0)
+#1 C:\laragon\www\Sha-Pick-Collection\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, conca...')
+#2 C:\laragon\www\Sha-Pick-Collection\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, conca...')
+#3 C:\laragon\www\Sha-Pick-Collection\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *, conca...', Array, false)
+#4 C:\laragon\www\Sha-Pick-Collection\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\Sha-Pick-Collection\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\Sha-Pick-Collection\app\Controllers\Home.php(95): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\Sha-Pick-Collection\system\CodeIgniter.php(927): App\Controllers\Home->cart()
+#8 C:\laragon\www\Sha-Pick-Collection\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\laragon\www\Sha-Pick-Collection\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\Sha-Pick-Collection\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\Sha-Pick-Collection\system\Commands\Server\rewrite.php(46): require_once('C:\\laragon\\www\\...')
+#12 {main}
+CRITICAL - 2023-02-07 12:29:28 --> Column 'user_id' in where clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *, concat(size, \'<br>\', color) as detail
+FROM `cart`
+INNER JOIN `products` ON `products`.`id` = `cart`.`menu_id`
+INNER JOIN `placeorder` ON `cart`.`cartid` = `placeorder`.`cart_id`
+WHERE `user_id` = \'15\'
+AND `place_order`.`cart_id` NOT IN (\'1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, concat(size, \'<br>\', color) as detail
+FROM `cart`
+INNER JOIN `products` ON `products`.`id` = `cart`.`menu_id`
+INNER JOIN `placeorder` ON `cart`.`cartid` = `placeorder`.`cart_id`
+WHERE `user_id` = \'15\'
+AND `place_order`.`cart_id` NOT IN (\'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, concat(size, \'<br>\', color) as detail
+FROM `cart`
+INNER JOIN `products` ON `products`.`id` = `cart`.`menu_id`
+INNER JOIN `placeorder` ON `cart`.`cartid` = `placeorder`.`cart_id`
+WHERE `user_id` = \'15\'
+AND `place_order`.`cart_id` NOT IN (\'1\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *, concat(size, \'<br>\', color) as detail
+FROM `cart`
+INNER JOIN `products` ON `products`.`id` = `cart`.`menu_id`
+INNER JOIN `placeorder` ON `cart`.`cartid` = `placeorder`.`cart_id`
+WHERE `user_id` = :user_id:
+AND `place_order`.`cart_id` NOT IN :place_order.cart_id:', [...], false)
+ 5 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Home.php(95): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->cart()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-02-07 12:29:44 --> mysqli_sql_exception: Unknown column 'place_order.cart_id' in 'where clause' in C:\laragon\www\Sha-Pick-Collection\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\laragon\www\Sha-Pick-Collection\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *, conca...', 0)
+#1 C:\laragon\www\Sha-Pick-Collection\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, conca...')
+#2 C:\laragon\www\Sha-Pick-Collection\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, conca...')
+#3 C:\laragon\www\Sha-Pick-Collection\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *, conca...', Array, false)
+#4 C:\laragon\www\Sha-Pick-Collection\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\Sha-Pick-Collection\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\Sha-Pick-Collection\app\Controllers\Home.php(95): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\Sha-Pick-Collection\system\CodeIgniter.php(927): App\Controllers\Home->cart()
+#8 C:\laragon\www\Sha-Pick-Collection\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\laragon\www\Sha-Pick-Collection\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\Sha-Pick-Collection\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\Sha-Pick-Collection\system\Commands\Server\rewrite.php(46): require_once('C:\\laragon\\www\\...')
+#12 {main}
+CRITICAL - 2023-02-07 12:29:44 --> Unknown column 'place_order.cart_id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *, concat(size, \'<br>\', color) as detail
+FROM `cart`
+INNER JOIN `products` ON `products`.`id` = `cart`.`menu_id`
+INNER JOIN `placeorder` ON `cart`.`cartid` = `placeorder`.`cart_id`
+WHERE `placeorder`.`user_id` = \'15\'
+AND `place_order`.`cart_id` NOT IN (\'1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, concat(size, \'<br>\', color) as detail
+FROM `cart`
+INNER JOIN `products` ON `products`.`id` = `cart`.`menu_id`
+INNER JOIN `placeorder` ON `cart`.`cartid` = `placeorder`.`cart_id`
+WHERE `placeorder`.`user_id` = \'15\'
+AND `place_order`.`cart_id` NOT IN (\'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, concat(size, \'<br>\', color) as detail
+FROM `cart`
+INNER JOIN `products` ON `products`.`id` = `cart`.`menu_id`
+INNER JOIN `placeorder` ON `cart`.`cartid` = `placeorder`.`cart_id`
+WHERE `placeorder`.`user_id` = \'15\'
+AND `place_order`.`cart_id` NOT IN (\'1\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *, concat(size, \'<br>\', color) as detail
+FROM `cart`
+INNER JOIN `products` ON `products`.`id` = `cart`.`menu_id`
+INNER JOIN `placeorder` ON `cart`.`cartid` = `placeorder`.`cart_id`
+WHERE `placeorder`.`user_id` = :placeorder.user_id:
+AND `place_order`.`cart_id` NOT IN :place_order.cart_id:', [...], false)
+ 5 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Home.php(95): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->cart()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-07 12:30:25 --> Trying to access array offset on value of type null
+in APPPATH\Views\singlesearch.php on line 203.
+ 1 APPPATH\Views\singlesearch.php(203): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\singlesearch.php', 203)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\singlesearch.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('singlesearch', [], true)
+ 5 APPPATH\Controllers\ProductsController.php(12): view('singlesearch', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\ProductsController->mp('FCPATH\\lib', 'slick', 'slick.css')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-07 12:30:25 --> Trying to access array offset on value of type null
+in APPPATH\Views\singlesearch.php on line 203.
+ 1 APPPATH\Views\singlesearch.php(203): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\singlesearch.php', 203)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\singlesearch.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('singlesearch', [], true)
+ 5 APPPATH\Controllers\ProductsController.php(12): view('singlesearch', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\ProductsController->mp('FCPATH\\lib', 'slick', 'slick-theme.css')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-07 12:32:51 --> Trying to access array offset on value of type null
+in APPPATH\Views\singlesearch.php on line 203.
+ 1 APPPATH\Views\singlesearch.php(203): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\singlesearch.php', 203)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\singlesearch.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('singlesearch', [], true)
+ 5 APPPATH\Controllers\ProductsController.php(12): view('singlesearch', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\ProductsController->mp('FCPATH\\lib', 'slick', 'slick.css')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-07 12:32:52 --> Trying to access array offset on value of type null
+in APPPATH\Views\singlesearch.php on line 203.
+ 1 APPPATH\Views\singlesearch.php(203): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\singlesearch.php', 203)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\singlesearch.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('singlesearch', [], true)
+ 5 APPPATH\Controllers\ProductsController.php(12): view('singlesearch', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\ProductsController->mp('FCPATH\\lib', 'slick', 'slick-theme.css')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-07 12:36:23 --> Trying to access array offset on value of type null
+in APPPATH\Views\singlesearch.php on line 203.
+ 1 APPPATH\Views\singlesearch.php(203): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\singlesearch.php', 203)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\singlesearch.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('singlesearch', [], true)
+ 5 APPPATH\Controllers\ProductsController.php(12): view('singlesearch', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\ProductsController->mp('FCPATH\\lib', 'slick', 'slick.css')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-07 12:36:23 --> Trying to access array offset on value of type null
+in APPPATH\Views\singlesearch.php on line 203.
+ 1 APPPATH\Views\singlesearch.php(203): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\singlesearch.php', 203)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\singlesearch.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('singlesearch', [], true)
+ 5 APPPATH\Controllers\ProductsController.php(12): view('singlesearch', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\ProductsController->mp('FCPATH\\lib', 'slick', 'slick-theme.css')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-07 12:39:36 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Controllers\Home.php on line 114.
+ 1 APPPATH\Controllers\Home.php(114): count(null)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->checkout()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-07 12:43:36 --> Trying to access array offset on value of type null
+in APPPATH\Views\singlesearch.php on line 203.
+ 1 APPPATH\Views\singlesearch.php(203): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\singlesearch.php', 203)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\singlesearch.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('singlesearch', [], true)
+ 5 APPPATH\Controllers\ProductsController.php(12): view('singlesearch', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\ProductsController->mp('FCPATH\\lib', 'slick', 'slick.css')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-07 12:43:37 --> Trying to access array offset on value of type null
+in APPPATH\Views\singlesearch.php on line 203.
+ 1 APPPATH\Views\singlesearch.php(203): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\singlesearch.php', 203)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\singlesearch.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('singlesearch', [], true)
+ 5 APPPATH\Controllers\ProductsController.php(12): view('singlesearch', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\ProductsController->mp('FCPATH\\lib', 'slick', 'slick-theme.css')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-07 12:49:39 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Controllers\Home.php on line 112.
+ 1 APPPATH\Controllers\Home.php(112): count(null)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->checkout()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

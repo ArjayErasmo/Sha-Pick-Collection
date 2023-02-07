@@ -138,7 +138,8 @@
                                         <form action="checkout" method="post">
                                         <?php foreach($cart_item as $item):?>
                                             <input type="hidden" name="menuid[]" value="<?=$item['menu_id']?>">
-                                            <input type="hidden" name="userid[]" value="<?=$item['user_id']?>">
+                                            <input type="hidden" name="userid" value="<?=$item['user_id']?>">
+                                            <input type="hidden" name="amount[]" value="<?=$item['price']?>">
                                         <tr>
                                         <td class="product-remove" style="border-left:1px solid black; font-family: Poppins, sans-serif; border-bottom: black;"><input class="checkCart" data-id="<?=$item['cartid']?>" data-price="<?=$item['price']?>" type="checkbox" value="<?= $item['id'] ?>" name="id[]"></td>
                                             <td>
@@ -154,6 +155,7 @@
                                             <td><a href="deleteCart/<?=$item['cartid']?>" ><i class="fa fa-trash"></i></a></td>
                                         </tr>
                                         <?php endforeach;?>
+                                        <button type="submit" id="submit" class="d-none"></button>
                                         <form>
                                         
                                     </tbody>
@@ -180,7 +182,7 @@
                                         </div>
                                         <div class="cart-btn">
                                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button>Checkout</button>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button id="triggerSubmit">Checkout</button>
                                         </div>
                                     </div>
                                 </div>
@@ -316,6 +318,10 @@
             $("#total").text(total)
             
           
+            })
+
+            $("#triggerSubmit").click(function() {
+                $("#submit").click();
             })
         </script>
     </body>

@@ -14,7 +14,7 @@ class CheckoutModel extends Model
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['userid', 'menuid'];
+    protected $allowedFields    = ['userid', 'menuid', 'amount'];
 
     // Dates
     protected $useTimestamps = false;
