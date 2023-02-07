@@ -57,21 +57,26 @@ class Home extends BaseController
     }
     public function cart()
     {
-        $cart_model = new \App\Models\CartModel();
         $id = $this->request->getPost('id');
-        $price = $this->request->getPost('price');
-        if(!empty($id))
-        {
+        $cart_model = new \App\Models\CartModel();
+        if(isset($id)){
+            $price = $this->request->getPost('price');
+
             $data = [
                 'menu_id' => $id,
                 'user_id' => session()->get('id'),
                 'total' => $price
             ];
             
-            if($cart_model->insert($data)){
-                return redirect()->route('cart');
-            }
-        }    
+  
+            $cart_model->insert($data);
+            
+            return redirect()->route('cart');
+        }
+        
+      
+    
+          
         $data = [
             'cart_item' => $cart_model->select("*, concat(size, '<br>' ,color) as detail")
             ->join('products', 'products.id = cart.menu_id', 'inner')
@@ -82,8 +87,26 @@ class Home extends BaseController
         ];
         return view('cart', $data);
     }
+    public function deleteCart($id) {
+        $cart_model = new \App\Models\CartModel();
+        $cart_model->where('cartid', $id)->delete();
+        return redirect()->route('cart');
+    }
     public function checkout() 
     {
+        $menuid = $this->request->getPost('menuid[]');
+        $userid = $this->reques->getPost('userid[]');
+
+        for($i = 0; $i < count($menuid) ; $i++){
+            $data = [
+                'userid' => $userid[$i],
+                'mednuid' => $menuid[$i]
+            ];
+            $checkout_model = new \App\Models\CheckoutModel();
+            $checkout_model->insert($data);
+        }
+       
+
         return view('checkout');
     }
     public function myaccount()

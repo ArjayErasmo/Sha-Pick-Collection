@@ -116,6 +116,7 @@
         <!-- Breadcrumb End -->
         
         <!-- Cart Start -->
+        <form method="post" action="checkout">
         <div class="cart-page">
             <div class="container-fluid">
                 <div class="row">
@@ -134,9 +135,12 @@
                                         </tr>
                                     </thead>
                                     <tbody class="align-middle">
+                                        <form action="checkout" method="post">
                                         <?php foreach($cart_item as $item):?>
+                                            <input type="hidden" name="menuid[]" value="<?=$item['menu_id']?>">
+                                            <input type="hidden" name="userid[]" value="<?=$item['user_id']?>">
                                         <tr>
-                                        <td class="product-remove" style="border-left:1px solid black; font-family: Poppins, sans-serif; border-bottom: black;"><input type="checkbox" value="<?= $item['id'] ?>" name="id[]"></td>
+                                        <td class="product-remove" style="border-left:1px solid black; font-family: Poppins, sans-serif; border-bottom: black;"><input class="checkCart" data-id="<?=$item['cartid']?>" data-price="<?=$item['price']?>" type="checkbox" value="<?= $item['id'] ?>" name="id[]"></td>
                                             <td>
                                                 <div class="img">
                                                     <a href="#"><img src="<?='/' . 'img/' . ($item['image'])?>" alt="Image"></a>
@@ -147,9 +151,10 @@
                                             <td><?=$item['price']?></td>
                                            
                                             <td><?=$item['total']?></td>
-                                            <td><button><i class="fa fa-trash"></i></button></td>
+                                            <td><a href="deleteCart/<?=$item['cartid']?>" ><i class="fa fa-trash"></i></a></td>
                                         </tr>
                                         <?php endforeach;?>
+                                        <form>
                                         
                                     </tbody>
                                 </table>
@@ -169,9 +174,9 @@
                                     <div class="cart-summary">
                                         <div class="cart-content">
                                             <h1>Cart Summary</h1>
-                                            <p>Sub Total<span>$99</span></p>
 
-                                            <h2>Grand Total<span>$100</span></h2>
+                                            <h2>Grand Total<span id="total">0</span></h2>
+                                            <input type="number"class="d-none" id="temp" >
                                         </div>
                                         <div class="cart-btn">
                                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -185,6 +190,7 @@
                 </div>
             </div>
         </div>
+ </form>
         <!-- Cart End -->
         
         <!-- Footer Start -->
@@ -287,5 +293,30 @@
         
         <!-- Template Javascript -->
         <script src="js/main.js"></script>
+        <script>
+            $(".checkCart").on('change', function() {
+            var price = Number(this.dataset.price);
+            var id = this.dataset.price;
+            var result = $(this).prop("checked")
+            if(result == true) {
+                if($("#temp").val() == 0){
+                    $("#temp").val(price)
+                    var total = price
+                   
+                }
+                else{
+                    var total = Number($("#temp").val()) + price
+                    $("#temp").val(total)
+                }
+            }
+            else{
+                var total =  Number($("#temp").val()) - price
+                $("#temp").val(total)
+            }
+            $("#total").text(total)
+            
+          
+            })
+        </script>
     </body>
 </html>

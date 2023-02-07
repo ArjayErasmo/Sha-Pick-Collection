@@ -69,7 +69,8 @@ $routes->get('/checkout', 'Home::checkout');
 $routes->get('/myaccount', 'Home::myaccount');
 $routes->get('/contact', 'Home::contact');
 $routes->get('/wishlist', 'Home::wishlist');
-
+$routes->post('/checkout', 'Home::checkout');
+$routes->get('/deleteCart/(:any)', 'Home::deleteCart/$1');
 
 //ADMIN LTE
 $routes->get('/admin', 'AdminController::index');
