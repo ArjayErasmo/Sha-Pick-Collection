@@ -93,13 +93,8 @@
                     </div>
                     <div class="col-md-3">
                         <div class="user">
-                            <a href="wishlist.html" class="btn wishlist">
-                                <i class="fa fa-heart"></i>
-                                <span>(0)</span>
-                            </a>
-                            <a href="cart.html" class="btn cart">
+                            <a href='cart' class="btn cart">
                                 <i class="fa fa-shopping-cart"></i>
-                                <span>(0)</span>
                             </a>
                         </div>
                     </div> 
@@ -130,10 +125,10 @@
                                 <table class="table table-bordered">
                                     <thead class="thead-dark">
                                         <tr>
+                                            <th></th>
                                             <th>Product</th>
                                             <th>Details</th>
                                             <th>Price</th>
-                              
                                             <th>Total</th>
                                             <th>Remove</th>
                                         </tr>
@@ -141,9 +136,10 @@
                                     <tbody class="align-middle">
                                         <?php foreach($cart_item as $item):?>
                                         <tr>
+                                        <td class="product-remove" style="border-left:1px solid black; font-family: Poppins, sans-serif; border-bottom: black;"><input type="checkbox" value="<?= $item['id'] ?>" name="id[]"></td>
                                             <td>
                                                 <div class="img">
-                                                    <a href="#"><img src="img/product-4.jpg" alt="Image"></a>
+                                                    <a href="#"><img src="<?='/' . 'img/' . ($item['image'])?>" alt="Image"></a>
                                                     <p><?=$item['name']?></p>
                                                 </div>
                                             </td>
@@ -163,23 +159,23 @@
                     <div class="col-lg-4">
                         <div class="cart-page-inner">
                             <div class="row">
-                                <div class="col-md-12">
+                                <!--<div class="col-md-12">
                                     <div class="coupon">
                                         <input type="text" placeholder="Coupon Code">
                                         <button>Apply Code</button>
                                     </div>
-                                </div>
+                                </div>-->
                                 <div class="col-md-12">
                                     <div class="cart-summary">
                                         <div class="cart-content">
                                             <h1>Cart Summary</h1>
                                             <p>Sub Total<span>$99</span></p>
-                                            <p>Shipping Cost<span>$1</span></p>
+
                                             <h2>Grand Total<span>$100</span></h2>
                                         </div>
                                         <div class="cart-btn">
-                                            <button>Update Cart</button>
-                                            <button>Checkout</button>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button>Checkout</button>
                                         </div>
                                     </div>
                                 </div>

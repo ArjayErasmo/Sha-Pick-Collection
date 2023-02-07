@@ -76,6 +76,7 @@ class Home extends BaseController
             'cart_item' => $cart_model->select("*, concat(size, '<br>' ,color) as detail")
             ->join('products', 'products.id = cart.menu_id', 'inner')
             ->findAll(),
+
             'total' => $cart_model->selectSum('total')
             ->where('user_id', $id)->first(),
         ];
