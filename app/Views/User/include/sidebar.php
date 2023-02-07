@@ -6,7 +6,7 @@
     <!-- Sidebar user panel (optional) -->
     <div class="user-panel mt-3 pb-3 mb-3 d-flex">
       <div class="image">
-        <img src="<?php base_url(); ?>/dist/img/1.jpg" class="img-circle elevation-2" alt="User Image">
+        <img src="<?= base_url('img\Arjay.jpg') ?>" class="img-circle elevation-2" alt="User Image">
       </div>
       <div class="info">
         <a style="color: white;" href="#" class="d-block"><?= session()->get('name') ?></a>
@@ -37,14 +37,14 @@
         </li>
 
         <li class="nav-item">
-          <a href="<?= site_url('order_h') ?>" class="nav-link" style="background-color: #3f474e;">
+          <a href="<?= site_url('orderH') ?>" class="nav-link" style="background-color: #3f474e;">
           <i class="nav-icon fas fa-file-alt"></i>
-            <p>History</p>
+            <p>My Orders</p>
           </a>
         </li>
 
         <li class="nav-item">
-          <a href="<?= site_url('profile') ?>" class="nav-link active" style="background-color: #3f474e;">
+          <a href="<?= site_url('myaccount') ?>" class="nav-link active" style="background-color: #3f474e;">
             <i class="nav-icon fas fa-user"></i>
             <p>Profile Settings</p>
           </a>

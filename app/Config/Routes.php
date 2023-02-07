@@ -122,6 +122,7 @@ $routes->match(['get', 'post'], '/menu/FootWear', 'Home::FootWear');
 $routes->match(['get', 'post'], '/price/below_one', 'Home::below_one');
 $routes->match(['get', 'post'], '/price/one_two', 'Home::one_two');
 $routes->match(['get', 'post'], '/price/two_three', 'Home::two_three');
+$routes->match(['get', 'post'], '/price/three_four', 'Home::three_four');
 
 
 //User Profile

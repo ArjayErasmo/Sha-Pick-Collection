@@ -207,7 +207,7 @@
                             <div class="product-price">
                                 <p style = "color:white"><?=($pr['description'])?></p>
                                 <h3><span>₱</span><?= number_format($pr['price'], 2)?></h3>
-                                <a class="btn" href=""><i class="fa fa-shopping-cart"></i>Buy Now</a>
+                                <a class="btn" href=""><i class="fa fa-shopping-cart"></i>Add to cart</a>
                             </div>
                         </div>
                     </div>

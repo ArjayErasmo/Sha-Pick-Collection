@@ -34,7 +34,7 @@
         
           <li class="nav-header">SHA PICK COLLECTION</li>
           <li class="nav-item">
-            <a href=<?= base_url('admin/index')?> class="nav-link active" style="background-color: #e2796f;">
+            <a href=<?= base_url('admin/index')?> class="nav-link" style="">
               <i class="nav-icon fas fa-chart-pie"></i>
               <p>
                 Sales and Graph
@@ -71,8 +71,7 @@
             <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Log Out</p>
           </a>
-        </li>
-      </ul>
+      </li>
     </div>
     <!-- /.sidebar -->
 </aside>

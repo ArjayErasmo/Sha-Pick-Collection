@@ -154,7 +154,7 @@
                                                         <a href='price/below_one' class="dropdown-item">₱0 to ₱100</a>
                                                         <a href='price/one_two' class="dropdown-item">₱101 to ₱200</a>
                                                         <a href='price/two_three' class="dropdown-item">₱201 to ₱300</a>
-                                                        <a href="#" class="dropdown-item">₱301 to ₱400</a>
+                                                        <a href='price/three_four' class="dropdown-item">₱301 to ₱400</a>
                                                         <a href="#" class="dropdown-item">₱401 to ₱500</a>
                                                         <a href="#" class="dropdown-item">₱501 to ₱600</a>
                                                         <a href="#" class="dropdown-item">₱601 to ₱700</a>
@@ -197,7 +197,7 @@
                                         <p style = "color:white"><?=($pr['description'])?></p>
                                    <!--     <p>?php if($pr['quantity'] <=0){ ?>sold out ?php }?></p> "close brackets for php" -->
                                         <h3><span>₱</span><?= number_format($pr['price'], 2)?></h3>
-                                        <a class="btn" href=""><i class="fa fa-shopping-cart"></i>Buy Now</a>
+                                        <a class="btn" href='cart'><i class="fa fa-shopping-cart"></i>Add to cart</a>
                                     </div>
                                 </div>
                             </div>

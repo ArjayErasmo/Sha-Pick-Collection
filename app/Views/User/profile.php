@@ -45,7 +45,7 @@
       <li class="nav-item">
         <a href="<?= site_url('orderH') ?>" class="nav-link">
         <i class="nav-icon fas fa-file-alt"></i>
-          <p>History</p>
+          <p>My Orders</p>
         </a>
       </li>
 
@@ -139,26 +139,26 @@
                                             <div class="form-group row">
                                                 <label for="inputName" class="col-sm-2 col-form-label"><b>Name:</b></label>
                                                 <div class="col-sm-8">
-                                                    <input type="text" name="name" value="" class="form-control" id="inputName" placeholder="Name">
+                                                    <input type="text" name="name" value="" class="form-control" id="inputName" placeholder="Arjay Erasmo">
                                                 </div>
                                                 
                                             </div>
                                             <div class="form-group row">
                                             <label for="inputEmail" class="col-sm-2 col-form-label">Username:</label>
                                                 <div class="col-sm-8">
-                                                    <input type="text" name="username" value="" class="form-control" id="inputEmail" placeholder="Username">
+                                                    <input type="text" name="username" value="" class="form-control" id="inputEmail" placeholder="arjhay04">
                                                 </div>
                                             </div>
                                             <div class="form-group row">
                                             <label for="inputSkills" class="col-sm-2 col-form-label">Phone Number:</label>
                                                 <div class="col-sm-8">
-                                                    <input type="text" name="phone_number" value="" class="form-control" id="inputSkills" placeholder="Phone Number">
+                                                    <input type="text" name="phone_number" value="" class="form-control" id="inputSkills" placeholder="09309669488">
                                                 </div>
                                             </div>
                                             <div class="form-group row">
                                                 <label for="inputExperience" class="col-sm-2 col-form-label">Address: </label>
                                                 <div class="col-sm-8">
-                                                    <input class="form-control" name="address" value="" id="inputExperience" placeholder="Address"></input>
+                                                    <input class="form-control" name="address" value="" id="inputExperience" placeholder="Poblacion, San Teodoro, Oriental Mindoro"></input>
                                                 </div>
                                             </div>
                                             <div class="form-group row">

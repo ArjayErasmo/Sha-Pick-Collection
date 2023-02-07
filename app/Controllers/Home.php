@@ -228,5 +228,13 @@ class Home extends BaseController
         ];
         return view('price/two_three', $data);
     }
+    public function three_four()
+    {
+        $pr = new ProductsModel();
+        $data = [
+            'products' => $pr->where('quantity >', 0)->where('price >=', 301)->where('price <=', 400)->findAll()
+        ];
+        return view('price/three_four', $data);
+    }
 
 }
