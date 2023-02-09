@@ -78,25 +78,29 @@ class Home extends BaseController
         
       
         $placeorder = new \App\Models\PlaceorderModel();
-        $cartId['info'] = $cart_model->select('cartid')->where('user_id', session()->get('id'))->findAll();
+     
         $arrayId = [];
-        for($i = 0; $i < count($cartId['info']); $i++){
-            array_push($arrayId, $cartId['info'][$i]['cartid']);
+        $cartId['count'] = $placeorder->select('cart_id')->where('user_id', session()->get('id'))->findAll();
+        for($i = 0; $i < count($cartId['count']); $i++){
+            array_push($arrayId, $cartId['count'][$i]['cart_id']);
         }
-        
-        $placeorder->select('cart_id')->findAll();
-
+       
+        if(!$arrayId){
+            $arrayId = ['0', '0'];
+        }
+        // var_dump($arrayId);
         
         $data = [
             'cart_item' => $cart_model->select("*, concat(size, '<br>' ,color) as detail")
             ->join('products', 'products.id = cart.menu_id', 'inner')
-            ->join('placeorder', 'cart.cartid = placeorder.cart_id', 'inner')
-            ->get()->getResultArray(),
+            ->whereNotIn('cartid', $arrayId)
+            ->findAll(),
 
             'total' => $cart_model->selectSum('total')
             ->where('user_id', $id)->first(),
         ];
         return view('cart', $data);
+        
     }
     public function deleteCart($id) {
         $cart_model = new \App\Models\CartModel();
@@ -108,28 +112,31 @@ class Home extends BaseController
         $checkout_model = new \App\Models\CheckoutModel();
         $menuid = $this->request->getPost('menuid[]');
         $userid = $this->request->getPost('userid');
-        $amount = $this->request->getPost('amount[]');
-        for($i = 0; $i < count($menuid) ; $i++){
-            $data = [
-                'userid' => $userid,
-                'menuid' => $menuid[$i],
-                'amount' => $amount[$i]
-            ];
-           
-            $checkout_model->insert($data);
-        }
-       
-        $data = [
-            'cart_item' => $cart_model->select("*, concat(size, '<br>' ,color) as detail")
-            ->join('products', 'products.id = cart.menu_id', 'right')
-            ->join('placeorder', 'cart.cartid = placeorder.cart_id', 'right')
-            ->where('placeorder.user_id', session()->get('id'))
-            ->whereNotIn('placeorder.cart_id', $arrayId)
-            ->findAll(),
 
-            'total' => $cart_model->selectSum('total')
-            ->where('user_id', $id)->first(),
-        ];
+        if(isset($menuid)) {
+            for($i = 0; $i < count($menuid) ; $i++){
+                $data = [
+                    'userid' => $userid,
+                    'menuid' => $menuid[$i],
+                    
+                ];
+               
+                $checkout_model->insert($data);
+            }
+        }
+        
+
+        $data["cart"] = $checkout_model->select("*, concat(size, '<br>' ,color) as detail")
+                ->join('products', 'checkout.menuid = products.id', 'inner')    
+                ->join('cart', 'checkout.menuid = cart.menu_id', 'right')           
+                ->where('checkout.userid', $userid)->get()->getResultArray();
+  
+                $data['total'] = $checkout_model->selectSum('total')
+                ->join('cart', 'checkout.menuid = cart.menu_id', 'right')
+                ->where('checkout.userid', $userid)->first();
+
+       
+       
         return view('checkout', $data);
     }
     public function myaccount()
@@ -142,7 +149,32 @@ class Home extends BaseController
     }
 
  
+public function placeorder() {
+    $order_model = new \App\Models\PlaceorderModel();
+    $cart_model = new \App\Models\CartModel();
+    $menuid = $this->request->getPost('menuid[]');
+    $total = $this->request->getPost('total[]');
+    $cartid = $this->request->getPost('cartid[]');
+    $pickup = $this->request->getPost('pickup');
+    $meetup = $this->request->getPost('meetup');
+    $delivery = "Pick up";
+    if(isset($meetup)) {
+        $delivery = "Meet Up";
+    }
 
+    for($i = 0; $i < count($menuid); $i++){
+        $data = [
+            'cart_id' => $cartid[$i],
+            'menu_id' => $menuid[$i],
+            'user_id' => session()->get('id'),
+            'delivery' => $delivery,
+            'total' => $total[$i]      
+        ];
+        $order_model->insert($data);
+    }
+    // var_dump($data);
+    return redirect()->route('orderH');
+}
 
 
 

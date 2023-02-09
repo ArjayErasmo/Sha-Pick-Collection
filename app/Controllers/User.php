@@ -81,6 +81,15 @@ class User extends BaseController{
     }
     public function orderH()
     {
-        return view('user/order_history');
+        $placeorder = new PlaceorderModel();
+        $data = [
+            'placeorder' => $placeorder->select('*')
+            ->join('products', 'products.id = placeorder.menu_id', 'inner')
+            ->where('placeorder.user_id', session()->get('id'))
+            ->where('placeorder.state', 'Pending')
+            ->get()->getResultArray()
+        ];
+
+        return view('user/order_history', $data);
     }
 }

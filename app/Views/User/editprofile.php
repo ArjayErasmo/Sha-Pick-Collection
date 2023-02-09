@@ -1,9 +1,9 @@
-<?= $this->include('user/include/top'); ?>
+<?= $this->include('user/inc/top'); ?>
 
 <body class="hold-transition sidebar-mini layout-fixed">
     <div class="wrapper">
-        <?= $this->include('user/include/navbar'); ?>
-        <?= $this->include('user/include/sidebar'); ?>
+        <?= $this->include('user/inc/navbar'); ?>
+        <?= $this->include('user/inc/sidebar'); ?>
     </div>
     <div class="content-wrapper">
         <!-- Main content -->
@@ -120,4 +120,4 @@
         </section>
     </div>
 
-    <?= $this->include('user/include/end'); ?>
+    <?= $this->include('user/inc/end'); ?>

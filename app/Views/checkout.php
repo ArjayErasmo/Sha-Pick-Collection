@@ -116,6 +116,7 @@
         <!-- Breadcrumb End -->
         
         <!-- Checkout Start -->
+        <form action="placeorder" method="post">   
         <div class="checkout">
             <div class="container-fluid"> 
                 <div class="row">
@@ -127,22 +128,27 @@
                                         <tr>
                                             <th>PRODUCT</th>
                                             <th>DETAILS</th>
-                                            <th>PRICE</th>
+                                            
                                             <th>TOTAL</th>
                                         </tr>
                                     </thead>
                                     <tbody class="align-middle">
+                                        <?php foreach($cart as $item):?>
+                                            <input type="hidden" name="menuid[]" value="<?=$item['menuid']?>">
+                                            <input type="hidden" name="cartid[]" value="<?=$item['cartid']?>">
+                                            <input type="hidden" name="total[]" value="<?=$item['total']?>">
                                         <tr>
                                             <td>
                                                 <div class="img">
-                                                    <a href="#"><img src="#" alt="Image"></a>
-                                                    <p>name</p>
+                                                    <a href="<?=site_url('img/'.$item['image'])?>" target="blank"><img src="<?=site_url('img/'.$item['image'])?>" height="100px" width="100px" alt="Image"></a>
+                                                    <p><?=$item['name']?></p>
                                                 </div>
                                             </td>
-                                            <td>detail</td>
-                                            <td>price</td>
-                                            <td>total</td>
+                                            <td><?=$item['detail']?></td>
+                                            <td><?=$item['price']?></td>
+                                         
                                         </tr>
+                                        <?php endforeach;?>
                                     </tbody>
                                 </table>
                             </div>
@@ -152,18 +158,16 @@
                         <div class="checkout-inner">
                             <div class="checkout-summary">
                                 <h1>Cart Total</h1>
-                                <p>Product Name<span>$99</span></p>
-                                <p class="sub-total">Sub Total<span>$99</span></p>
-                                <p class="ship-cost">Shipping Cost<span>$1</span></p>
-                                <h2>Grand Total<span>$100</span></h2>
+                      
+                                <h2>Grand Total<span>Php <?=$total['total']?></span></h2>
                             </div>
-
+                                            
                             <div class="checkout-payment">
                                 <div class="payment-methods">
                                     <h1>Delivery Options</h1>
                                     <div class="payment-method">
                                         <div class="custom-control custom-radio">
-                                            <input type="radio" class="custom-control-input" id="payment-3" name="payment">
+                                            <input type="radio" value="Pick up" class="custom-control-input" id="payment-3" name="pickup">
                                             <label class="custom-control-label" for="payment-3">Pick Up</label>
                                         </div>
                                         <div class="payment-content" id="payment-3-show">
@@ -174,7 +178,7 @@
                                     </div>
                                     <div class="payment-method">
                                         <div class="custom-control custom-radio">
-                                            <input type="radio" class="custom-control-input" id="payment-4" name="payment">
+                                            <input type="radio" value="Meet in place" class="custom-control-input" id="payment-4" name="meetup">
                                             <label class="custom-control-label" for="payment-4">Meet in Place</label>
                                         </div>
                                         <div class="payment-content" id="payment-4-show">
@@ -185,14 +189,17 @@
                                     </div>
                                 </div>
                                 <div class="checkout-btn">
-                                    <button style="color: white;">Place Order</button>
+                            
+                                    <button type="submit"  style="color: white;">Place Order</button>
                                 </div>
                             </div>
+                                      
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+                                        </form>
         <!-- Checkout End -->
         
         <!-- Footer Start -->

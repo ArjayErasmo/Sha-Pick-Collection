@@ -137,11 +137,11 @@
                                     <tbody class="align-middle">
                                         <form action="checkout" method="post">
                                         <?php foreach($cart_item as $item):?>
-                                            <input type="hidden" name="menuid[]" value="<?=$item['menu_id']?>">
+                                          
                                             <input type="hidden" name="userid" value="<?=$item['user_id']?>">
                                             <input type="hidden" name="amount[]" value="<?=$item['price']?>">
                                         <tr>
-                                        <td class="product-remove" style="border-left:1px solid black; font-family: Poppins, sans-serif; border-bottom: black;"><input class="checkCart" data-id="<?=$item['cartid']?>" data-price="<?=$item['price']?>" type="checkbox" value="<?= $item['id'] ?>" name="id[]"></td>
+                                        <td class="product-remove" style="border-left:1px solid black; font-family: Poppins, sans-serif; border-bottom: black;"><input class="checkCart" data-id="<?=$item['cartid']?>" data-price="<?=$item['price']?>" type="checkbox" value="<?= $item['menu_id'] ?>" name="menuid[]"></td>
                                             <td>
                                                 <div class="img">
                                                     <a href="#"><img src="<?='/' . 'img/' . ($item['image'])?>" alt="Image"></a>

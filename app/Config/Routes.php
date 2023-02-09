@@ -70,6 +70,7 @@ $routes->get('/myaccount', 'Home::myaccount');
 $routes->get('/contact', 'Home::contact');
 $routes->get('/wishlist', 'Home::wishlist');
 $routes->post('/checkout', 'Home::checkout');
+$routes->post('/placeorder', 'Home::placeorder');
 $routes->get('/deleteCart/(:any)', 'Home::deleteCart/$1');
 
 //ADMIN LTE
@@ -128,6 +129,7 @@ $routes->match(['get', 'post'], '/price/three_four', 'Home::three_four');
 //User Profile
 $routes->match(['get', 'post', 'put'], '/edit_profile', 'User::edit_profile');
 $routes->match(['get', 'post', 'put'], '/orderH', 'User::orderH');
+
 
 /*
  * --------------------------------------------------------------------

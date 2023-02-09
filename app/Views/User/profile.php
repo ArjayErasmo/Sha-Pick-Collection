@@ -1,7 +1,7 @@
-<?= $this->include('user/include/top'); ?>
+<?= $this->include('user/inc/top'); ?>
 
 <body>
-  <?= $this->include('user/include/navbar'); ?>
+  <?= $this->include('user/inc/navbar'); ?>
 
     <!-- Main Sidebar Container -->
     <aside class="main-sidebar sidebar-dark-primary elevation-4">
@@ -185,6 +185,6 @@
         </section>
     </div>
 
-    <?= $this->include('user/include/end'); ?>
+    <?= $this->include('user/inc/end'); ?>
 
 </body>
